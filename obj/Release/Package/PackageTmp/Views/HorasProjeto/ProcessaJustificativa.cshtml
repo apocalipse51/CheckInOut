@@ -1,0 +1,70 @@
+﻿@{
+        Layout = null;
+        ViewBag.Title = "Justificar ponto";
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <link id="favicon" href="~/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    @Styles.Render("~/Styles/Utils/main.css")
+    @Styles.Render("~/Styles/Utils/animate.css")
+    @Styles.Render("~/Styles/Utils/bootstrap.css")
+    @Scripts.Render("~/Scripts/jquery-1.9.1.js")
+    @Scripts.Render("~/Scripts/modernizr-2.6.2.js")
+    @Html.Hidden("JustificativaTextoHpoURL", Url.Action("JustificativaTextoHpo", "HorasProjeto"))
+
+<style type="text/css">
+    body {
+    background-image: url('../../Images/vivo1.jpg');
+    background-size: cover;
+    -webkit-transition: background 1s !important;
+    -moz-transition: background 1s !important;
+    -o-transition: background 1s !important;
+    transition: background 1s !important;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+</style>
+
+</head>
+
+<body>
+    @ViewBag.id
+    @ViewBag.jtfid
+    @ViewBag.dao
+    @ViewBag.daf
+                <table align="center" style="margin-top:5%;">
+                    <tr>
+                        <td>
+                            <div id="status" style="margin-top:5%;color:white;">@ViewBag.status</div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="CamposTextoJust">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <input type="text" name="JustificativaTexto" style="width: 300px" id="JustificativaTexto" class="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="Registrar observação" class="input form-control btn btn-default" onclick="TextoJustificar();" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <script src="~/Scripts/ProcessaJustifica/Justifica.js"></script>
+
+</body>
+</html>
+
+
+

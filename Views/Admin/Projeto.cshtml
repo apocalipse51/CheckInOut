@@ -1,0 +1,96 @@
+﻿@section scripts{
+    @Scripts.Render("~/Scripts/Admin/Projeto.js")
+}
+
+@Html.Hidden("BuscaResponsavelURL", Url.Action("BuscaResponsavel", "Admin"))
+@Html.Hidden("BuscaProjetoURL", Url.Action("ListaProjeto", "Admin"))
+@Html.Hidden("MatemProjetoURL", Url.Action("MantemProjeto", "Admin"))
+@Html.Hidden("BuscaProdutoURL", Url.Action("ListaProduto", "Admin"))
+@Html.Hidden("CalculaIdProjetoURL", Url.Action("CalculaIdProjeto", "Admin"))
+
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+@Html.Hidden("idProjeto", 0)
+
+
+<div class="wait alert-success">AGUARDE UM INSTANTE</div>
+<div class="error alert-danger"></div>
+<h2>Projeto</h2>
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="box">
+            <div style="clear: both;"></div>
+            <div class="col-md-4" align="right" style="width: 100%">
+                <img src="/Images/plusPNG.png" onclick="MonstraCampos()">
+            </div>
+            <div style="clear: both;"></div>
+            <div class="col-md-4" id="divCampos" name="divCampos">
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <p>Produto:</p>
+                            <select id="cbxProduto" name="cbxProduto" class="form-control" style="width: 200px" onchange="CalculaProjetoId();"></select>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Descrição:</p>
+                            <input type="text" name="txtDescricao" id="txtDescricao" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Código Projeto:</p>
+                            <input type="text" name="txtCodigo" id="txtCodigo" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <tr>
+                            <td>
+                                <p>Responsável</p>
+                                <select id="cbxProdutoResponsavel" name="cbxProdutoResponsavel" class="form-control" style="width: 300px"></select>
+                            </td>
+                        </tr>
+                        <td>
+                            <p>&nbsp;</p>
+                            <input type="button" value="&nbsp;&nbsp;&nbsp;Salvar&nbsp;&nbsp;&nbsp;&nbsp;" class="input form-control btn btn-success" onclick="SalvaProjeto();" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="clear: both;"></div>
+            <table class="table-internal" style="margin-top: 15px;" id="tblDescricaoItens">
+                <thead>
+                    <tr class="tr-head">
+                        <th>
+                            Editar
+                        </th>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            Produto
+                        </th>
+                        <th>
+                            Descricao
+                        </th>
+                        <th>
+                            Código
+                        </th>
+                        <th>
+                            Responsável
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>

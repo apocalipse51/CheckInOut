@@ -1,0 +1,116 @@
+﻿@section scripts{
+    @Scripts.Render("~/Scripts/Admin/NotaFiscal.js")
+}
+
+@Html.Hidden("BuscaContratanteURL", Url.Action("ListaContratante", "Admin"))
+@Html.Hidden("BuscaFilialPorContratanteURL", Url.Action("ListaFilialPorContratante", "Admin"))
+@Html.Hidden("BuscaLicencaPorFilialURL", Url.Action("ListaLicencasPorFilial", "Admin"))
+@Html.Hidden("BuscaNotaFiscalURL", Url.Action("ListaNotaFiscal", "Admin"))
+@Html.Hidden("MantemNotaFiscalURL", Url.Action("MantemNotaFiscal", "Admin"))
+
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+@Html.Hidden("idNotaFiscal", 0)
+
+
+<div class="wait alert-success">AGUARDE UM INSTANTE</div>
+<div class="error alert-danger"></div>
+<h2>Nota Fiscal</h2>
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="box">
+            <div style="clear: both;"></div>
+            <div class="col-md-4" align="right" style="width: 100%">
+                <img src="/Images/plusPNG.png" onclick="MonstraCampos()">
+            </div>
+            <div style="clear: both;"></div>
+            <div class="col-md-4" id="divCampos" name="divCampos">
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <p>Contratante:</p>
+                            <select id="cbxContratante" name="cbxContratante" class="form-control" style="width: 300px" onchange="CarregaComboFilialSelecionado('');"></select>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Filial:</p>
+                            <select id="cbxFilial" name="cbxFilial" class="form-control" style="width: 300px" onchange="CarregaLicencaPorFilial('');"></select>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Licença:</p>
+                            <select id="cbxLicenca" name="cbxLicenca" class="form-control" style="width: 300px"></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Numero da Nota Fiscal</p>
+                            <input type="text" name="txtNumeroNota" id="txtNumeroNota" class="text" pattern="[0-9]+$" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Data Emissão</p>
+                            <input type="Date" name="txtDtEmissao" id="txtDtEmissao" class="text" maxlength="10" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Valor Nota</p>
+                            <input type="text" name="txtValorNota" id="txtValorNota" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>&nbsp;</p>
+                            <input type="button" value="&nbsp;&nbsp;&nbsp;Salvar&nbsp;&nbsp;&nbsp;&nbsp;" class="input form-control btn btn-success" onclick="SalvaNotaFiscal();" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="clear: both;"></div>
+            <table class="table-internal" style="margin-top: 15px;" id="tblDescricaoItens">
+                <thead>
+                    <tr class="tr-head">
+                        <th>
+                            Editar
+                        </th>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            Contratante
+                        </th>
+                        <th>
+                            Filial
+                        </th>
+                        <th>
+                            Licença
+                        </th>
+                        <th>
+                            Numero da Nota
+                        </th>
+                        <th>
+                            Data de Emissão
+                        </th>
+                        <th>
+                            Valor da Nota
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>

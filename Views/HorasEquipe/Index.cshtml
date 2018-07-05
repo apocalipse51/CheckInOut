@@ -1,0 +1,105 @@
+﻿﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Styles/TablesRelatory.css" rel="stylesheet" />﻿
+<style>
+    .cont {
+        padding: 1em 2em;
+    }
+
+    .btn {
+        outline: none;
+        background-color: #fff;
+        border: 1px solid #0070b2;
+        color: #0070b2;
+        display: inline;
+        margin: .3em;
+        transition: .2s;
+    }
+
+        .btn:hover,
+        .btn:active,
+        .search-btn:hover,
+        .search-btn:active {
+            outline: none;
+            border: 1px solid #fff;
+            background-color: #0070b2;
+            color: #fff;
+            transition: .5s;
+        }
+
+    .search-btn {
+        height: 35px;
+        color: #0070b2;
+        border: 1px solid #0070b2;
+        background-color: #fff;
+        transition: .2s;
+    }
+
+    #select {
+        height: 35px;
+    }
+
+    .title-search-bar {
+        color: #0070b2;
+        text-align: center;
+        font-size: 1.3em;
+        display: inline;
+        margin-right: .5em;
+    }
+
+    .container-search {
+        display: inline;
+    }
+
+    .alert-message {
+        color: #fff;
+        background-color: #F44336;
+        text-align: center;
+        padding: 1em;
+        border-radius: .3em;
+        border: 2px solid rgba(0,0,0,.1);
+    }
+
+</style>
+
+<!--Inicio da area de filtro principal-->
+<div class="row bg-white header-container" ng-controller="EquipeMain">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <p class="error-show alert z-depth-2" ng-if="error" id="err">
+            <span class="closebtn" ng-click="remover()">&times;</span>
+            A data limite para pesquisa é dos últimos 40 dias.
+        </p>
+        <div class="form-bg">
+            <form name="form1" class="form-inline" id="formPrincipal">
+                <div class="form-group inp input-field">
+                    <label for="DtInicio">Data Início:</label><br>
+                    <input type="date" id="DtInicio" name="DtInicio" placeholder="Inicio" ng-model="dtInicial" class="form-inline" />
+                </div>
+                <div class="form-group inp input-field">
+                    <label for="DtFim">Data Final:</label><br>
+                    <input type="date" id="DtFim" name="DtFim" placeholder="Fim" class="form-inline" ng-model="dtFinal" />
+                </div>
+                <div class="form-group inp">
+                    <label for="Tipo">Tipo:</label><br>
+                    <select id="Tipo" class="form-inline" name="Tipo" style="height: 33.5px; vertical-align: middle; border: 1px solid #e2e2e2;">
+                        <option value="0">Horas</option>
+                        <option value="1">Controle de custos</option>
+                        <option value="2">Log extração das bases</option>
+                    </select>
+                </div>
+                <button type="submit" onclick="return validar()" ng-click="validaPesquisa()" class="waves-effect waves-light btn indigo" id="btnFormPrincipal"><i data-feather="search"></i></button>
+            </form>
+        </div>
+        <!--<div class="loader"></div>-->
+    </div>
+</div>
+<!--Fim do filtro principal-->
+<!--View Princial-->
+<ng-view></ng-view>
+<!--Fim da área da view principal-->
+<!--Previne a submissão do form de pesquisa principal-->
+<script>
+    document.querySelector('#formPrincipal').addEventListener('submit', Event => Event.preventDefault());
+</script>
+<!--Fim da área de script-->

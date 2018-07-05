@@ -1,0 +1,111 @@
+﻿@section scripts{
+    @Scripts.Render("~/Scripts/Admin/Filial.js")
+}
+
+@Html.Hidden("BuscaFilialURL", Url.Action("ListaFilial", "Admin"))
+@Html.Hidden("MatemFilialURL", Url.Action("MantemFilial", "Admin"))
+@Html.Hidden("BuscaContratanteURL", Url.Action("ListaContratante", "Admin"))
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+@Html.Hidden("idFilial", 0)
+
+
+<div class="wait">AGUARDE UM INSTANTE</div>
+<div class="error"></div>
+<h2>Filial</h2>
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="box">
+            <div style="clear: both;"></div>
+            <div class="col-md-4" align="right" style="width: 100%">
+                <img src="/Images/plusPNG.png" onclick="MonstraCampos()">
+            </div>
+            <div style="clear: both;"></div>
+            <div class="col-md-4" id="divCampos" name="divCampos">
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <p>Contratante:</p>
+                            <select id="cbxContratante" name="cbxContratante" class="form-control"></select>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Descrição:</p>
+                            <input type="text" name="txtDescricao" id="txtDescricao" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>CNPJ:</p>
+                            <input type="text" name="txtCNPJ" id="txtCNPJ" class="text" />
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <p>Responsável:</p>
+                            <input type="text" name="txtResponsavel" id="txtResponsavel" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Telefone:</p>
+                            <input type="text" name="txtTelefone" id="txtTelefone" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>E-Mail:</p>
+                            <input type="text" name="txtEmail" id="txtEmail" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>&nbsp;</p>
+                            <input type="button" value="&nbsp;&nbsp;&nbsp;Salvar&nbsp;&nbsp;&nbsp;&nbsp;" class="input form-control btn btn-success" onclick="SalvaFilial();" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="clear: both;"></div>
+            <table class="table-internal" style="margin-top: 15px;" id="tblDescricaoItens">
+                <thead>
+                    <tr class="tr-head">
+                        <th>
+                            Editar
+                        </th>
+                        <th>
+                            Contratante
+                        </th>
+                        <th>
+                            Descrição
+                        </th>
+                        <th>
+                            CNPJ
+                        </th>
+                        <th>
+                            Responsável
+                        </th>
+                        <th>
+                            Telefone
+                        </th>
+                        <th>
+                            E-Mail
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>

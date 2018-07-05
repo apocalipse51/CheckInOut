@@ -1,0 +1,105 @@
+﻿
+    @section scripts{
+        @Scripts.Render("~/Scripts/Organograma/Organograma.js")
+    }
+
+    @Html.Hidden("BuscaResponsavelURL", Url.Action("BuscaResponsavel", "Admin"))
+    @Html.Hidden("ListaUsuarioURL", Url.Action("ListaUsuario", "Usuario"))
+    @Html.Hidden("RetornaDetalhesURL", Url.Action("RetornaDetalhesUsuario", "Organo"))
+    @Html.Hidden("FiltrarEstruturaUsuarioURL", Url.Action("RetornaEstrutura", "Organo"))
+    @Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+
+    <div class="wait">AGUARDE UM INSTANTE</div>
+    <div class="error"></div>
+    <h2>Organograma</h2>
+    <div class="container">
+        <div class="row">
+                <div style="float:left;">
+                    <div class="col-lg-6">
+                        <p>Tamanho</p>
+                        <select id="TamanhoOrg" class="form-control" name="TamanhoOrg" onchange="InicialOrg();" style="width:120px;">
+                            <option value="small">Pequeno</option>
+                            <option value="medium">Médio</option>
+                            <option value="large">Grande</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="float:right;">
+                    <div class="col-lg-12">
+                        <p>Estrutura</p>
+                        <select id="cbxUsuarioEstruturaf" class="form-control" name="cbxUsuarioEstruturaf" onchange="Filtrar();"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>&nbsp;</p>
+                    <input type="button" value="Expandir" id="Expandir" class="input form-control btn btn-default active" onclick="Expandir();" style="float:left;" />                            
+                </div>           
+                <div class="col-lg-6">
+                    <p>&nbsp;</p>
+                    <input type="button" value="Reduzir" id="Reduzir" class="input form-control btn btn-default active" onclick="Reduzir();" style="float:right;" />
+                </div>
+            </div>
+        <p>&nbsp;</p>
+        </div>           
+    <div class="row" style="overflow:scroll; width:100%; height:100%; margin-left:10px;">
+        <div id="chart_div"></div>
+    </div>   
+    <div class="modal fade" id="ModalDetalhe" tabindex="-1" role="dialog" aria-labelledby="ModalLabelDetalhe" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background: #ffffff; border-radius: 15px; border: 2px solid #660099;">
+                <div class="modal-header">
+                    <h4 class="example-title" id="ModalLabelDetalhe">Detalhes</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row" style="float:left; margin-left:20px;">
+                                    Estrutura: <p id="str_estrutura">estrutura</p>
+                                    E-mail: <p id="str_email">email</p>
+                                    Telefone: <p id="str_tel">tel</p>
+                                </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="row" style="float:right; width:128px; height:128px; margin-right:20px;">
+                                        <img src="../Images/userimg.png" id="imagem_perfil" height="128" width="128" style="border-radius: 15px;"/>
+                                    </div>
+                                </div>
+                            <div class="col-lg-10">
+                                <table id="tblStatus"> 
+                                <tbody></tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-10">
+                                <table class="table-internal table table-fixed" style="margin-top: 15px;" id="tblDetalhesUsuario">
+                                    <thead>
+                                        <tr class="tr-head">
+                                            <th>
+                                                Cliente
+                                            </th>
+                                            <th>
+                                                Produto
+                                            </th>
+                                            <th>
+                                                Projeto
+                                            </th>
+                                            <th>
+                                                Tempo mês
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>

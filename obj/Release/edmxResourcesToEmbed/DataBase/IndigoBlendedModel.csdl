@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IndigoBlended_GVTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Indigo_Report_Usuarios">
+    <Key>
+      <PropertyRef Name="rus_Id" />
+    </Key>
+    <Property Name="rus_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rus_Nome" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="rus_Login" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rus_Senha" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rus_DataHora" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="Indigo" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Indigo_Report_Usuarios" EntityType="Self.Indigo_Report_Usuarios" />
+    <FunctionImport Name="STP_REPORT_LOGIN" ReturnType="Collection(IndigoBlended_GVTModel.UsuarioResult)">
+      <Parameter Name="Login" Mode="In" Type="String" />
+      <Parameter Name="Senha" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_TABULACAO" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardTabulacaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_DETALHAMENTO" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardDetalhamentoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_CONVERSAO_TOTAL" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardConversaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_CONVERSAO_APTAS" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardConversaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardConversaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_NORMATIVO_ABERTURA" ReturnType="Collection(IndigoBlended_GVTModel.BarrasNormativoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_NORMATIVO_VENDA" ReturnType="Collection(IndigoBlended_GVTModel.BarrasNormativoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_NORMATIVO_ABERTURA_TOTAL" ReturnType="Collection(IndigoBlended_GVTModel.PizzaNormativoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_NORMATIVO_VENDA_ABERTURA" ReturnType="Collection(IndigoBlended_GVTModel.PizzaNormativoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_NORMATIVO_VENDA_TOTAL" ReturnType="Collection(IndigoBlended_GVTModel.PizzaNormativoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_NORMATIVO_DETALHAMENTO" ReturnType="Collection(IndigoBlended_GVTModel.DetalhamentoNormativo)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_COBERTURA" ReturnType="Collection(IndigoBlended_GVTModel.BarrasCobertura)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_COBERTURA_ABERTAS_NAOABERTAS" ReturnType="Collection(IndigoBlended_GVTModel.PizzaCoberturaAbertaNaoAbertas)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_COBERTURA_DETALHAMENTO" ReturnType="Collection(IndigoBlended_GVTModel.DetalhamentoCobertura)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_COBERTURA_FACILIDADE_SEMFACILIDADE" ReturnType="Collection(IndigoBlended_GVTModel.PizzaCoberturaSemFacilidade)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_COBERTURA_NAOPOSSIBILITA_RECUSA" ReturnType="Collection(IndigoBlended_GVTModel.PizzaCoberturaRecusa)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_DASHBOARD_OPERADOR" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardOperador)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+      <Parameter Name="Equipe" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_DETALHAMENTO_OPERADOR" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardDetalhamentoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_CONVERSAO_APTAS_OPERADOR" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardConversaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA_OPERADOR" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardConversaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_CONVERSAO_TOTAL_OPERADOR" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardConversaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_TABULACAO_OPERADOR" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardTabulacaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_OPERADOR_TOTAL" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardTabulacaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+      <Parameter Name="Equipe" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_VENDAS_PENDENTES" ReturnType="Collection(IndigoBlended_GVTModel.VendasPendentesResult)">
+      <Parameter Name="SUPERVISOR" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_CONVERSAO_APTAS_TRANSFERENCIA_MOVEL" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardConversaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA_TRANSFERENCIA_MOVEL" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardConversaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_CONVERSAO_TOTAL_TRANSFERENCIA_MOVEL" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardConversaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_DETALHAMENTO_TRANSFERENCIA_MOVEL" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardDetalhamentoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_TABULACAO_TRANSFERENCIA_MOVEL" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardTabulacaoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_TABULACAO_SUPERVISOR" ReturnType="Collection(IndigoBlended_GVTModel.TabulacaoDetalhada)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+      <Parameter Name="Supervisor" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_DASHBOARD_DETALHAMENTO_OPERADOR_POR_OPERACAO" ReturnType="Collection(IndigoBlended_GVTModel.DashBoardDetalhamentoResult)">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+      <Parameter Name="Usuario" Mode="In" Type="String" />
+      <Parameter Name="tabulacao" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_TABULACAO_SUPERVISOR1">
+      <Parameter Name="DtInicio" Mode="In" Type="DateTime" />
+      <Parameter Name="DtFim" Mode="In" Type="DateTime" />
+      <Parameter Name="Supervisor" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="STP_REPORT_TABULACOES_PADRAO" ReturnType="Collection(IndigoBlended_GVTModel.TabulacaoPadraoResult)">
+      <Parameter Name="DT_INICIO" Mode="In" Type="DateTime" />
+      <Parameter Name="DT_FIM" Mode="In" Type="DateTime" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="UsuarioResult">
+    <Property Type="Int32" Name="rus_Id" Nullable="false" />
+    <Property Type="String" Name="rus_Nome" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="rus_Login" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="rus_Senha" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="DashBoardTabulacaoResult">
+    <Property Type="String" Name="Tabulacao" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="Quantidade" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="DashBoardDetalhamentoResult">
+    <Property Type="String" Name="Tabulacao" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="Percentual" Nullable="false" />
+    <Property Type="String" Name="Quantidade" Nullable="false" />
+    <Property Type="String" Name="CorLinha" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="DashBoardConversaoResult">
+    <Property Type="String" Name="Texto" Nullable="false" />
+    <Property Type="Int32" Name="Quantidade" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="BarrasNormativoResult">
+    <Property Type="String" Name="Descricao" Nullable="true" />
+    <Property Type="Int32" Name="Quantidade" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="PizzaNormativoResult">
+    <Property Type="String" Name="Descricao" Nullable="false" MaxLength="24" />
+    <Property Type="Int32" Name="Quantidade" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="DetalhamentoNormativo">
+    <Property Type="String" Name="Codigo" Nullable="false" />
+    <Property Type="String" Name="Tabulacao" Nullable="false" />
+    <Property Type="String" Name="Quantidade" Nullable="false" />
+    <Property Type="String" Name="Percentual" Nullable="false" />
+    <Property Type="String" Name="CorLinha" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="BarrasCobertura">
+    <Property Type="String" Name="Descricao" Nullable="false" MaxLength="300" />
+    <Property Type="Int32" Name="Quantidade" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="PizzaCoberturaAbertaNaoAbertas">
+    <Property Type="String" Name="Descricao" Nullable="false" MaxLength="11" />
+    <Property Type="Int32" Name="Quantidade" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="PizzaCoberturaSemFacilidade">
+    <Property Type="String" Name="Descricao" Nullable="false" MaxLength="14" />
+    <Property Type="Int32" Name="Quantidade" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="PizzaCoberturaRecusa">
+    <Property Type="String" Name="Descricao" Nullable="false" MaxLength="24" />
+    <Property Type="Int32" Name="Quantidade" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="DetalhamentoCobertura">
+    <Property Type="String" Name="Codigo" Nullable="false" />
+    <Property Type="String" Name="Tabulacao" Nullable="false" />
+    <Property Type="String" Name="Quantidade" Nullable="false" />
+    <Property Type="String" Name="Percentual" Nullable="false" />
+    <Property Type="String" Name="CorLinha" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="DashBoardOperador">
+    <Property Type="String" Name="Login" Nullable="false" />
+    <Property Type="String" Name="Usuario" Nullable="false" />
+    <Property Type="Int32" Name="Inaptas" Nullable="false" />
+    <Property Type="Int32" Name="Negociacao" Nullable="false" />
+    <Property Type="Int32" Name="Vendas" Nullable="false" />
+    <Property Type="Int32" Name="Inconsistencias" Nullable="false" />
+    <Property Type="Int32" Name="Recusas" Nullable="false" />
+    <Property Type="String" Name="CorLinha" Nullable="false" />
+    <Property Type="Int32" Name="Improdutivas" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="VendasPendentesResult">
+    <Property Type="String" Name="pro_login" Nullable="false" />
+    <Property Type="String" Name="pro_Nome" Nullable="false" />
+    <Property Type="String" Name="int_cpf" Nullable="false" />
+    <Property Type="String" Name="int_NomeCompleto" Nullable="false" />
+    <Property Type="String" Name="int_estado" Nullable="false" />
+    <Property Type="String" Name="int_cidade" Nullable="false" />
+    <Property Type="String" Name="int_TelevisaoAdiquirida" Nullable="false" />
+    <Property Type="String" Name="int_TelefoneAdiquirida" Nullable="false" />
+    <Property Type="String" Name="int_InternetAdiquirida" Nullable="false" />
+    <Property Type="String" Name="int_AdicionaisAduidida" Nullable="false" />
+    <Property Type="String" Name="int_TabelaPreco" Nullable="false" />
+    <Property Type="String" Name="int_GrupoPreco" Nullable="false" />
+    <Property Type="String" Name="int_CategoriaOferta" Nullable="false" />
+    <Property Type="String" Name="int_Ofertas" Nullable="false" />
+    <Property Type="String" Name="int_GrupoPromocao" Nullable="false" />
+    <Property Type="String" Name="int_Promocao" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="TabulacaoDetalhada">
+    <Property Type="String" Name="login_usuario" Nullable="false" />
+    <Property Type="String" Name="codigo_tabulacao" Nullable="false" />
+    <Property Type="String" Name="descricao_tabulacao" Nullable="false" />
+    <Property Type="String" Name="colaborador" Nullable="false" />
+    <Property Type="String" Name="CorLinha" Nullable="false" />
+    <Property Type="String" Name="data_interacao" Nullable="false" />
+    <Property Type="String" Name="TelevisaoAdiquirida" Nullable="false" />
+    <Property Type="String" Name="TelefoneAdiquirida" Nullable="false" />
+    <Property Type="String" Name="InternetAdiquirida" Nullable="false" />
+    <Property Type="String" Name="AdicionaisAduidida" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="TabulacaoPadraoResult">
+    <Property Type="String" Name="CANALVENDAS" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="FORNECEDOR" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TIPOOPERACAO" Nullable="false" MaxLength="1" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="DATAHORAATENDIMENTO" Nullable="false" />
+    <Property Type="String" Name="DDDTerminalA" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DURACAOCONTATO" Nullable="true" />
+    <Property Type="String" Name="INTENCAOCOMPRA" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="NUMPROTUNICO" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TELEFONETERMINALA" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CALLBACK" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DDDTERMINALCALLBACK" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="IDATENDIMENTOINICIAL" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TELEFONETERMINALCALLBACK" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="BAIRRO" Nullable="true" />
+    <Property Type="String" Name="CEP" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="CIDADE" Nullable="true" />
+    <Property Type="String" Name="COMPLEMENTO" Nullable="true" />
+    <Property Type="String" Name="CPFCLIENTESOLICITANTE" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="CPFTITULAR" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="DATANASCIMENTOCLIENTESOLICITANTE" Nullable="true" />
+    <Property Type="String" Name="DATANASCIMENTOTITULAR" Nullable="true" />
+    <Property Type="String" Name="DDDCONTATO1" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DDDCONTATO2" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DDDTERMINALFIXA" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DDDTERMINAL" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="EMAIL" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="LOGRADOURO" Nullable="true" />
+    <Property Type="String" Name="NOMECLIENTESOLICITANTE" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="NOMEMAESOLICITANTE" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="NOMEMAETITULAR" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="NOMETITULAR" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="NUMEROLOGRADOURO" Nullable="true" />
+    <Property Type="String" Name="REGIONAL" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TELEFONECONTATO1" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="TELEFONECONTATO2" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="TELEFONETERMINALFIXA" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TELEFONETERMINAL" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TIPOLOG" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="UF" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="MATRICULASAPOPERADOR" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="NOMEOPERADOR" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="NOMESUPERVISOROPERACAO" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="REOPERADOR" Nullable="true" />
+    <Property Type="String" Name="MOTIVOSCOREVERMELHO" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SCOREV360" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SCOREVSCORE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PRODUTOADQUIRIDO1" Nullable="true" />
+    <Property Type="String" Name="PRODUTOADQUIRIDO2" Nullable="true" />
+    <Property Type="String" Name="PRODUTOADQUIRIDO3" Nullable="true" />
+    <Property Type="String" Name="PRODUTOADQUIRIDO4" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PRODUTOATUAL1" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PRODUTOATUAL2" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PRODUTOATUAL3" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PRODUTOATUAL4" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PRODUTOOFERTADO1" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PRODUTOOFERTADO2" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PRODUTOOFERTADO3" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="PRODUTOOFERTADO4" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ADABASEMISSAO" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DATAHORACONCORDANCIA" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DTEMISSAO1" MaxLength="1" Nullable="true" />
+    <Property Type="String" Name="DTEMISSAO2" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="DTEMISSAO3" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="DTEMISSAO4" Nullable="true" MaxLength="1" />
+    <Property Type="String" Name="NUMEROOS1" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="NUMEROOS2" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="NUMEROOS3" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="NUMEROOS4" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SITE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="STATUSEMISSAO" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TIPOPAGTO" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TROCATITULARIDADE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="MOTIVOFINALIZADOR" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="RETORNOSIEBEL" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CONTAONLINE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="NOMEBANCO" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="AGENCIA" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="CONTA" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DIGITO" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DATAVENCIMENTO" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="ACERTIVIDADE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SVA1" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SVA2" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SVA3" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="SVA4" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="DISPONIBILIDADEDEFIBRA" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="OFERTAFIBRA" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TRANSFERENCIASAVE" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="APTOADSL" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="TRANSFERENCIAADSL" Nullable="false" MaxLength="1" />
+  </ComplexType>
+</Schema>

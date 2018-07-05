@@ -1,0 +1,114 @@
+﻿@section scripts{
+    @Scripts.Render("~/Scripts/UIMultiSelect.js")
+    @Scripts.Render("~/Scripts/TopProjeto/TopProjeto.js")
+    @Styles.Render("~/Styles/jquery.multiselect.css")
+}
+
+@Html.Hidden("TopProjetosURL", Url.Action("RetornaTopProjetos", "TopProjetos"))
+@Html.Hidden("RetornaDetalhesFiltroURL", Url.Action("RetornaDetalhes", "TopProjetos"))
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+
+<div class="wait">AGUARDE UM INSTANTE</div>
+<div class="error"></div>
+<h2>Top Projetos</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <p>&nbsp;</p>
+            <input type="button" value="Expandir" class="input form-control btn btn-default active" onclick="TopProjetos(1);" style="float:left;" />
+        </div>
+        <div class="col-lg-6">
+            <p>&nbsp;</p>
+            <input type="button" value="Reduzir" class="input form-control btn btn-default active" onclick="TopProjetos(15);" style="float:right;" />
+        </div>
+    </div>
+    <p>&nbsp;</p>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="box">
+            <table class="table-internal table-hover" style="margin-top: 15px;" id="tblTopProjetos">
+                <thead>
+                    <tr class="tr-head">
+                        <th>
+                            Cliente
+                        </th>
+                        <th>
+                            Produto
+                        </th>
+                        <th>
+                            Projeto
+                        </th>
+                        <th>
+                            HC
+                        </th>
+                        <th>
+                            Tempo total
+                        </th>
+                        <th>
+                            Mês atual
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="ModalDetalhe" tabindex="-1" role="dialog" aria-labelledby="ModalLabelDetalhe" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content" style="background: #ffffff; border-radius: 15px; border: 2px solid #660099;">
+            <div class="modal-header">
+                <h4 class="example-title" id="ModalLabelDetalhe">Projeto</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input id="ProjetoDetalhado" name="ProjetoDetalhado" type="hidden" value="0" />
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="NomeProjeto">Detalhes</p>                      
+                    </div>
+                    <div style="float:right;">
+                        <div class="col-lg-4">
+                            <div class="col-lg-2">
+                                <p>Mês/Ano</p>
+                                <input type="text" name="AnoMes" id="MesAno" class="text" onchange="DetalheComboUsuario();" style="width:70px;" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Estrutura</p>
+                            <select id="cbxUsuarioEstruturaf" class="form-control" name="cbxUsuarioEstruturaf" onchange="DetalheComboUsuario();"></select>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <table class="table-internal" style="margin-top: 15px;" id="tblDetalhes">
+                            <thead>
+                                <tr class="tr-head">
+                                    <th>
+                                        Nome
+                                    </th>
+                                    <th>
+                                        Produto
+                                    </th>
+                                    <th>
+                                        Projeto
+                                    </th>
+                                    <th>
+                                        Mês
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+

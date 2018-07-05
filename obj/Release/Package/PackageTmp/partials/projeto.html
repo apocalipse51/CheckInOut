@@ -1,0 +1,32 @@
+<style>
+    .alert-message {
+        color: #fff;
+        background-color: #F44336;
+        text-align: center;
+        padding: 1em;
+        border-radius: .3em;
+        border: 2px solid rgba(0,0,0,.1);
+    }
+</style>
+<!--Team menu-->
+<menu-equipe></menu-equipe>
+<!--End of Team Menu-->
+<!--End of internal Nav-->
+<div class="bg-white">
+	<!--Internal Nav-->
+	<menu-search></menu-search>
+	<!--End of internal Nav-->
+	<!--Filter options-->
+	<div class="cont bg-white" ng-hide="drop">
+	    <p class="title-search-bar">Selecione um {{field}}</p>
+	    <div class="container-search"></div>
+		<button ng-click="search()" class="search-btn">Pesquisar</button>
+	</div>
+	<!--End of filter options-->
+</div>
+<!--Alert Search and Charging bar-->
+<info></info>
+<!--End of Alert Search and Charging bar-->
+<h2 class="graph-title" ng-hide="t">{{title}}</h2>
+<div class="main-structure row" id="graphic-horas">
+</div>

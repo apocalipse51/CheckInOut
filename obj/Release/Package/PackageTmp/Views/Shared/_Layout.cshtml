@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html ng-app="checkin">
+@Html.Hidden("BuscaTelaURL", Url.Action("BuscaTelas", "Usuario"))
+@Html.Hidden("LogoutUsuarioURL", Url.Action("Logout", "Usuario"))
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Indigo - ADMIN</title>
+    <link id="favicon" href="~/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link href="~/Content/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/check-theme.css">
+    <link href="~/Styles/dataTables.jqueryui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/layout.css">
+    <link rel="stylesheet" href="~/Content/user-info.css">
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="~/Scripts/popper.js"></script>
+    <script src="~/Scripts/home/Template.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    @Scripts.Render("~/Scripts/main.js")
+    @Scripts.Render("~/Scripts/MaskMoney.js")
+    @Scripts.Render("~/Scripts/jQuery.mask.js")
+    @Scripts.Render("~/Scripts/Home/Layout.js")
+    <script src="~/Scripts/datatable.js"></script>
+    <script src="~/Scripts/dataTables.jqueryui.js"></script>
+    <script src="~/Scripts/Sessao.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/dirPagination.js"></script>
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/directives/Directives.js"></script>
+    <script src="~/Scripts/controllers/main-controller.js"></script>
+    <script src="~/Scripts/controllers/horas-controller.js"></script>
+    <script src="~/Scripts/controllers/outliers-controller.js"></script>
+    <script src="~/Scripts/controllers/relatorio-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/equipe-main-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/equipe-horas-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/equipe-outliers-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/equipe-relatorio-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/cliente-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/produto-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/projeto-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/teste-estrutura.js"></script>
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    <!--Hidden URL to get the password's reset link-->
+    @Html.Hidden("ResetarSenhaUsuarioURL", Url.Action("ResetarSenhaUsuario", "Usuario"))
+    <!--End of hidden URL-->
+    <!--Area de alteração de senha-->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">IndigoSoft</a>
+      <button class='btn-out' onclick="Template.Close()" data-toggle="modal" data-target="#loadLeave"><i data-feather="log-out"></i></button>
+      <button type="button" class="btn-menu-main" onclick="showMenu()"><i data-feather="menu"></i></button>
+    </nav>
+    <!--Fim da área de alteração da Senha-->
+    <!--Menu And main content-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--Menu-->
+        <nav class="col-md-2 col-lg-2 d-none d-md-block bg-light sidebar hide">
+          <div class="sidebar-sticky">
+            <!--User info area-->
+            <div class="user">
+              <div>
+                <!--<img src="/Images/user.png" alt="Avatar de usuário" class="user-info-image">-->
+                <img src='/Images/user.png' alt="Avatar Usuário" class="user-info-image" onerror="this.src='../Images/user.png'">
+              </div>
+              <div class="user-info">
+                <p class="user-name">@HttpContext.Current.Session["USUARIO"].ToString()</p>
+                <div class="btn-group">
+                  <button type="button" class="user-options-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Opções
+                  </button>
+                  <div class="dropdown-menu">
+                    <p id="alterars" class="passwordChange password-change-link dropdown-item">Alterar senha</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--End of user info Area-->
+            <ul class="nav flex-column menu-container pb-1">
+              <!--Menu Goes Here-->
+            </ul>
+          </div>
+        </nav>
+        <!--Main Content-->
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-5 pb-5 mt-5 mb-5 main">
+          @RenderBody()
+          <!--Modal Area-->
+          <div class="modal-container">
+            <!--Modal Content Goes Here-->
+          </div>
+          <!-- Leave Modal -->
+          <div class="modal fade" id="loadLeave" tabindex="-1" role="dialog" aria-labelledby="loadLeave" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="loadLeavelLabel">Saindo...</h5>
+              </div>
+              <div class="modal-body">
+                <div class="loader loader-menu loader-black"></div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <!-- End of leave modal -->
+          <!--End of modal Area-->
+        </main>
+      </div>
+    </div>
+    <!--End of menu and main content-->
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace();
+        Sessao();
+        //Não excluir, usado para busca na página de relatórios individuais
+        localStorage.setItem('idSearch', '@HttpContext.Current.Session["IDUSUARIO"].ToString()');
+        localStorage.setItem('imgPerfil', '@HttpContext.Current.Session["IMGUSUARIO"].ToString()');
+        localStorage.setItem('perfil', '@HttpContext.Current.Session["PERFIL"].ToString()');
+        //Instancia o menu
+        Template.Menu(@HttpContext.Current.Session["IDUSUARIO"].ToString());
+        //Get the user image
+        Template.ImgUser();
+        //Modal Change password behavior definition
+        document.querySelector('#alterars').addEventListener('click', e => {
+          Template.ChangePassword();
+          AlterarSenha();
+        });
+
+        function showMenu() {
+          let menu = document.querySelector('.sidebar');
+          if(menu.classList.contains('hide')) {
+            menu.classList.remove('hide');
+            menu.classList.add('show');
+          } else {
+            menu.classList.remove('show');
+            menu.classList.add('hide');
+          }
+        }
+    </script>
+</body>
+</html>

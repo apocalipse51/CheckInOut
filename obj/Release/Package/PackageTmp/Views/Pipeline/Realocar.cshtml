@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "Pipeline de projetos";
+}
+
+@Html.Hidden("RecusaProjetoURL", Url.Action("RealocarProj", "Pipeline"))
+@Html.Hidden("BuscaResponsavelURL", Url.Action("BuscaResponsavel", "Admin"))
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <link id="favicon" href="~/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    @Styles.Render("~/Styles/Utils/main.css")
+    @Styles.Render("~/Styles/Utils/animate.css")
+    @Styles.Render("~/Styles/Utils/bootstrap.css")
+    @Scripts.Render("~/Scripts/jquery-1.9.1.js")
+    @Scripts.Render("~/Scripts/modernizr-2.6.2.js")
+
+    <style type="text/css">
+        body {
+            background-image: url('../../Images/vivo1.jpg');
+            background-size: cover;
+            -webkit-transition: background 1s !important;
+            -moz-transition: background 1s !important;
+            -o-transition: background 1s !important;
+            transition: background 1s !important;
+            font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+                <table align="center" style="margin-top:5%;">
+                    <tr>
+                        <td>
+                            <div id="status" style="margin-top:5%; color:white;">@ViewBag.status</div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="CamposTextoJust">
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <select id="cbxUsuario" class="form-control" name="cbxUsuario"></select>
+                            </td>
+                            <td>
+                                <input type="button" value="Realocar" class="input form-control btn btn-default" onclick="Realocar();" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <script src="~/Scripts/Pipeline/Realocar.js"></script>
+
+</body>
+</html>

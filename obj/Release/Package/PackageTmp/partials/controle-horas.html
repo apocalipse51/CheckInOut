@@ -1,0 +1,30 @@
+<style>
+    .alert-message {
+        color: #fff;
+        background-color: #F44336;
+        text-align: center;
+        padding: 1em;
+        border-radius: .3em;
+        border: 2px solid rgba(0,0,0,.1);
+    }
+</style>
+﻿<div class="bg-white" style="padding: 1em;">
+    <h1>{{title}}</h1>
+    <div ng-repeat="recurso in relatorio" style="border: 1px solid #ccc">
+        <p style="background-color: #00f; color: #fff;">{{recurso.Nome}}</p>
+        <div ng-repeat="hora in recurso.Horas">
+            <div>
+                <label for="tempo">Tempo:</label>
+                <p style="display: inline-block;" id="tempo">{{hora.Tempo}}</p>
+                <label for="dataInicio">Data Inicio:</label>
+                <p style="display: inline-block;" id="dataInicio">{{hora.DataInicio}}</p>
+                <label for="dataFim">Data Fim:</label>
+                <p style="display: inline-block;" id="dataFim">{{hora.DataFim}}</p>
+                <label for="horaInicio">Hora Inicio:</label>
+                <p style="display: inline-block;" id="horaInicio">{{HoraInicio}}</p>
+                <label for="horaFim">horaFim:</label>
+                <p style="display: inline-block;" id="horaFim">{{hora.HoraFim}}</p>
+            </div>
+        </div>
+    </div>
+</div>

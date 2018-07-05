@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Indigo_Controle_LicencaModelStoreContainer" CdmEntityContainer="Indigo_Controle_Licenca">
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_LOGADOS_ONLINE" FunctionName="Indigo_Controle_LicencaModel.Store.STP_BUSCA_LOGADOS_ONLINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.DashBoardOnLine">
+          <ScalarProperty Name="con_Nome" ColumnName="con_Nome" />
+          <ScalarProperty Name="fil_Descricao" ColumnName="fil_Descricao" />
+          <ScalarProperty Name="lic_Id" ColumnName="lic_Id" />
+          <ScalarProperty Name="lic_Qtde" ColumnName="lic_Qtde" />
+          <ScalarProperty Name="prd_Descricao" ColumnName="prd_Descricao" />
+          <ScalarProperty Name="Logdados" ColumnName="Logdados" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Indigo_ClienteFinal">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_ClienteFinal">
+        <MappingFragment StoreEntitySet="Indigo_ClienteFinal">
+          <ScalarProperty Name="clf_Sigla" ColumnName="clf_Sigla" />
+          <ScalarProperty Name="clf_Descricao" ColumnName="clf_Descricao" />
+          <ScalarProperty Name="clf_id" ColumnName="clf_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_Contratante">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_Contratante">
+        <MappingFragment StoreEntitySet="Indigo_Contratante">
+          <ScalarProperty Name="con_Sigla" ColumnName="con_Sigla" />
+          <ScalarProperty Name="con_Email" ColumnName="con_Email" />
+          <ScalarProperty Name="con_Telefone" ColumnName="con_Telefone" />
+          <ScalarProperty Name="con_Responsavel" ColumnName="con_Responsavel" />
+          <ScalarProperty Name="con_CNPJ" ColumnName="con_CNPJ" />
+          <ScalarProperty Name="con_Nome" ColumnName="con_Nome" />
+          <ScalarProperty Name="con_Id" ColumnName="con_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_ControleLogin">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_ControleLogin">
+        <MappingFragment StoreEntitySet="Indigo_ControleLogin">
+          <ScalarProperty Name="cll_DataPing" ColumnName="cll_DataPing" />
+          <ScalarProperty Name="cll_DataLogin" ColumnName="cll_DataLogin" />
+          <ScalarProperty Name="cll_HostName" ColumnName="cll_HostName" />
+          <ScalarProperty Name="cll_LicId" ColumnName="cll_LicId" />
+          <ScalarProperty Name="cll_id" ColumnName="cll_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_FaseProjeto">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_FaseProjeto">
+        <MappingFragment StoreEntitySet="Indigo_FaseProjeto">
+          <ScalarProperty Name="fpo_Descricao" ColumnName="fpo_Descricao" />
+          <ScalarProperty Name="fpo_Id" ColumnName="fpo_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_Filial">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_Filial">
+        <MappingFragment StoreEntitySet="Indigo_Filial">
+          <ScalarProperty Name="fil_Email" ColumnName="fil_Email" />
+          <ScalarProperty Name="fil_Telefone" ColumnName="fil_Telefone" />
+          <ScalarProperty Name="fil_Responsavel" ColumnName="fil_Responsavel" />
+          <ScalarProperty Name="fil_CNPJ" ColumnName="fil_CNPJ" />
+          <ScalarProperty Name="fil_Descricao" ColumnName="fil_Descricao" />
+          <ScalarProperty Name="fil_ConId" ColumnName="fil_ConId" />
+          <ScalarProperty Name="fil_Id" ColumnName="fil_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_HorasProjeto">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_HorasProjeto">
+        <MappingFragment StoreEntitySet="Indigo_HorasProjeto">
+          <ScalarProperty Name="hpo_jtfNome" ColumnName="hpo_jtfNome" />
+          <ScalarProperty Name="hpo_jtfSequencia" ColumnName="hpo_jtfSequencia" />
+          <ScalarProperty Name="hpo_jtfAprovado" ColumnName="hpo_jtfAprovado" />
+          <ScalarProperty Name="hpo_Observacao" ColumnName="hpo_Observacao" />
+          <ScalarProperty Name="hpo_usrId" ColumnName="hpo_usrId" />
+          <ScalarProperty Name="hpo_DataHoraFim" ColumnName="hpo_DataHoraFim" />
+          <ScalarProperty Name="hpo_DataHoraInicio" ColumnName="hpo_DataHoraInicio" />
+          <ScalarProperty Name="hpo_sfpId" ColumnName="hpo_sfpId" />
+          <ScalarProperty Name="hpo_prjId" ColumnName="hpo_prjId" />
+          <ScalarProperty Name="hpo_Id" ColumnName="hpo_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_Licencas">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_Licencas">
+        <MappingFragment StoreEntitySet="Indigo_Licencas">
+          <ScalarProperty Name="lic_ValidadeLicenca" ColumnName="lic_ValidadeLicenca" />
+          <ScalarProperty Name="lic_DataContratacao" ColumnName="lic_DataContratacao" />
+          <ScalarProperty Name="lic_Qtde" ColumnName="lic_Qtde" />
+          <ScalarProperty Name="lic_Contrato" ColumnName="lic_Contrato" />
+          <ScalarProperty Name="lic_PrdId" ColumnName="lic_PrdId" />
+          <ScalarProperty Name="lic_FilId" ColumnName="lic_FilId" />
+          <ScalarProperty Name="lic_Id" ColumnName="lic_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_NotaFiscal">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_NotaFiscal">
+        <MappingFragment StoreEntitySet="Indigo_NotaFiscal">
+          <ScalarProperty Name="ntf_Valor" ColumnName="ntf_Valor" />
+          <ScalarProperty Name="ntf_DataEmissao" ColumnName="ntf_DataEmissao" />
+          <ScalarProperty Name="ntf_NumeroNotaFiscal" ColumnName="ntf_NumeroNotaFiscal" />
+          <ScalarProperty Name="ntf_LicId" ColumnName="ntf_LicId" />
+          <ScalarProperty Name="ntf_id" ColumnName="ntf_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_Produto">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_Produto">
+        <MappingFragment StoreEntitySet="Indigo_Produto">
+          <ScalarProperty Name="prd_ativo" ColumnName="prd_ativo" />
+          <ScalarProperty Name="prd_Sigla" ColumnName="prd_Sigla" />
+          <ScalarProperty Name="prd_Descricao" ColumnName="prd_Descricao" />
+          <ScalarProperty Name="prd_ClfId" ColumnName="prd_ClfId" />
+          <ScalarProperty Name="prd_Id" ColumnName="prd_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_Projeto">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_Projeto">
+        <MappingFragment StoreEntitySet="Indigo_Projeto">
+          <ScalarProperty Name="prj_idusr" ColumnName="prj_idusr" />
+          <ScalarProperty Name="prj_IdControle" ColumnName="prj_IdControle" />
+          <ScalarProperty Name="prj_Descricao" ColumnName="prj_Descricao" />
+          <ScalarProperty Name="prj_PrdId" ColumnName="prj_PrdId" />
+          <ScalarProperty Name="prj_Id" ColumnName="prj_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_SubfaseProjeto">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_SubfaseProjeto">
+        <MappingFragment StoreEntitySet="Indigo_SubfaseProjeto">
+          <ScalarProperty Name="sfp_Descricao" ColumnName="sfp_Descricao" />
+          <ScalarProperty Name="sfp_fpoId" ColumnName="sfp_fpoId" />
+          <ScalarProperty Name="sfp_Id" ColumnName="sfp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_Telas">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_Telas">
+        <MappingFragment StoreEntitySet="Indigo_Telas">
+          <ScalarProperty Name="tel_Metodo" ColumnName="tel_Metodo" />
+          <ScalarProperty Name="tel_Controller" ColumnName="tel_Controller" />
+          <ScalarProperty Name="tel_Icone" ColumnName="tel_Icone" />
+          <ScalarProperty Name="tel_Descricao" ColumnName="tel_Descricao" />
+          <ScalarProperty Name="tel_Id" ColumnName="tel_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_TelasUsuario">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_TelasUsuario">
+        <MappingFragment StoreEntitySet="Indigo_TelasUsuario">
+          <ScalarProperty Name="tuo_UsrId" ColumnName="tuo_UsrId" />
+          <ScalarProperty Name="tuo_TelId" ColumnName="tuo_TelId" />
+          <ScalarProperty Name="tuo_Id" ColumnName="tuo_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_Usuario">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_Usuario">
+        <MappingFragment StoreEntitySet="Indigo_Usuario">
+          <ScalarProperty Name="usr_Perfil" ColumnName="usr_Perfil" />
+          <ScalarProperty Name="usr_PermissaoPipe" ColumnName="usr_PermissaoPipe" />
+          <ScalarProperty Name="usr_imagePerfil" ColumnName="usr_imagePerfil" />
+          <ScalarProperty Name="usr_VerEstruturas" ColumnName="usr_VerEstruturas" />
+          <ScalarProperty Name="usr_Tel" ColumnName="usr_Tel" />
+          <ScalarProperty Name="estr_id" ColumnName="estr_id" />
+          <ScalarProperty Name="fnc_id" ColumnName="fnc_id" />
+          <ScalarProperty Name="usr_Email" ColumnName="usr_Email" />
+          <ScalarProperty Name="usr_Senha" ColumnName="usr_Senha" />
+          <ScalarProperty Name="usr_Login" ColumnName="usr_Login" />
+          <ScalarProperty Name="usr_Nome" ColumnName="usr_Nome" />
+          <ScalarProperty Name="usr_Id" ColumnName="usr_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_RELATORIO_HORAS_COMPLETO" FunctionName="Indigo_Controle_LicencaModel.Store.STP_BUSCA_RELATORIO_HORAS_COMPLETO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.ReportHorasCompleto">
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Funcao" ColumnName="Funcao" />
+          <ScalarProperty Name="Estrutura" ColumnName="Estrutura" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="Id_Projeto" ColumnName="Id Projeto" />
+          <ScalarProperty Name="Projeto" ColumnName="Projeto" />
+          <ScalarProperty Name="Fase_Projeto" ColumnName="Fase Projeto" />
+          <ScalarProperty Name="Atividade" ColumnName="Atividade" />
+          <ScalarProperty Name="Data_Inicio" ColumnName="Data Inicio" />
+          <ScalarProperty Name="Hora_Inicio" ColumnName="Hora Inicio" />
+          <ScalarProperty Name="Data_Fim" ColumnName="Data Fim" />
+          <ScalarProperty Name="Hora_Fim" ColumnName="Hora Fim" />
+          <ScalarProperty Name="Tempo" ColumnName="Tempo" />
+          <ScalarProperty Name="HoraDecimal" ColumnName="HoraDecimal" />
+          <ScalarProperty Name="Observação" ColumnName="Observação" />
+          <ScalarProperty Name="Aprovacao" ColumnName="Aprovacao" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_RELATORIO_HORAS_COMPACTO" FunctionName="Indigo_Controle_LicencaModel.Store.STP_RELATORIO_HORAS_COMPACTO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.ReportHorasCompacto">
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Tempo" ColumnName="Tempo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_RELATORIO_HORAS_COMPACTO_TIMELINE" FunctionName="Indigo_Controle_LicencaModel.Store.STP_RELATORIO_HORAS_COMPACTO_TIMELINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.ReportHorasTimeLine">
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Tempo" ColumnName="Tempo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_CONTROLE_HORAS" FunctionName="Indigo_Controle_LicencaModel.Store.STP_CONTROLE_HORAS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.RetornoPermissao">
+          <ScalarProperty Name="permissao" ColumnName="permissao" />
+          <ScalarProperty Name="msg" ColumnName="msg" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_INICIO_ALMOCO" FunctionName="Indigo_Controle_LicencaModel.Store.STP_INICIO_ALMOCO" />
+    <FunctionImportMapping FunctionImportName="STP_INICIO_TAREFA" FunctionName="Indigo_Controle_LicencaModel.Store.STP_INICIO_TAREFA" />
+    <EntitySetMapping Name="Indigo_JustificaHorasProjeto">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_JustificaHorasProjeto">
+        <MappingFragment StoreEntitySet="Indigo_JustificaHorasProjeto">
+          <ScalarProperty Name="jtf_Nome" ColumnName="jtf_Nome" />
+          <ScalarProperty Name="jtf_Id" ColumnName="jtf_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_JustificaHorasUsuario">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_JustificaHorasUsuario">
+        <MappingFragment StoreEntitySet="Indigo_JustificaHorasUsuario">
+          <ScalarProperty Name="jft_Tipo" ColumnName="jft_Tipo" />
+          <ScalarProperty Name="jft_dataReg" ColumnName="jft_dataReg" />
+          <ScalarProperty Name="jtf_Aprova" ColumnName="jtf_Aprova" />
+          <ScalarProperty Name="jft_Texto" ColumnName="jft_Texto" />
+          <ScalarProperty Name="hpo_id" ColumnName="hpo_id" />
+          <ScalarProperty Name="jtf_data" ColumnName="jtf_data" />
+          <ScalarProperty Name="usrjtf_id" ColumnName="usrjtf_id" />
+          <ScalarProperty Name="usr_id" ColumnName="usr_id" />
+          <ScalarProperty Name="jtf_id" ColumnName="jtf_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_EstruturaFluxo">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_EstruturaFluxo">
+        <MappingFragment StoreEntitySet="Indigo_EstruturaFluxo">
+          <ScalarProperty Name="estr_apr" ColumnName="estr_apr" />
+          <ScalarProperty Name="estr_Nome" ColumnName="estr_Nome" />
+          <ScalarProperty Name="usr_id" ColumnName="usr_id" />
+          <ScalarProperty Name="estrusr_id" ColumnName="estrusr_id" />
+          <ScalarProperty Name="estr_id" ColumnName="estr_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_FuncaoUsuario">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_FuncaoUsuario">
+        <MappingFragment StoreEntitySet="Indigo_FuncaoUsuario">
+          <ScalarProperty Name="fnc_Sigla" ColumnName="fnc_Sigla" />
+          <ScalarProperty Name="fnc_valor" ColumnName="fnc_valor" />
+          <ScalarProperty Name="fnc_Nome" ColumnName="fnc_Nome" />
+          <ScalarProperty Name="fnc_id" ColumnName="fnc_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="STP_INICIO_TAREFA_JUST" FunctionName="Indigo_Controle_LicencaModel.Store.STP_INICIO_TAREFA_JUST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.RetornoEstruturaJustifica">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="NomeEstrutura" ColumnName="NomeEstrutura" />
+          <ScalarProperty Name="EmailEstrutura" ColumnName="EmailEstrutura" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Funcao" ColumnName="Funcao" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="Projeto" ColumnName="Projeto" />
+          <ScalarProperty Name="Fase_Projeto" ColumnName="Fase Projeto" />
+          <ScalarProperty Name="Atividade" ColumnName="Atividade" />
+          <ScalarProperty Name="DataInicio" ColumnName="DataInicio" />
+          <ScalarProperty Name="HoraInicio" ColumnName="HoraInicio" />
+          <ScalarProperty Name="DataFim" ColumnName="DataFim" />
+          <ScalarProperty Name="HoraFim" ColumnName="HoraFim" />
+          <ScalarProperty Name="Tempo" ColumnName="Tempo" />
+          <ScalarProperty Name="Justificativa" ColumnName="Justificativa" />
+          <ScalarProperty Name="Observacao" ColumnName="Observacao" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Indigo_HorasNTrab">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_HorasNTrab">
+        <MappingFragment StoreEntitySet="Indigo_HorasNTrab">
+          <ScalarProperty Name="hnt_jtfNome" ColumnName="hnt_jtfNome" />
+          <ScalarProperty Name="hnt_jtfSequencia" ColumnName="hnt_jtfSequencia" />
+          <ScalarProperty Name="hnt_jtfAprovado" ColumnName="hnt_jtfAprovado" />
+          <ScalarProperty Name="hnt_Observacao" ColumnName="hnt_Observacao" />
+          <ScalarProperty Name="hnt_usrId" ColumnName="hnt_usrId" />
+          <ScalarProperty Name="hnt_DataHoraFim" ColumnName="hnt_DataHoraFim" />
+          <ScalarProperty Name="hnt_DataHoraInicio" ColumnName="hnt_DataHoraInicio" />
+          <ScalarProperty Name="hnt_sfpId" ColumnName="hnt_sfpId" />
+          <ScalarProperty Name="hnt_prjId" ColumnName="hnt_prjId" />
+          <ScalarProperty Name="hnt_Id" ColumnName="hnt_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="STP_RETORNA_ESTRUTURA" FunctionName="Indigo_Controle_LicencaModel.Store.STP_RETORNA_ESTRUTURA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.RetornaEstrutura">
+          <ScalarProperty Name="usr_Id" ColumnName="usr_Id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="NomeFunc" ColumnName="NomeFunc" />
+          <ScalarProperty Name="SiglaFunc" ColumnName="SiglaFunc" />
+          <ScalarProperty Name="NomeEstr" ColumnName="NomeEstr" />
+          <ScalarProperty Name="AprovaEstr" ColumnName="AprovaEstr" />
+          <ScalarProperty Name="estr_id" ColumnName="estr_id" />
+          <ScalarProperty Name="TargetTotal" ColumnName="TargetTotal" />
+          <ScalarProperty Name="TargetAtual" ColumnName="TargetAtual" />
+          <ScalarProperty Name="Esperado" ColumnName="Esperado" />
+          <ScalarProperty Name="HC" ColumnName="HC" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Indigo_ConfigCalendario">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_ConfigCalendario">
+        <MappingFragment StoreEntitySet="Indigo_ConfigCalendario">
+          <ScalarProperty Name="qt_targetTotal" ColumnName="qt_targetTotal" />
+          <ScalarProperty Name="qt_FimDeSemana" ColumnName="qt_FimDeSemana" />
+          <ScalarProperty Name="qt_diaFeriado" ColumnName="qt_diaFeriado" />
+          <ScalarProperty Name="qt_diaUtil" ColumnName="qt_diaUtil" />
+          <ScalarProperty Name="id_qt" ColumnName="id_qt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="STP_RETORNA_TARGET" FunctionName="Indigo_Controle_LicencaModel.Store.STP_RETORNA_TARGET">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.RetornoTargetUsuario">
+          <ScalarProperty Name="target_total" ColumnName="target_total" />
+          <ScalarProperty Name="target_atual" ColumnName="target_atual" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Indigo_Calendario">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_Calendario">
+        <MappingFragment StoreEntitySet="Indigo_Calendario">
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="id_data" ColumnName="id_data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_UtilizacaoPa">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_UtilizacaoPa">
+        <MappingFragment StoreEntitySet="Indigo_UtilizacaoPa">
+          <ScalarProperty Name="uta_DataUtilizacao" ColumnName="uta_DataUtilizacao" />
+          <ScalarProperty Name="uta_NomaAgente" ColumnName="uta_NomaAgente" />
+          <ScalarProperty Name="uta_IdAgente" ColumnName="uta_IdAgente" />
+          <ScalarProperty Name="uta_PrdId" ColumnName="uta_PrdId" />
+          <ScalarProperty Name="uta_Id" ColumnName="uta_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="STP_LISTA_JUSTIFICATIVA" FunctionName="Indigo_Controle_LicencaModel.Store.STP_LISTA_JUSTIFICATIVA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.ListaJustifica">
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="Projeto" ColumnName="Projeto" />
+          <ScalarProperty Name="Fase" ColumnName="Fase" />
+          <ScalarProperty Name="Atividade" ColumnName="Atividade" />
+          <ScalarProperty Name="DataInicio" ColumnName="DataInicio" />
+          <ScalarProperty Name="DataFim" ColumnName="DataFim" />
+          <ScalarProperty Name="Aprovacao" ColumnName="Aprovacao" />
+          <ScalarProperty Name="Motivo" ColumnName="Motivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_RETORNA_TOP_PROJETOS" FunctionName="Indigo_Controle_LicencaModel.Store.STP_RETORNA_TOP_PROJETOS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.RetornaTopProjeto">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EPS" ColumnName="EPS" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="Projeto" ColumnName="Projeto" />
+          <ScalarProperty Name="TempoTotal" ColumnName="TempoTotal" />
+          <ScalarProperty Name="TempoMes" ColumnName="TempoMes" />
+          <ScalarProperty Name="TempoDia" ColumnName="TempoDia" />
+          <ScalarProperty Name="HC" ColumnName="HC" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_RETORNA_DETALHES_PROJETO_USUARIO" FunctionName="Indigo_Controle_LicencaModel.Store.STP_RETORNA_DETALHES_PROJETO_USUARIO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.RetornaDetalhesUsuario">
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="Projeto" ColumnName="Projeto" />
+          <ScalarProperty Name="TempoMes" ColumnName="TempoMes" />
+          <ScalarProperty Name="EPS" ColumnName="EPS" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_RETORNA_HC" FunctionName="Indigo_Controle_LicencaModel.Store.STP_RETORNA_HC">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.RetornaHC">
+          <ScalarProperty Name="HC" ColumnName="HC" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_FILTRO_PROJETOS" FunctionName="Indigo_Controle_LicencaModel.Store.STP_FILTRO_PROJETOS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.RetornaProjetoFiltro">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="EPS" ColumnName="EPS" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="Projeto" ColumnName="Projeto" />
+          <ScalarProperty Name="TempoMes" ColumnName="TempoMes" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Indigo_HorasProjetoAtalho">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_HorasProjetoAtalho">
+        <MappingFragment StoreEntitySet="Indigo_HorasProjetoAtalho">
+          <ScalarProperty Name="hpoa_Atalho" ColumnName="hpoa_Atalho" />
+          <ScalarProperty Name="hpoa_Observacao" ColumnName="hpoa_Observacao" />
+          <ScalarProperty Name="hpoa_usrId" ColumnName="hpoa_usrId" />
+          <ScalarProperty Name="hpoa_sfpId" ColumnName="hpoa_sfpId" />
+          <ScalarProperty Name="hpoa_prjId" ColumnName="hpoa_prjId" />
+          <ScalarProperty Name="hpoa_Id" ColumnName="hpoa_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_ConfiguracaoControleCusto">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_ConfiguracaoControleCusto">
+        <MappingFragment StoreEntitySet="Indigo_ConfiguracaoControleCusto">
+          <ScalarProperty Name="ico_Ativo" ColumnName="ico_Ativo" />
+          <ScalarProperty Name="ico_FiltraData" ColumnName="ico_FiltraData" />
+          <ScalarProperty Name="ico_CampoNomeOperador" ColumnName="ico_CampoNomeOperador" />
+          <ScalarProperty Name="ico_CampoIdOperador" ColumnName="ico_CampoIdOperador" />
+          <ScalarProperty Name="ico_CampoData" ColumnName="ico_CampoData" />
+          <ScalarProperty Name="ico_View" ColumnName="ico_View" />
+          <ScalarProperty Name="ico_Senha" ColumnName="ico_Senha" />
+          <ScalarProperty Name="ico_Usuario" ColumnName="ico_Usuario" />
+          <ScalarProperty Name="ico_BaseDados" ColumnName="ico_BaseDados" />
+          <ScalarProperty Name="ico_Servidor" ColumnName="ico_Servidor" />
+          <ScalarProperty Name="ico_LicId" ColumnName="ico_LicId" />
+          <ScalarProperty Name="ico_Id" ColumnName="ico_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_RELATORIO_LOG_BASE" FunctionName="Indigo_Controle_LicencaModel.Store.STP_BUSCA_RELATORIO_LOG_BASE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.RetornoLogBase">
+          <ScalarProperty Name="DataExecucao" ColumnName="DataExecucao" />
+          <ScalarProperty Name="Contratante" ColumnName="Contratante" />
+          <ScalarProperty Name="Filial" ColumnName="Filial" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="Mensagem" ColumnName="Mensagem" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_RELATORIO_CONTROLE_CUSTOS" FunctionName="Indigo_Controle_LicencaModel.Store.STP_BUSCA_RELATORIO_CONTROLE_CUSTOS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.RetornoControleCusto">
+          <ScalarProperty Name="Contratante" ColumnName="Contratante" />
+          <ScalarProperty Name="Filial" ColumnName="Filial" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="DataAtendimento" ColumnName="DataAtendimento" />
+          <ScalarProperty Name="IdOperador" ColumnName="IdOperador" />
+          <ScalarProperty Name="NomeOperador" ColumnName="NomeOperador" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Indigo_Pipeline">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_Pipeline">
+        <MappingFragment StoreEntitySet="Indigo_Pipeline">
+          <ScalarProperty Name="pip_Aceito" ColumnName="pip_Aceito" />
+          <ScalarProperty Name="pip_userPipecria" ColumnName="pip_userPipecria" />
+          <ScalarProperty Name="pip_userResp" ColumnName="pip_userResp" />
+          <ScalarProperty Name="pip_Objetivo" ColumnName="pip_Objetivo" />
+          <ScalarProperty Name="pip_Qtpas" ColumnName="pip_Qtpas" />
+          <ScalarProperty Name="pip_DtAprovacao" ColumnName="pip_DtAprovacao" />
+          <ScalarProperty Name="pipCl_ContatoTelefones" ColumnName="pipCl_ContatoTelefones" />
+          <ScalarProperty Name="pipCl_ContatoEmail" ColumnName="pipCl_ContatoEmail" />
+          <ScalarProperty Name="pipCl_ContatoNome" ColumnName="pipCl_ContatoNome" />
+          <ScalarProperty Name="pip_Concluido" ColumnName="pip_Concluido" />
+          <ScalarProperty Name="pip_Contrato" ColumnName="pip_Contrato" />
+          <ScalarProperty Name="pip_Proposta" ColumnName="pip_Proposta" />
+          <ScalarProperty Name="pip_Cancelado" ColumnName="pip_Cancelado" />
+          <ScalarProperty Name="pip_Aguardando" ColumnName="pip_Aguardando" />
+          <ScalarProperty Name="pip_Prospec" ColumnName="pip_Prospec" />
+          <ScalarProperty Name="pip_Origem" ColumnName="pip_Origem" />
+          <ScalarProperty Name="pip_Obs" ColumnName="pip_Obs" />
+          <ScalarProperty Name="pip_prazo" ColumnName="pip_prazo" />
+          <ScalarProperty Name="pip_TotalLicenca" ColumnName="pip_TotalLicenca" />
+          <ScalarProperty Name="pip_QtLicenca" ColumnName="pip_QtLicenca" />
+          <ScalarProperty Name="pip_ValorLicenca" ColumnName="pip_ValorLicenca" />
+          <ScalarProperty Name="pip_PrevContrato" ColumnName="pip_PrevContrato" />
+          <ScalarProperty Name="pipprd_Id" ColumnName="pipprd_Id" />
+          <ScalarProperty Name="pip_Tipo" ColumnName="pip_Tipo" />
+          <ScalarProperty Name="pip_Status" ColumnName="pip_Status" />
+          <ScalarProperty Name="pippj_Desc" ColumnName="pippj_Desc" />
+          <ScalarProperty Name="pipCl_Id" ColumnName="pipCl_Id" />
+          <ScalarProperty Name="pip_Id" ColumnName="pip_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="STP_EXPORTAR_PIPELINE" FunctionName="Indigo_Controle_LicencaModel.Store.STP_EXPORTAR_PIPELINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Indigo_Controle_LicencaModel.ExportarPipeline">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Origem" ColumnName="Origem" />
+          <ScalarProperty Name="Cliente" ColumnName="Cliente" />
+          <ScalarProperty Name="Projeto" ColumnName="Projeto" />
+          <ScalarProperty Name="Produto" ColumnName="Produto" />
+          <ScalarProperty Name="Status_Edita" ColumnName="Status_Edita" />
+          <ScalarProperty Name="Tipo_Edita" ColumnName="Tipo_Edita" />
+          <ScalarProperty Name="Previsão_Edita" ColumnName="Previsão_Edita" />
+          <ScalarProperty Name="Licença_Edita" ColumnName="Licença_Edita" />
+          <ScalarProperty Name="Quantidade_Edita" ColumnName="Quantidade_Edita" />
+          <ScalarProperty Name="Total_Edita" ColumnName="Total_Edita" />
+          <ScalarProperty Name="Observação_Edita" ColumnName="Observação_Edita" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Indigo_ControleCusto">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_ControleCusto">
+        <MappingFragment StoreEntitySet="Indigo_ControleCusto">
+          <ScalarProperty Name="icc_NomeOperador" ColumnName="icc_NomeOperador" />
+          <ScalarProperty Name="icc_IdOperador" ColumnName="icc_IdOperador" />
+          <ScalarProperty Name="icc_DataAtendimento" ColumnName="icc_DataAtendimento" />
+          <ScalarProperty Name="icc_LicId" ColumnName="icc_LicId" />
+          <ScalarProperty Name="icc_Id" ColumnName="icc_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indigo_LogControleCusto">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.Indigo_LogControleCusto">
+        <MappingFragment StoreEntitySet="Indigo_LogControleCusto">
+          <ScalarProperty Name="lcc_Mensagem" ColumnName="lcc_Mensagem" />
+          <ScalarProperty Name="lcc_DataHora" ColumnName="lcc_DataHora" />
+          <ScalarProperty Name="lcc_IcoId" ColumnName="lcc_IcoId" />
+          <ScalarProperty Name="lcc_Id" ColumnName="lcc_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Indigo_Controle_LicencaModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,106 @@
+﻿@section scripts{
+    @Scripts.Render("~/Scripts/Admin/Contratante.js")
+}
+
+@Html.Hidden("BuscaContratanteURL", Url.Action("ListaContratante", "Admin"))
+@Html.Hidden("MatemContratanteURL", Url.Action("MantemContratante", "Admin"))
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+@Html.Hidden("idContratante", 0)
+
+
+<div class="wait alert-success">AGUARDE UM INSTANTE</div>
+<div class="error alert-danger"></div>
+<h2>Contratante</h2>
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="box">
+            <div style="clear: both;"></div>
+            <div class="col-md-4" align="right" style="width: 100%">
+                <img src="/Images/plusPNG.png" onclick="MonstraCampos()">
+            </div>
+            <div style="clear: both;"></div>
+            <div class="col-md-4" id="divCampos" name="divCampos">
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <p>Nome:</p>
+                            <input type="text" name="txtNome" id="txtNome" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>CNPJ:</p>
+                            <input type="text" name="txtCNPJ" id="txtCNPJ" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Responsável:</p>
+                            <input type="text" name="txtResponsavel" id="txtResponsavel" class="text" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Telefone:</p>
+                            <input type="text" name="txtTelefone" id="txtTelefone" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>E-Mail:</p>
+                            <input type="text" name="txtEmail" id="txtEmail" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Sigla:</p>
+                            <input type="text" name="txtSigla" id="txtSigla" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>&nbsp;</p>
+                            <input type="button" value="&nbsp;&nbsp;&nbsp;Salvar&nbsp;&nbsp;&nbsp;&nbsp;" class="input form-control btn btn-success" onclick="SalvaContratante();" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="clear: both;"></div>
+            <table class="table-internal" style="margin-top: 15px;" id="tblDescricaoItens">
+                <thead>
+                    <tr class="tr-head">
+                        <th>
+                            Editar
+                        </th>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            CNPJ
+                        </th>
+                        <th>
+                            Responsável
+                        </th>
+                        <th>
+                            Telefone
+                        </th>
+                        <th>
+                            E-Mail
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>

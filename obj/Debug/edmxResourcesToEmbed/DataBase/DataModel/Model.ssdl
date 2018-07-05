@@ -1,0 +1,958 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Indigo_Controle_LicencaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Indigo_Calendario">
+    <Key>
+      <PropertyRef Name="id_data" />
+    </Key>
+    <Property Name="id_data" Type="int" Nullable="false" />
+    <Property Name="data" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Indigo_ClienteFinal">
+    <Key>
+      <PropertyRef Name="clf_id" />
+    </Key>
+    <Property Name="clf_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="clf_Descricao" Type="varchar" MaxLength="200" />
+    <Property Name="clf_Sigla" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Indigo_ConfigCalendario">
+    <Key>
+      <PropertyRef Name="id_qt" />
+    </Key>
+    <Property Name="id_qt" Type="int" Nullable="false" />
+    <Property Name="qt_diaUtil" Type="int" />
+    <Property Name="qt_diaFeriado" Type="int" />
+    <Property Name="qt_FimDeSemana" Type="int" />
+    <Property Name="qt_targetTotal" Type="int" />
+  </EntityType>
+  <EntityType Name="Indigo_ConfiguracaoControleCusto">
+    <Key>
+      <PropertyRef Name="ico_Id" />
+    </Key>
+    <Property Name="ico_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ico_LicId" Type="uniqueidentifier" />
+    <Property Name="ico_Servidor" Type="varchar" MaxLength="200" />
+    <Property Name="ico_BaseDados" Type="varchar" MaxLength="200" />
+    <Property Name="ico_Usuario" Type="varchar" MaxLength="200" />
+    <Property Name="ico_Senha" Type="varchar" MaxLength="200" />
+    <Property Name="ico_View" Type="varchar" MaxLength="200" />
+    <Property Name="ico_CampoData" Type="varchar" MaxLength="200" />
+    <Property Name="ico_CampoIdOperador" Type="varchar" MaxLength="200" />
+    <Property Name="ico_CampoNomeOperador" Type="varchar" MaxLength="200" />
+    <Property Name="ico_FiltraData" Type="bit" />
+    <Property Name="ico_Ativo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Indigo_Contratante">
+    <Key>
+      <PropertyRef Name="con_Id" />
+    </Key>
+    <Property Name="con_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="con_Nome" Type="varchar" MaxLength="200" />
+    <Property Name="con_CNPJ" Type="varchar" MaxLength="30" />
+    <Property Name="con_Responsavel" Type="varchar" MaxLength="200" />
+    <Property Name="con_Telefone" Type="varchar" MaxLength="20" />
+    <Property Name="con_Email" Type="varchar" MaxLength="400" />
+    <Property Name="con_Sigla" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Indigo_ControleCusto">
+    <Key>
+      <PropertyRef Name="icc_Id" />
+    </Key>
+    <Property Name="icc_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="icc_LicId" Type="uniqueidentifier" />
+    <Property Name="icc_DataAtendimento" Type="datetime" />
+    <Property Name="icc_IdOperador" Type="varchar" MaxLength="500" />
+    <Property Name="icc_NomeOperador" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Indigo_ControleLogin">
+    <Key>
+      <PropertyRef Name="cll_id" />
+    </Key>
+    <Property Name="cll_id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cll_LicId" Type="uniqueidentifier" />
+    <Property Name="cll_HostName" Type="varchar" MaxLength="200" />
+    <Property Name="cll_DataLogin" Type="datetime" />
+    <Property Name="cll_DataPing" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Indigo_EstruturaFluxo">
+    <Key>
+      <PropertyRef Name="estr_id" />
+    </Key>
+    <Property Name="estr_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="estrusr_id" Type="int" />
+    <Property Name="usr_id" Type="int" />
+    <Property Name="estr_Nome" Type="varchar" MaxLength="200" />
+    <Property Name="estr_apr" Type="int" />
+  </EntityType>
+  <EntityType Name="Indigo_FaseProjeto">
+    <Key>
+      <PropertyRef Name="fpo_Id" />
+    </Key>
+    <Property Name="fpo_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fpo_Descricao" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Indigo_Filial">
+    <Key>
+      <PropertyRef Name="fil_Id" />
+    </Key>
+    <Property Name="fil_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fil_ConId" Type="int" />
+    <Property Name="fil_Descricao" Type="varchar" MaxLength="200" />
+    <Property Name="fil_CNPJ" Type="varchar" MaxLength="30" />
+    <Property Name="fil_Responsavel" Type="varchar" MaxLength="200" />
+    <Property Name="fil_Telefone" Type="varchar" MaxLength="20" />
+    <Property Name="fil_Email" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Indigo_FuncaoUsuario">
+    <Key>
+      <PropertyRef Name="fnc_id" />
+    </Key>
+    <Property Name="fnc_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fnc_Nome" Type="varchar" MaxLength="200" />
+    <Property Name="fnc_valor" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="fnc_Sigla" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Indigo_HorasNTrab">
+    <Key>
+      <PropertyRef Name="hnt_Id" />
+    </Key>
+    <Property Name="hnt_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hnt_prjId" Type="int" />
+    <Property Name="hnt_sfpId" Type="int" />
+    <Property Name="hnt_DataHoraInicio" Type="datetime" />
+    <Property Name="hnt_DataHoraFim" Type="datetime" />
+    <Property Name="hnt_usrId" Type="int" />
+    <Property Name="hnt_Observacao" Type="varchar" MaxLength="1000" />
+    <Property Name="hnt_jtfAprovado" Type="int" />
+    <Property Name="hnt_jtfSequencia" Type="int" />
+    <Property Name="hnt_jtfNome" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Indigo_HorasProjeto">
+    <Key>
+      <PropertyRef Name="hpo_Id" />
+    </Key>
+    <Property Name="hpo_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hpo_prjId" Type="int" />
+    <Property Name="hpo_sfpId" Type="int" />
+    <Property Name="hpo_DataHoraInicio" Type="datetime" />
+    <Property Name="hpo_DataHoraFim" Type="datetime" />
+    <Property Name="hpo_usrId" Type="int" />
+    <Property Name="hpo_Observacao" Type="varchar" MaxLength="1000" />
+    <Property Name="hpo_jtfAprovado" Type="int" />
+    <Property Name="hpo_jtfSequencia" Type="int" />
+    <Property Name="hpo_jtfNome" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Indigo_HorasProjetoAtalho">
+    <Key>
+      <PropertyRef Name="hpoa_Id" />
+    </Key>
+    <Property Name="hpoa_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="hpoa_prjId" Type="int" />
+    <Property Name="hpoa_sfpId" Type="int" />
+    <Property Name="hpoa_usrId" Type="int" />
+    <Property Name="hpoa_Observacao" Type="varchar" MaxLength="1000" />
+    <Property Name="hpoa_Atalho" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Indigo_JustificaHorasProjeto">
+    <Key>
+      <PropertyRef Name="jtf_Id" />
+    </Key>
+    <Property Name="jtf_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="jtf_Nome" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Indigo_JustificaHorasUsuario">
+    <Key>
+      <PropertyRef Name="jtf_id" />
+    </Key>
+    <Property Name="jtf_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usr_id" Type="int" Nullable="false" />
+    <Property Name="usrjtf_id" Type="int" Nullable="false" />
+    <Property Name="jtf_data" Type="datetime" />
+    <Property Name="hpo_id" Type="int" />
+    <Property Name="jft_Texto" Type="varchar" MaxLength="1000" />
+    <Property Name="jtf_Aprova" Type="int" />
+    <Property Name="jft_dataReg" Type="datetime" />
+    <Property Name="jft_Tipo" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Indigo_Licencas">
+    <Key>
+      <PropertyRef Name="lic_Id" />
+    </Key>
+    <Property Name="lic_Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="lic_FilId" Type="int" />
+    <Property Name="lic_PrdId" Type="int" />
+    <Property Name="lic_Contrato" Type="varchar" MaxLength="200" />
+    <Property Name="lic_Qtde" Type="int" />
+    <Property Name="lic_DataContratacao" Type="datetime" />
+    <Property Name="lic_ValidadeLicenca" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Indigo_LogControleCusto">
+    <Key>
+      <PropertyRef Name="lcc_Id" />
+    </Key>
+    <Property Name="lcc_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="lcc_IcoId" Type="int" />
+    <Property Name="lcc_DataHora" Type="datetime" />
+    <Property Name="lcc_Mensagem" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Indigo_NotaFiscal">
+    <Key>
+      <PropertyRef Name="ntf_id" />
+    </Key>
+    <Property Name="ntf_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ntf_LicId" Type="uniqueidentifier" />
+    <Property Name="ntf_NumeroNotaFiscal" Type="varchar" MaxLength="50" />
+    <Property Name="ntf_DataEmissao" Type="datetime" />
+    <Property Name="ntf_Valor" Type="numeric" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="Indigo_Pipeline">
+    <Key>
+      <PropertyRef Name="pip_Id" />
+    </Key>
+    <Property Name="pip_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pipCl_Id" Type="int" />
+    <Property Name="pippj_Desc" Type="varchar" MaxLength="200" />
+    <Property Name="pip_Status" Type="int" />
+    <Property Name="pip_Tipo" Type="int" />
+    <Property Name="pipprd_Id" Type="int" />
+    <Property Name="pip_PrevContrato" Type="date" />
+    <Property Name="pip_ValorLicenca" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="pip_QtLicenca" Type="int" />
+    <Property Name="pip_TotalLicenca" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="pip_prazo" Type="int" />
+    <Property Name="pip_Obs" Type="text" />
+    <Property Name="pip_Origem" Type="varchar" MaxLength="200" />
+    <Property Name="pip_Prospec" Type="datetime" />
+    <Property Name="pip_Aguardando" Type="datetime" />
+    <Property Name="pip_Cancelado" Type="datetime" />
+    <Property Name="pip_Proposta" Type="datetime" />
+    <Property Name="pip_Contrato" Type="datetime" />
+    <Property Name="pip_Concluido" Type="datetime" />
+    <Property Name="pipCl_ContatoNome" Type="varchar" MaxLength="500" />
+    <Property Name="pipCl_ContatoEmail" Type="varchar" MaxLength="500" />
+    <Property Name="pipCl_ContatoTelefones" Type="varchar" MaxLength="500" />
+    <Property Name="pip_DtAprovacao" Type="datetime" />
+    <Property Name="pip_Qtpas" Type="int" />
+    <Property Name="pip_Objetivo" Type="text" />
+    <Property Name="pip_userResp" Type="int" />
+    <Property Name="pip_userPipecria" Type="int" />
+    <Property Name="pip_Aceito" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Indigo_Produto">
+    <Key>
+      <PropertyRef Name="prd_Id" />
+    </Key>
+    <Property Name="prd_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="prd_ClfId" Type="int" />
+    <Property Name="prd_Descricao" Type="varchar" MaxLength="200" />
+    <Property Name="prd_Sigla" Type="varchar" MaxLength="20" />
+    <Property Name="prd_ativo" Type="int" />
+  </EntityType>
+  <EntityType Name="Indigo_Projeto">
+    <Key>
+      <PropertyRef Name="prj_Id" />
+    </Key>
+    <Property Name="prj_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="prj_PrdId" Type="int" />
+    <Property Name="prj_Descricao" Type="varchar" MaxLength="200" />
+    <Property Name="prj_IdControle" Type="varchar" MaxLength="200" />
+    <Property Name="prj_idusr" Type="int" />
+  </EntityType>
+  <EntityType Name="Indigo_SubfaseProjeto">
+    <Key>
+      <PropertyRef Name="sfp_Id" />
+    </Key>
+    <Property Name="sfp_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sfp_fpoId" Type="int" />
+    <Property Name="sfp_Descricao" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Indigo_Telas">
+    <Key>
+      <PropertyRef Name="tel_Id" />
+    </Key>
+    <Property Name="tel_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tel_Descricao" Type="varchar" MaxLength="50" />
+    <Property Name="tel_Icone" Type="varchar" MaxLength="200" />
+    <Property Name="tel_Controller" Type="varchar" MaxLength="200" />
+    <Property Name="tel_Metodo" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Indigo_TelasUsuario">
+    <Key>
+      <PropertyRef Name="tuo_Id" />
+    </Key>
+    <Property Name="tuo_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tuo_TelId" Type="int" />
+    <Property Name="tuo_UsrId" Type="int" />
+  </EntityType>
+  <EntityType Name="Indigo_Usuario">
+    <Key>
+      <PropertyRef Name="usr_Id" />
+    </Key>
+    <Property Name="usr_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usr_Nome" Type="varchar" MaxLength="200" />
+    <Property Name="usr_Login" Type="varchar" MaxLength="50" />
+    <Property Name="usr_Senha" Type="varchar" MaxLength="50" />
+    <Property Name="usr_Email" Type="varchar" MaxLength="200" />
+    <Property Name="fnc_id" Type="int" />
+    <Property Name="estr_id" Type="int" />
+    <Property Name="usr_Tel" Type="varchar" MaxLength="50" />
+    <Property Name="usr_VerEstruturas" Type="int" />
+    <Property Name="usr_imagePerfil" Type="varchar" MaxLength="200" />
+    <Property Name="usr_PermissaoPipe" Type="int" />
+    <Property Name="usr_Perfil" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Indigo_Controle_Licenca.dbo.Indigo_UtilizacaoPa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Indigo_UtilizacaoPa">
+    <Key>
+      <PropertyRef Name="uta_Id" />
+    </Key>
+    <Property Name="uta_Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="uta_PrdId" Type="int" />
+    <Property Name="uta_IdAgente" Type="varchar" MaxLength="500" />
+    <Property Name="uta_NomaAgente" Type="varchar" MaxLength="500" />
+    <Property Name="uta_DataUtilizacao" Type="smalldatetime" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK__Indigo_Co__cll_L__2A4B4B5E">
+    <End Role="Indigo_Licencas" Type="Self.Indigo_Licencas" Multiplicity="0..1" />
+    <End Role="Indigo_ControleLogin" Type="Self.Indigo_ControleLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Licencas">
+        <PropertyRef Name="lic_Id" />
+      </Principal>
+      <Dependent Role="Indigo_ControleLogin">
+        <PropertyRef Name="cll_LicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Co__icc_L__3A4CA8FD">
+    <End Role="Indigo_Licencas" Type="Self.Indigo_Licencas" Multiplicity="0..1" />
+    <End Role="Indigo_ControleCusto" Type="Self.Indigo_ControleCusto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Licencas">
+        <PropertyRef Name="lic_Id" />
+      </Principal>
+      <Dependent Role="Indigo_ControleCusto">
+        <PropertyRef Name="icc_LicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Co__ico_L__31B762FC">
+    <End Role="Indigo_Licencas" Type="Self.Indigo_Licencas" Multiplicity="0..1" />
+    <End Role="Indigo_ConfiguracaoControleCusto" Type="Self.Indigo_ConfiguracaoControleCusto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Licencas">
+        <PropertyRef Name="lic_Id" />
+      </Principal>
+      <Dependent Role="Indigo_ConfiguracaoControleCusto">
+        <PropertyRef Name="ico_LicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Co__ico_L__339FAB6E">
+    <End Role="Indigo_Licencas" Type="Self.Indigo_Licencas" Multiplicity="0..1" />
+    <End Role="Indigo_ConfiguracaoControleCusto" Type="Self.Indigo_ConfiguracaoControleCusto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Licencas">
+        <PropertyRef Name="lic_Id" />
+      </Principal>
+      <Dependent Role="Indigo_ConfiguracaoControleCusto">
+        <PropertyRef Name="ico_LicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Co__ico_L__3587F3E0">
+    <End Role="Indigo_Licencas" Type="Self.Indigo_Licencas" Multiplicity="0..1" />
+    <End Role="Indigo_ConfiguracaoControleCusto" Type="Self.Indigo_ConfiguracaoControleCusto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Licencas">
+        <PropertyRef Name="lic_Id" />
+      </Principal>
+      <Dependent Role="Indigo_ConfiguracaoControleCusto">
+        <PropertyRef Name="ico_LicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Co__ico_L__37703C52">
+    <End Role="Indigo_Licencas" Type="Self.Indigo_Licencas" Multiplicity="0..1" />
+    <End Role="Indigo_ConfiguracaoControleCusto" Type="Self.Indigo_ConfiguracaoControleCusto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Licencas">
+        <PropertyRef Name="lic_Id" />
+      </Principal>
+      <Dependent Role="Indigo_ConfiguracaoControleCusto">
+        <PropertyRef Name="ico_LicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Fi__fil_C__2B3F6F97">
+    <End Role="Indigo_Contratante" Type="Self.Indigo_Contratante" Multiplicity="0..1" />
+    <End Role="Indigo_Filial" Type="Self.Indigo_Filial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Contratante">
+        <PropertyRef Name="con_Id" />
+      </Principal>
+      <Dependent Role="Indigo_Filial">
+        <PropertyRef Name="fil_ConId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Ho__hnt_I__681373AD">
+    <End Role="Indigo_Projeto" Type="Self.Indigo_Projeto" Multiplicity="0..1" />
+    <End Role="Indigo_HorasNTrab" Type="Self.Indigo_HorasNTrab" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Projeto">
+        <PropertyRef Name="prj_Id" />
+      </Principal>
+      <Dependent Role="Indigo_HorasNTrab">
+        <PropertyRef Name="hnt_prjId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Ho__hnt_I__690797E6">
+    <End Role="Indigo_SubfaseProjeto" Type="Self.Indigo_SubfaseProjeto" Multiplicity="0..1" />
+    <End Role="Indigo_HorasNTrab" Type="Self.Indigo_HorasNTrab" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_SubfaseProjeto">
+        <PropertyRef Name="sfp_Id" />
+      </Principal>
+      <Dependent Role="Indigo_HorasNTrab">
+        <PropertyRef Name="hnt_sfpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Ho__hnt_I__69FBBC1F">
+    <End Role="Indigo_Usuario" Type="Self.Indigo_Usuario" Multiplicity="0..1" />
+    <End Role="Indigo_HorasNTrab" Type="Self.Indigo_HorasNTrab" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Usuario">
+        <PropertyRef Name="usr_Id" />
+      </Principal>
+      <Dependent Role="Indigo_HorasNTrab">
+        <PropertyRef Name="hnt_usrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Ho__hpo_p__2C3393D0">
+    <End Role="Indigo_Projeto" Type="Self.Indigo_Projeto" Multiplicity="0..1" />
+    <End Role="Indigo_HorasProjeto" Type="Self.Indigo_HorasProjeto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Projeto">
+        <PropertyRef Name="prj_Id" />
+      </Principal>
+      <Dependent Role="Indigo_HorasProjeto">
+        <PropertyRef Name="hpo_prjId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Ho__hpo_s__2D27B809">
+    <End Role="Indigo_SubfaseProjeto" Type="Self.Indigo_SubfaseProjeto" Multiplicity="0..1" />
+    <End Role="Indigo_HorasProjeto" Type="Self.Indigo_HorasProjeto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_SubfaseProjeto">
+        <PropertyRef Name="sfp_Id" />
+      </Principal>
+      <Dependent Role="Indigo_HorasProjeto">
+        <PropertyRef Name="hpo_sfpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Ho__hpo_u__2E1BDC42">
+    <End Role="Indigo_Usuario" Type="Self.Indigo_Usuario" Multiplicity="0..1" />
+    <End Role="Indigo_HorasProjeto" Type="Self.Indigo_HorasProjeto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Usuario">
+        <PropertyRef Name="usr_Id" />
+      </Principal>
+      <Dependent Role="Indigo_HorasProjeto">
+        <PropertyRef Name="hpo_usrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Ho__hpoa___29221CFB">
+    <End Role="Indigo_Projeto" Type="Self.Indigo_Projeto" Multiplicity="0..1" />
+    <End Role="Indigo_HorasProjetoAtalho" Type="Self.Indigo_HorasProjetoAtalho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Projeto">
+        <PropertyRef Name="prj_Id" />
+      </Principal>
+      <Dependent Role="Indigo_HorasProjetoAtalho">
+        <PropertyRef Name="hpoa_prjId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Ho__hpoa___2A164134">
+    <End Role="Indigo_SubfaseProjeto" Type="Self.Indigo_SubfaseProjeto" Multiplicity="0..1" />
+    <End Role="Indigo_HorasProjetoAtalho" Type="Self.Indigo_HorasProjetoAtalho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_SubfaseProjeto">
+        <PropertyRef Name="sfp_Id" />
+      </Principal>
+      <Dependent Role="Indigo_HorasProjetoAtalho">
+        <PropertyRef Name="hpoa_sfpId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Ho__hpoa___2B0A656D">
+    <End Role="Indigo_Usuario" Type="Self.Indigo_Usuario" Multiplicity="0..1" />
+    <End Role="Indigo_HorasProjetoAtalho" Type="Self.Indigo_HorasProjetoAtalho" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Usuario">
+        <PropertyRef Name="usr_Id" />
+      </Principal>
+      <Dependent Role="Indigo_HorasProjetoAtalho">
+        <PropertyRef Name="hpoa_usrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Li__lic_F__2F10007B">
+    <End Role="Indigo_Filial" Type="Self.Indigo_Filial" Multiplicity="0..1" />
+    <End Role="Indigo_Licencas" Type="Self.Indigo_Licencas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Filial">
+        <PropertyRef Name="fil_Id" />
+      </Principal>
+      <Dependent Role="Indigo_Licencas">
+        <PropertyRef Name="lic_FilId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Li__lic_P__300424B4">
+    <End Role="Indigo_Produto" Type="Self.Indigo_Produto" Multiplicity="0..1" />
+    <End Role="Indigo_Licencas" Type="Self.Indigo_Licencas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Produto">
+        <PropertyRef Name="prd_Id" />
+      </Principal>
+      <Dependent Role="Indigo_Licencas">
+        <PropertyRef Name="lic_PrdId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Lo__lcc_I__3E1D39E1">
+    <End Role="Indigo_ConfiguracaoControleCusto" Type="Self.Indigo_ConfiguracaoControleCusto" Multiplicity="0..1" />
+    <End Role="Indigo_LogControleCusto" Type="Self.Indigo_LogControleCusto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_ConfiguracaoControleCusto">
+        <PropertyRef Name="ico_Id" />
+      </Principal>
+      <Dependent Role="Indigo_LogControleCusto">
+        <PropertyRef Name="lcc_IcoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_No__ntf_L__30F848ED">
+    <End Role="Indigo_Licencas" Type="Self.Indigo_Licencas" Multiplicity="0..1" />
+    <End Role="Indigo_NotaFiscal" Type="Self.Indigo_NotaFiscal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Licencas">
+        <PropertyRef Name="lic_Id" />
+      </Principal>
+      <Dependent Role="Indigo_NotaFiscal">
+        <PropertyRef Name="ntf_LicId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Pr__prd_C__31EC6D26">
+    <End Role="Indigo_ClienteFinal" Type="Self.Indigo_ClienteFinal" Multiplicity="0..1" />
+    <End Role="Indigo_Produto" Type="Self.Indigo_Produto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_ClienteFinal">
+        <PropertyRef Name="clf_id" />
+      </Principal>
+      <Dependent Role="Indigo_Produto">
+        <PropertyRef Name="prd_ClfId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Pr__prj_P__32E0915F">
+    <End Role="Indigo_Produto" Type="Self.Indigo_Produto" Multiplicity="0..1" />
+    <End Role="Indigo_Projeto" Type="Self.Indigo_Projeto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Produto">
+        <PropertyRef Name="prd_Id" />
+      </Principal>
+      <Dependent Role="Indigo_Projeto">
+        <PropertyRef Name="prj_PrdId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Su__sfp_f__33D4B598">
+    <End Role="Indigo_FaseProjeto" Type="Self.Indigo_FaseProjeto" Multiplicity="0..1" />
+    <End Role="Indigo_SubfaseProjeto" Type="Self.Indigo_SubfaseProjeto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_FaseProjeto">
+        <PropertyRef Name="fpo_Id" />
+      </Principal>
+      <Dependent Role="Indigo_SubfaseProjeto">
+        <PropertyRef Name="sfp_fpoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Te__tuo_T__34C8D9D1">
+    <End Role="Indigo_Telas" Type="Self.Indigo_Telas" Multiplicity="0..1" />
+    <End Role="Indigo_TelasUsuario" Type="Self.Indigo_TelasUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Telas">
+        <PropertyRef Name="tel_Id" />
+      </Principal>
+      <Dependent Role="Indigo_TelasUsuario">
+        <PropertyRef Name="tuo_TelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Te__tuo_U__35BCFE0A">
+    <End Role="Indigo_Usuario" Type="Self.Indigo_Usuario" Multiplicity="0..1" />
+    <End Role="Indigo_TelasUsuario" Type="Self.Indigo_TelasUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Usuario">
+        <PropertyRef Name="usr_Id" />
+      </Principal>
+      <Dependent Role="Indigo_TelasUsuario">
+        <PropertyRef Name="tuo_UsrId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Us__estr___6754599E">
+    <End Role="Indigo_EstruturaFluxo" Type="Self.Indigo_EstruturaFluxo" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Indigo_Usuario" Type="Self.Indigo_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_EstruturaFluxo">
+        <PropertyRef Name="estr_id" />
+      </Principal>
+      <Dependent Role="Indigo_Usuario">
+        <PropertyRef Name="estr_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Us__estr___68487DD7">
+    <End Role="Indigo_EstruturaFluxo" Type="Self.Indigo_EstruturaFluxo" Multiplicity="0..1" />
+    <End Role="Indigo_Usuario" Type="Self.Indigo_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_EstruturaFluxo">
+        <PropertyRef Name="estr_id" />
+      </Principal>
+      <Dependent Role="Indigo_Usuario">
+        <PropertyRef Name="estr_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Us__fnc_i__693CA210">
+    <End Role="Indigo_FuncaoUsuario" Type="Self.Indigo_FuncaoUsuario" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Indigo_Usuario" Type="Self.Indigo_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_FuncaoUsuario">
+        <PropertyRef Name="fnc_id" />
+      </Principal>
+      <Dependent Role="Indigo_Usuario">
+        <PropertyRef Name="fnc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Indigo_Us__fnc_i__6A30C649">
+    <End Role="Indigo_FuncaoUsuario" Type="Self.Indigo_FuncaoUsuario" Multiplicity="0..1" />
+    <End Role="Indigo_Usuario" Type="Self.Indigo_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_FuncaoUsuario">
+        <PropertyRef Name="fnc_id" />
+      </Principal>
+      <Dependent Role="Indigo_Usuario">
+        <PropertyRef Name="fnc_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Indigo_JustificaHorasUsuario_Indigo_JustificaHorasProjeto">
+    <End Role="Indigo_JustificaHorasProjeto" Type="Self.Indigo_JustificaHorasProjeto" Multiplicity="1" />
+    <End Role="Indigo_JustificaHorasUsuario" Type="Self.Indigo_JustificaHorasUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_JustificaHorasProjeto">
+        <PropertyRef Name="jtf_Id" />
+      </Principal>
+      <Dependent Role="Indigo_JustificaHorasUsuario">
+        <PropertyRef Name="usrjtf_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Indigo_Pipeline_Indigo_ClienteFinal">
+    <End Role="Indigo_ClienteFinal" Type="Self.Indigo_ClienteFinal" Multiplicity="0..1" />
+    <End Role="Indigo_Pipeline" Type="Self.Indigo_Pipeline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_ClienteFinal">
+        <PropertyRef Name="clf_id" />
+      </Principal>
+      <Dependent Role="Indigo_Pipeline">
+        <PropertyRef Name="pipCl_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Indigo_Pipeline_Indigo_Produto">
+    <End Role="Indigo_Produto" Type="Self.Indigo_Produto" Multiplicity="0..1" />
+    <End Role="Indigo_Pipeline" Type="Self.Indigo_Pipeline" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Indigo_Produto">
+        <PropertyRef Name="prd_Id" />
+      </Principal>
+      <Dependent Role="Indigo_Pipeline">
+        <PropertyRef Name="pipprd_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="STP_BUSCA_LOGADOS_ONLINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dtInicial" Type="datetime" Mode="In" />
+    <Parameter Name="dtFinal" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_BUSCA_RELATORIO_CONTROLE_CUSTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="dtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_BUSCA_RELATORIO_HORAS_COMPLETO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="dtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_BUSCA_RELATORIO_LOG_BASE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="dtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_CONTROLE_HORAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="HostName" Type="varchar" Mode="In" />
+    <Parameter Name="Licenca" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="STP_EXPORTAR_PIPELINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_FILTRO_PROJETOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="ano" Type="int" Mode="In" />
+    <Parameter Name="idusuario" Type="int" Mode="In" />
+    <Parameter Name="idprojeto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="STP_INICIO_ALMOCO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="USUARIOID" Type="int" Mode="In" />
+    <Parameter Name="OPERACAO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_INICIO_TAREFA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="projetoId" Type="int" Mode="In" />
+    <Parameter Name="subFaseProjetoId" Type="int" Mode="In" />
+    <Parameter Name="usuarioId" Type="int" Mode="In" />
+    <Parameter Name="dataInicio" Type="datetime" Mode="In" />
+    <Parameter Name="dataFim" Type="datetime" Mode="In" />
+    <Parameter Name="obs" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_INICIO_TAREFA_JUST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="projetoId" Type="int" Mode="In" />
+    <Parameter Name="subFaseProjetoId" Type="int" Mode="In" />
+    <Parameter Name="usuarioId" Type="int" Mode="In" />
+    <Parameter Name="dataInicio" Type="datetime" Mode="In" />
+    <Parameter Name="dataFim" Type="datetime" Mode="In" />
+    <Parameter Name="obs" Type="varchar" Mode="In" />
+    <Parameter Name="aprova" Type="int" Mode="In" />
+    <Parameter Name="justifica" Type="int" Mode="In" />
+  </Function>
+  <Function Name="STP_LISTA_JUSTIFICATIVA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="dtFim" Type="datetime" Mode="In" />
+    <Parameter Name="Idusuario" Type="int" Mode="In" />
+  </Function>
+  <Function Name="STP_RELATORIO_HORAS_COMPACTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="dtFim" Type="datetime" Mode="In" />
+    <Parameter Name="projetoId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="STP_RELATORIO_HORAS_COMPACTO_TIMELINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="dtFim" Type="datetime" Mode="In" />
+    <Parameter Name="projetoId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="STP_RETORNA_DETALHES_PROJETO_USUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idusuario" Type="int" Mode="In" />
+  </Function>
+  <Function Name="STP_RETORNA_ESTRUTURA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id_estrparam" Type="int" Mode="In" />
+  </Function>
+  <Function Name="STP_RETORNA_HC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idprojeto" Type="int" Mode="In" />
+  </Function>
+  <Function Name="STP_RETORNA_TARGET" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="segundos_target_total" Type="int" Mode="In" />
+    <Parameter Name="idusuario" Type="int" Mode="In" />
+  </Function>
+  <Function Name="STP_RETORNA_TOP_PROJETOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Indigo_Controle_LicencaModelStoreContainer">
+    <EntitySet Name="Indigo_Calendario" EntityType="Self.Indigo_Calendario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_ClienteFinal" EntityType="Self.Indigo_ClienteFinal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_ConfigCalendario" EntityType="Self.Indigo_ConfigCalendario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_ConfiguracaoControleCusto" EntityType="Self.Indigo_ConfiguracaoControleCusto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_Contratante" EntityType="Self.Indigo_Contratante" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_ControleCusto" EntityType="Self.Indigo_ControleCusto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_ControleLogin" EntityType="Self.Indigo_ControleLogin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_EstruturaFluxo" EntityType="Self.Indigo_EstruturaFluxo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_FaseProjeto" EntityType="Self.Indigo_FaseProjeto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_Filial" EntityType="Self.Indigo_Filial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_FuncaoUsuario" EntityType="Self.Indigo_FuncaoUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_HorasNTrab" EntityType="Self.Indigo_HorasNTrab" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_HorasProjeto" EntityType="Self.Indigo_HorasProjeto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_HorasProjetoAtalho" EntityType="Self.Indigo_HorasProjetoAtalho" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_JustificaHorasProjeto" EntityType="Self.Indigo_JustificaHorasProjeto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_JustificaHorasUsuario" EntityType="Self.Indigo_JustificaHorasUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_Licencas" EntityType="Self.Indigo_Licencas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_LogControleCusto" EntityType="Self.Indigo_LogControleCusto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_NotaFiscal" EntityType="Self.Indigo_NotaFiscal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_Pipeline" EntityType="Self.Indigo_Pipeline" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_Produto" EntityType="Self.Indigo_Produto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_Projeto" EntityType="Self.Indigo_Projeto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_SubfaseProjeto" EntityType="Self.Indigo_SubfaseProjeto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_Telas" EntityType="Self.Indigo_Telas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_TelasUsuario" EntityType="Self.Indigo_TelasUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_Usuario" EntityType="Self.Indigo_Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Indigo_UtilizacaoPa" EntityType="Self.Indigo_UtilizacaoPa" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[Indigo_UtilizacaoPa].[uta_Id] AS [uta_Id], 
+[Indigo_UtilizacaoPa].[uta_PrdId] AS [uta_PrdId], 
+[Indigo_UtilizacaoPa].[uta_IdAgente] AS [uta_IdAgente], 
+[Indigo_UtilizacaoPa].[uta_NomaAgente] AS [uta_NomaAgente], 
+[Indigo_UtilizacaoPa].[uta_DataUtilizacao] AS [uta_DataUtilizacao]
+FROM [dbo].[Indigo_UtilizacaoPa] AS [Indigo_UtilizacaoPa]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Indigo_Co__cll_L__2A4B4B5E" Association="Self.FK__Indigo_Co__cll_L__2A4B4B5E">
+      <End Role="Indigo_Licencas" EntitySet="Indigo_Licencas" />
+      <End Role="Indigo_ControleLogin" EntitySet="Indigo_ControleLogin" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Co__icc_L__3A4CA8FD" Association="Self.FK__Indigo_Co__icc_L__3A4CA8FD">
+      <End Role="Indigo_Licencas" EntitySet="Indigo_Licencas" />
+      <End Role="Indigo_ControleCusto" EntitySet="Indigo_ControleCusto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Co__ico_L__31B762FC" Association="Self.FK__Indigo_Co__ico_L__31B762FC">
+      <End Role="Indigo_Licencas" EntitySet="Indigo_Licencas" />
+      <End Role="Indigo_ConfiguracaoControleCusto" EntitySet="Indigo_ConfiguracaoControleCusto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Co__ico_L__339FAB6E" Association="Self.FK__Indigo_Co__ico_L__339FAB6E">
+      <End Role="Indigo_Licencas" EntitySet="Indigo_Licencas" />
+      <End Role="Indigo_ConfiguracaoControleCusto" EntitySet="Indigo_ConfiguracaoControleCusto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Co__ico_L__3587F3E0" Association="Self.FK__Indigo_Co__ico_L__3587F3E0">
+      <End Role="Indigo_Licencas" EntitySet="Indigo_Licencas" />
+      <End Role="Indigo_ConfiguracaoControleCusto" EntitySet="Indigo_ConfiguracaoControleCusto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Co__ico_L__37703C52" Association="Self.FK__Indigo_Co__ico_L__37703C52">
+      <End Role="Indigo_Licencas" EntitySet="Indigo_Licencas" />
+      <End Role="Indigo_ConfiguracaoControleCusto" EntitySet="Indigo_ConfiguracaoControleCusto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Fi__fil_C__2B3F6F97" Association="Self.FK__Indigo_Fi__fil_C__2B3F6F97">
+      <End Role="Indigo_Contratante" EntitySet="Indigo_Contratante" />
+      <End Role="Indigo_Filial" EntitySet="Indigo_Filial" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Ho__hnt_I__681373AD" Association="Self.FK__Indigo_Ho__hnt_I__681373AD">
+      <End Role="Indigo_Projeto" EntitySet="Indigo_Projeto" />
+      <End Role="Indigo_HorasNTrab" EntitySet="Indigo_HorasNTrab" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Ho__hnt_I__690797E6" Association="Self.FK__Indigo_Ho__hnt_I__690797E6">
+      <End Role="Indigo_SubfaseProjeto" EntitySet="Indigo_SubfaseProjeto" />
+      <End Role="Indigo_HorasNTrab" EntitySet="Indigo_HorasNTrab" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Ho__hnt_I__69FBBC1F" Association="Self.FK__Indigo_Ho__hnt_I__69FBBC1F">
+      <End Role="Indigo_Usuario" EntitySet="Indigo_Usuario" />
+      <End Role="Indigo_HorasNTrab" EntitySet="Indigo_HorasNTrab" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Ho__hpo_p__2C3393D0" Association="Self.FK__Indigo_Ho__hpo_p__2C3393D0">
+      <End Role="Indigo_Projeto" EntitySet="Indigo_Projeto" />
+      <End Role="Indigo_HorasProjeto" EntitySet="Indigo_HorasProjeto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Ho__hpo_s__2D27B809" Association="Self.FK__Indigo_Ho__hpo_s__2D27B809">
+      <End Role="Indigo_SubfaseProjeto" EntitySet="Indigo_SubfaseProjeto" />
+      <End Role="Indigo_HorasProjeto" EntitySet="Indigo_HorasProjeto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Ho__hpo_u__2E1BDC42" Association="Self.FK__Indigo_Ho__hpo_u__2E1BDC42">
+      <End Role="Indigo_Usuario" EntitySet="Indigo_Usuario" />
+      <End Role="Indigo_HorasProjeto" EntitySet="Indigo_HorasProjeto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Ho__hpoa___29221CFB" Association="Self.FK__Indigo_Ho__hpoa___29221CFB">
+      <End Role="Indigo_Projeto" EntitySet="Indigo_Projeto" />
+      <End Role="Indigo_HorasProjetoAtalho" EntitySet="Indigo_HorasProjetoAtalho" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Ho__hpoa___2A164134" Association="Self.FK__Indigo_Ho__hpoa___2A164134">
+      <End Role="Indigo_SubfaseProjeto" EntitySet="Indigo_SubfaseProjeto" />
+      <End Role="Indigo_HorasProjetoAtalho" EntitySet="Indigo_HorasProjetoAtalho" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Ho__hpoa___2B0A656D" Association="Self.FK__Indigo_Ho__hpoa___2B0A656D">
+      <End Role="Indigo_Usuario" EntitySet="Indigo_Usuario" />
+      <End Role="Indigo_HorasProjetoAtalho" EntitySet="Indigo_HorasProjetoAtalho" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Li__lic_F__2F10007B" Association="Self.FK__Indigo_Li__lic_F__2F10007B">
+      <End Role="Indigo_Filial" EntitySet="Indigo_Filial" />
+      <End Role="Indigo_Licencas" EntitySet="Indigo_Licencas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Li__lic_P__300424B4" Association="Self.FK__Indigo_Li__lic_P__300424B4">
+      <End Role="Indigo_Produto" EntitySet="Indigo_Produto" />
+      <End Role="Indigo_Licencas" EntitySet="Indigo_Licencas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Lo__lcc_I__3E1D39E1" Association="Self.FK__Indigo_Lo__lcc_I__3E1D39E1">
+      <End Role="Indigo_ConfiguracaoControleCusto" EntitySet="Indigo_ConfiguracaoControleCusto" />
+      <End Role="Indigo_LogControleCusto" EntitySet="Indigo_LogControleCusto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_No__ntf_L__30F848ED" Association="Self.FK__Indigo_No__ntf_L__30F848ED">
+      <End Role="Indigo_Licencas" EntitySet="Indigo_Licencas" />
+      <End Role="Indigo_NotaFiscal" EntitySet="Indigo_NotaFiscal" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Pr__prd_C__31EC6D26" Association="Self.FK__Indigo_Pr__prd_C__31EC6D26">
+      <End Role="Indigo_ClienteFinal" EntitySet="Indigo_ClienteFinal" />
+      <End Role="Indigo_Produto" EntitySet="Indigo_Produto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Pr__prj_P__32E0915F" Association="Self.FK__Indigo_Pr__prj_P__32E0915F">
+      <End Role="Indigo_Produto" EntitySet="Indigo_Produto" />
+      <End Role="Indigo_Projeto" EntitySet="Indigo_Projeto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Su__sfp_f__33D4B598" Association="Self.FK__Indigo_Su__sfp_f__33D4B598">
+      <End Role="Indigo_FaseProjeto" EntitySet="Indigo_FaseProjeto" />
+      <End Role="Indigo_SubfaseProjeto" EntitySet="Indigo_SubfaseProjeto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Te__tuo_T__34C8D9D1" Association="Self.FK__Indigo_Te__tuo_T__34C8D9D1">
+      <End Role="Indigo_Telas" EntitySet="Indigo_Telas" />
+      <End Role="Indigo_TelasUsuario" EntitySet="Indigo_TelasUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Te__tuo_U__35BCFE0A" Association="Self.FK__Indigo_Te__tuo_U__35BCFE0A">
+      <End Role="Indigo_Usuario" EntitySet="Indigo_Usuario" />
+      <End Role="Indigo_TelasUsuario" EntitySet="Indigo_TelasUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Us__estr___6754599E" Association="Self.FK__Indigo_Us__estr___6754599E">
+      <End Role="Indigo_EstruturaFluxo" EntitySet="Indigo_EstruturaFluxo" />
+      <End Role="Indigo_Usuario" EntitySet="Indigo_Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Us__estr___68487DD7" Association="Self.FK__Indigo_Us__estr___68487DD7">
+      <End Role="Indigo_EstruturaFluxo" EntitySet="Indigo_EstruturaFluxo" />
+      <End Role="Indigo_Usuario" EntitySet="Indigo_Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Us__fnc_i__693CA210" Association="Self.FK__Indigo_Us__fnc_i__693CA210">
+      <End Role="Indigo_FuncaoUsuario" EntitySet="Indigo_FuncaoUsuario" />
+      <End Role="Indigo_Usuario" EntitySet="Indigo_Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Indigo_Us__fnc_i__6A30C649" Association="Self.FK__Indigo_Us__fnc_i__6A30C649">
+      <End Role="Indigo_FuncaoUsuario" EntitySet="Indigo_FuncaoUsuario" />
+      <End Role="Indigo_Usuario" EntitySet="Indigo_Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Indigo_JustificaHorasUsuario_Indigo_JustificaHorasProjeto" Association="Self.FK_Indigo_JustificaHorasUsuario_Indigo_JustificaHorasProjeto">
+      <End Role="Indigo_JustificaHorasProjeto" EntitySet="Indigo_JustificaHorasProjeto" />
+      <End Role="Indigo_JustificaHorasUsuario" EntitySet="Indigo_JustificaHorasUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Indigo_Pipeline_Indigo_ClienteFinal" Association="Self.FK_Indigo_Pipeline_Indigo_ClienteFinal">
+      <End Role="Indigo_ClienteFinal" EntitySet="Indigo_ClienteFinal" />
+      <End Role="Indigo_Pipeline" EntitySet="Indigo_Pipeline" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Indigo_Pipeline_Indigo_Produto" Association="Self.FK_Indigo_Pipeline_Indigo_Produto">
+      <End Role="Indigo_Produto" EntitySet="Indigo_Produto" />
+      <End Role="Indigo_Pipeline" EntitySet="Indigo_Pipeline" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,146 @@
+﻿@section scripts{
+    @Scripts.Render("~/Scripts/Admin/Licenca.js")
+}
+
+@Html.Hidden("BuscaContratanteURL", Url.Action("ListaContratante", "Admin"))
+@Html.Hidden("BuscaProdutoURL", Url.Action("ListaProduto", "Admin"))
+@Html.Hidden("BuscaFilialPorContratanteURL", Url.Action("ListaFilialPorContratante", "Admin"))
+@Html.Hidden("MantemLicencasURL", Url.Action("MantemLicencas", "Admin"))
+@Html.Hidden("BuscaLicencasURL", Url.Action("ListaLicencas", "Admin"))
+@Html.Hidden("AlteraVencimentoURL", Url.Action("AlteraVencimento", "Admin"))
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+@Html.Hidden("idLicenca", 0)
+
+
+<div class="wait alert-success">AGUARDE UM INSTANTE</div>
+<div class="error alert-danger"></div>
+<h2>Licenças</h2>
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="box">
+            <div style="clear: both;"></div>
+            <div class="col-md-4" align="right" style="width: 100%">
+                <img src="/Images/plusPNG.png" onclick="MonstraCampos()">
+            </div>
+            <div style="clear: both;"></div>
+            <div class="col-md-4" id="divCampos" name="divCampos">
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <p>Contratante:</p>
+                            <select id="cbxContratante" name="cbxContratante" class="form-control" style="width: 300px" onchange="CarregaComboFilial();"></select>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Filial:</p>
+                            <select id="cbxFilial" name="cbxFilial" class="form-control" style="width: 300px"></select>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Produto:</p>
+                            <select id="cbxProduto" name="cbxProduto" class="form-control" style="width: 300px"></select>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Contrato:</p>
+                            <input type="text" name="txtContrato" id="txtContrato" class="text"/>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Quantidade de Licenças:</p>
+                            <input type="number" name="txtQtde" id="txtQtde" class="text" pattern="[0-9]+$"/>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Data Contratação</p>
+                            <input type="Date" name="txtDtContratacao" id="txtDtContratacao" class="text" maxlength="10" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$"/>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>&nbsp;</p>
+                            <input type="button" value="&nbsp;&nbsp;&nbsp;Salvar&nbsp;&nbsp;&nbsp;&nbsp;" class="input form-control btn btn-success" onclick="SalvaLicenca();"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="clear: both;"></div>
+            <table class="table-internal" style="margin-top: 15px;" id="tblDescricaoItens">
+                <thead>
+                <tr class="tr-head">
+                    <th>
+                        Editar
+                    </th>
+                    <th>
+                        Validade
+                    </th>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Contratante
+                    </th>
+                    <th>
+                        Filial
+                    </th>
+                    <th>
+                        Produto
+                    </th>
+                    <th>
+                        Contrato
+                    </th>
+                    <th>
+                        Qtde licenças
+                    </th>
+                    <th>
+                        Data Contratação
+                    </th>
+                    <th>
+                        Validade
+                    </th>
+                </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>
+<div id="divDataVencimento" style="position: absolute; z-index: 100; top: 80px; left: 30%; background: #ffffff; border-radius: 25px; border: 2px solid #73AD21; padding: 20px;">
+    <div align="right" style="width: 100%">
+        <img src="../images/close.png" onclick="FechaDataVencimento();">
+    </div>
+    <h4 class="example-title">Data Vencimento</h4>
+    <hr>
+    <table border="0">
+        <tr>
+            <td>
+                Nova Data Validade:
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="date" id="txtDataValidade" class="text" style="width: 100%;" />
+                <input type="hidden" id="idLicencaValidade" class="text" style="width: 100%;" />
+            </td>
+            <td>
+                <input type="button" id="AlterarValidade" class="input form-control btn btn-success" placeholder="Altar a Validade" value="Alterar Validade" onclick="EnviaMudancaValidade();" style="width: 200px" />
+            </td>
+        </tr>
+    </table>
+</div>

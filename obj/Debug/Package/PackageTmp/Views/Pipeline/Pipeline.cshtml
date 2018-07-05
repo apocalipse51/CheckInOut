@@ -1,0 +1,379 @@
+﻿@section scripts{
+
+    @Scripts.Render("~/Scripts/Pipeline/Pipeline.js")
+    @Scripts.Render("~/Scripts/jquery.MultiFile.js")
+}
+@Html.Hidden("IniciaProjetoPilelineURL", Url.Action("IniciarProjeto", "Pipeline"))
+@Html.Hidden("ListaPipelineEditarTipoURL", Url.Action("MantemPilelineTipo", "Pipeline"))
+@Html.Hidden("ListaPipelineEditarStatusURL", Url.Action("MantemPilelineStatus", "Pipeline"))
+@Html.Hidden("ListaPipelineEditarURL", Url.Action("ListaPipelineEditarObs", "Pipeline"))
+@Html.Hidden("MantemPilelineObsURL", Url.Action("MantemPilelineObs", "Pipeline"))
+@Html.Hidden("MantemPilelineURL", Url.Action("MantemPileline", "Pipeline"))
+@Html.Hidden("ListaPipelineURL", Url.Action("ListaPipeline", "Pipeline"))
+@Html.Hidden("BuscaClienteFinalURL", Url.Action("ListaClienteFinal", "Admin"))
+@Html.Hidden("BuscaProdutoURL", Url.Action("BuscaProduto", "Admin"))
+@Html.Hidden("AddClienteURL", Url.Action("AdicionarCliente", "Admin"))
+@Html.Hidden("MantemProdutoURL", Url.Action("MantemProduto", "Admin"))
+@Html.Hidden("BuscaUsuarioURL", Url.Action("BuscaResponsavel", "Admin"))
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+@Html.Hidden("idcontrole", 0)
+@ViewBag.error
+<div class="wait">AGUARDE UM INSTANTE</div>
+<div class="error"></div>
+<h2>Pipeline</h2>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="box">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>&nbsp;</p>
+                        <img id="plus" src="/Images/plusPNG.png" onclick="MonstraCampos();">
+                    </div>
+                    <div class="col-lg-6">
+                        <p>&nbsp;</p>
+                        <input type="button" value="Ocultar" id="Ocultar" class="input form-control btn btn-default active" onclick="Ocultar();" style="float:right;" />
+                    </div>
+                    <div class="col-md-2">
+                        <p>&nbsp;</p>
+                        <p>Filtro</p>
+                        <select id="cbxStatusFiltro" name="cbxStatusFiltro" onchange="Filtra();" style="width:100%;">
+                            <option value="-1">Todos</option>
+                            <option value="0">Prospecção</option>
+                            <option value="1">Aguardando</option>
+                            <option value="2">Cancelado</option>
+                            <option value="3">Proposta</option>
+                            <option value="4">Contrato</option>
+                            <option value="5">Concluído</option>
+                            <option value="6">Concluído e aprovado</option>
+                            <option value="-1">Todos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>&nbsp;</p>
+                        <input type="button" value="Importar" id="importar"  onclick="Importar();" class="input form-control btn btn-primary  active" style="float:left;" />
+                    </div>
+                    <div class="col-lg-6" style="float:right;">
+                        <p>&nbsp;</p>
+                        <form name="form3" action="@Url.Action("ReportPipeline", "Pipeline")" method="post">
+                            <input type="submit" value="Exportar" id="exportar" class="input form-control btn btn-success  active" style="float:right;" />
+                        </form>
+                    </div>
+                </div>
+                <div id="divCampos" name="divCampos">
+                    <div class="container-fluid">
+                        <p>&nbsp;</p>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>Origem</p>
+                                <input type="text" name="txtOrigem" id="txtOrigem" class="text" style="width:100%;" />
+                            </div>
+                            <div class="col-md-2">
+                                <img src="/Images/plusPNG.png" onclick="AddCliente();" style="float:right; width:24px;height:24px;">
+                                <p>Cliente</p>
+                                <select id="cbxClienteFinal" name="cbxClienteFinal" style="width:100%;"></select>
+                            </div>
+                            <div class="col-md-2">
+                                <p>Contato</p>
+                                <input type="text" name="txtContatoNome" id="txtContatoNome" class="text" style="width:100%;" />
+                            </div>
+                            <div class="col-md-2">
+                                <p>E-mail</p>
+                                <input type="text" name="txtContatoEmail" id="txtContatoEmail" class="text" style="width:100%;" />
+                            </div>
+                            <div class="col-md-2">
+                                <p>Telefone(s)</p>
+                                <input type="text" name="txtContatoTelefones" id="txtContatoTelefones" class="text" style="width:100%;" />
+                            </div>
+                        </div>
+                        <p>&nbsp;</p>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>Projeto</p>
+                                <input type="text" name="txtProjeto" id="txtProjeto" class="text" style="width:100%;" />
+                            </div>
+                            <div class="col-md-2">
+                                <p>Status</p>
+                                <select id="cbxStatus" name="cbxStatus" style="width:100%;">
+                                    <option value="0">Prospecção</option>
+                                    <option value="1">Aguardando</option>
+                                    <option value="2">Cancelado</option>
+                                    <option value="3">Proposta</option>
+                                    <option value="4">Contrato</option>
+                                    <option value="5">Concluído</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <p>Tipo</p>
+                                <select id="cbxTipo" name="cbxTipo" style="width:100%;">
+                                    <option value="0">PoC</option>
+                                    <option value="1">Try and buy</option>
+                                    <option value="2">Venda</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="/Images/plusPNG.png" onclick="AddProduto();" style="float:right; width:24px;height:24px;">
+                                <p>Produto</p>
+                                <select id="cbxProduto" name="cbxProduto" style="width:100%;"></select>
+                            </div>
+                            <div class="col-md-2">
+                                <p>Previsão contrato:</p>
+                                <input type="date" name="txtPrevisaoContrato" id="txtPrevisaoContrato" style="width:100%;" />
+                            </div>
+                            <div class="col-md-2">
+                                <p>Valor da licença</p>
+                                <input type="text" name="txtValorlicenca" id="txtValorlicenca" onchange="TrataValor();" class="text" style="width:100%;" />
+                            </div>
+                        </div>
+                        <p>&nbsp;</p>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p>Quantidade</p>
+                                <input type="number" name="txtQtlicencas" id="txtQtlicencas" class="text" style="width:100%;" onchange="CalculaLicenca();" />
+                            </div>
+                            <div class="col-md-2">
+                                <p>Total</p>
+                                <b style="float:left; font-size:large;color:green;">R$</b>
+                                <b id="lblTotal" style="float:right; font-size:large;"></b>
+                            </div>
+                            <div class="col-md-2">
+                                <p>Prazo contratual(Meses)</p>
+                                <input type="number" name="txtPrazo" id="txtPrazo" class="text" style="width:100%;" />
+                            </div>
+                            <div class="col-md-2">
+                                <p>Observações</p>
+                                <input type="button" value="Observação" class="input form-control btn btn-info" style="width:100%;" onclick="RegistrarObservacao();" />
+                                <input type="hidden" value="" name="txtObsTemp" id="txtObs" class="text" style="width:100%;" />
+                            </div>
+                            <div class="col-md-2">
+                                <p>&nbsp;</p>
+                                <input type="button" value="Salvar" class="input form-control btn btn-success" style="width:100%;" onclick="Salvar();" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <table class="table-internal table-hover" style="margin-top: 15px;" id="tbPipeline">
+                    <thead>
+                        <tr class="tr-head">
+                            <th>
+                                Editar
+                            </th>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                Origem
+                            </th>
+                            <th>
+                                Cliente
+                            </th>
+                            <th>
+                                Projeto
+                            </th>
+                            <th>
+                                Status
+                            </th>
+                            <th>
+                                Tipo
+                            </th>
+                            <th>
+                                Produto
+                            </th>
+                            <th>
+                                Previsão contrato
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalAdd" tabindex="-1" role="dialog" aria-labelledby="ModalLabelAdd" aria-hidden="true" style="margin-top:10%;">
+        <div id="ModalMuda" class="modal-dialog modal-sm" role="document">
+            <div class="modal-content" style="background: #ffffff; border-radius: 15px; border: 2px solid #660099;">
+                <div class="modal-header">
+                    <h4 class="example-title" id="ModalLabelAdd">Adicionar</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="AddCliente" class="row">
+                        <div class="col-md-10">
+                            <p>Cliente:</p>
+                            <input type="text" id="txtCliente" class="text" style="width: 100%;" />
+                        </div>
+                        <div class="col-md-10">
+                            <p>Sigla:</p>
+                            <input type="text" id="txtSigla" class="text" style="width: 100%;" />
+                        </div>
+                        <div class="col-lg-10">
+                            <p>&nbsp;</p>
+                            <input type="button" id="AdicinarCliente" class="input form-control btn btn-success" placeholder="Adicionar" value="Adicionar" onclick="SalvarCliente();" />
+                        </div>
+                    </div>
+                    <div id="AddProduto" class="row">
+                        <div class="col-md-10">
+                            <p>Produto:</p>
+                            <input type="text" id="txtProduto" class="text" style="width: 100%;" />
+                        </div>
+                        <div class="col-md-10">
+                            <p>Sigla:</p>
+                            <input type="text" id="txtSiglaProj" class="text" style="width: 100%;" />
+                        </div>
+                        <div class="col-lg-10">
+                            <p>&nbsp;</p>
+                            <input type="button" id="AdicinarProduto" class="input form-control btn btn-success" placeholder="Adicionar" value="Adicionar" onclick="SalvarProduto();" />
+                        </div>
+                    </div>
+                    <div id="AddObservacao" class="row">
+                        <div class="col-lg-12">
+                            <p>Observação:</p>
+                            <textarea type="text" id="txtObTemp" class="text" style="width: 100%;" rows="6"></textarea>
+                        </div>
+                        <div class="col-lg-10">
+                            <p>&nbsp;</p>
+                            <input type="button" class="input form-control btn btn-success" value="Registrar" onclick="RegistrarObs();" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalAprova" tabindex="-1" role="dialog" aria-labelledby="ModalLabelAprova" aria-hidden="true" style="margin-top:5%;">
+        <div id="ModalAprova" class="modal-dialog" role="document">
+            <div class="modal-content" style="background: #ffffff; border-radius: 15px; border: 2px solid #660099;">
+                <div class="modal-header">
+                    <h4 class="example-title" id="ModalLabeAprova">Inicio do projeto</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p>Id:</p>
+                            <input type="text" id="txtIdProjA" class="text" style="width: 100%;" readonly />
+                        </div>
+                        <div class="col-lg-4">
+                            <p>Nome do projeto:</p>
+                            <input type="text" id="txtNomePrA" class="text" style="width: 100%;" readonly />
+                        </div>
+                        <div class="col-lg-4">
+                            <p>Tipo de negócio:</p>
+                            <select id="TipoA" style="width:100%;">
+                                <option value="0">POC</option>
+                                <option value="1">Try and buy</option>
+                                <option value="2">Venda</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p>Produto</p>
+                            <input type="text" id="txtProdutoA" class="text" style="width: 100%;" readonly />
+                        </div>
+                        <div class="col-lg-4">
+                            <p>Data de contrato</p>
+                            <input type="date" id="txtDataContratoA" class="text" style="width: 100%;" readonly />
+                        </div>
+                        <div class="col-lg-4">
+                            <p>Responsável pelo projeto</p>
+                            <select id="cbxUsuario" name="cbxUsuario" class="form-control" style="width: 100%"></select>
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p>Quantidade de PA(s)</p>
+                            <input type="number" id="txtQtpas" class="text" style="width: 100%;" />
+                        </div>
+                        <div class="col-lg-4">
+                            <p>Cliente</p>
+                            <input type="text" id="txtClienteA" class="text" style="width: 100%;" readonly />
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="wait">AGUARDE UM INSTANTE</div>
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Objetivo do projeto:</p>
+                            <textarea type="text" id="txtObTempA" class="text" style="width: 100%;" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>&nbsp;</p>
+                            <input type="button" id="EnviarPojeto" class="input form-control btn btn-success" style="float:right;" value="Enviar" onclick="IniciarProjeto();" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalAnexo" tabindex="-1" role="dialog" aria-labelledby="ModalLabelAnexo" aria-hidden="true" style="margin-top:5%;">
+        <div id="ModalAnexo" class="modal-dialog" role="document">
+            <div class="modal-content" style="background: #ffffff; border-radius: 15px; border: 2px solid #660099;">
+                <div class="modal-header">
+                    <h4 class="example-title" id="ModalLabeAnexo">Documentos sobre o projeto</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">x</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <form name="form1" action="/Pipeline/CarregarArquivos" method="post" enctype="multipart/form-data">
+                            @Html.Hidden("id", 0)
+                            <div class="col-lg-12">
+                                <a href="#" onclick="ListarArquivos();">Ver anexos</a>
+                            </div>
+                            <div class="col-lg-7">
+                                <p>&nbsp;</p>
+                                <input type="file" name="arquivos" multiple maxlength="999999999" />
+                            </div>
+                            <div class="col-lg-7">
+                                <p>&nbsp;</p>
+                                <input type="submit" class="input btn btn-default active" value="Carregar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="ModalImportar" tabindex="-1" role="dialog" aria-labelledby="ModalLabelImportar" aria-hidden="true" style="margin-top:5%;">
+    <div id="ModalImportar" class="modal-dialog" role="document">
+        <div class="modal-content" style="background: #ffffff; border-radius: 15px; border: 2px solid #660099;">
+            <div class="modal-header">
+                <h4 class="example-title" id="ModalLabeAnexo">Importar pipeline</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">x</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form name="form" action="/Pipeline/ImportarPipeline" method="post" enctype="multipart/form-data">
+                        <div class="col-lg-7">
+                            <p>&nbsp;</p>
+                            <input type="file" name="arquivos" multiple maxlength="999999999" />
+                        </div>
+                        <div class="col-lg-7">
+                            <p>&nbsp;</p>
+                            <input type="submit" class="input btn btn-default active" value="Carregar" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

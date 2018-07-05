@@ -1,0 +1,81 @@
+﻿@section scripts{
+    @Scripts.Render("~/Scripts/Admin/Produto.js")
+}
+
+@Html.Hidden("BuscaProdutoURL", Url.Action("ListaProduto", "Admin"))
+@Html.Hidden("MantemProdutoURL", Url.Action("MantemProduto", "Admin"))
+@Html.Hidden("BuscaClienteFinalURL", Url.Action("ListaClienteFinal", "Admin"))
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+@Html.Hidden("idProduto", 0)
+
+
+<div class="wait">AGUARDE UM INSTANTE</div>
+<div class="error"></div>
+<h2>Produto</h2>
+
+<div class="row">
+    <div class="col-sm-12">
+
+        <div class="box">
+            <div style="clear: both;"></div>
+            <div class="col-md-4" align="right" style="width: 100%">
+                <img src="/Images/plusPNG.png" onclick="MonstraCampos()">
+            </div>
+            <div style="clear: both;"></div>
+            <div class="col-md-4" id="divCampos" name="divCampos">
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <p>Cliente Final:</p>
+                            <select id="cbxClienteFinal" name="cbxClienteFinal" class="form-control" style="width: 300px"></select>
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Descrição:</p>
+                            <input type="text" name="txtDescricao" id="txtDescricao" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>Sigla:</p>
+                            <input type="text" name="txtSigla" id="txtSigla" class="text" />
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            <p>&nbsp;</p>
+                            <input type="button" value="&nbsp;&nbsp;&nbsp;Salvar&nbsp;&nbsp;&nbsp;&nbsp;" class="input form-control btn btn-success" onclick="SalvaProduto();" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="clear: both;"></div>
+            <table class="table-internal" style="margin-top: 15px;" id="tblDescricaoItens">
+                <thead>
+                    <tr class="tr-head">
+                        <th>
+                            Editar
+                        </th>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Filial
+                        </th>
+                        <th>
+                            Descricao
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+
+    </div>
+</div>

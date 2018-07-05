@@ -1,0 +1,45 @@
+body {
+    background-image: url("../Images/bg.jpg");
+}
+
+:root {
+    --main-color: #1ac6ff;
+    --secondary-color: #4dd2ff;
+    --dark-shadow: rgba(0,0,0,.3);
+}
+
+/* Form Layout*/
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+/*Notifys*/
+
+.alert-success,
+.alert-danger {
+    max-width: 300px;
+    margin: 2.3em auto 0 auto;
+    box-shadow: 0 0 .5px rgba(0,0,0,.2);
+    padding: 1em 1.5em;
+    position: absolute;
+    left: 50%;
+    border-radius: 5px;    
+}
+
+.alert-danger {
+    margin-left: -11%;
+    color: #fff;    
+}
+
+.alert-success {
+    margin-left: -9%;
+    color: #fff;
+}
+
+.wait,
+.error {
+    display: none;
+}

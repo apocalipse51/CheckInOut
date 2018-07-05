@@ -1,0 +1,82 @@
+<style>
+    .alert-message {
+        color: #fff;
+        background-color: #F44336;
+        text-align: center;
+        padding: 1em;
+        border-radius: .3em;
+        border: 2px solid rgba(0,0,0,.1);
+    }
+</style>
+<!--Área das tabelas-->
+<menu-individual></menu-individual>
+
+<search-spinner></search-spinner>
+
+<alert-search></alert-search>
+
+<div ng-if="show">
+    <div class="row bg-white z-depth-1">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="searchRelatorio">Procurar: </label>
+                    <input type="text" ng-model="procurar" id="searchRelatorio" class="form-control" placeholder="Procurar...">
+                </div>
+            </form>
+            <a class="linkExcel" href="{{ExcelLink}}" style="color: #1bb71e; padding: .3em .5em;">Download EXCEL</a>
+        </div>
+    </div>
+
+    <div class="row bg-white z-depth-1">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="" id="table">
+                <h1 class="title-table">{{titulo}}</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="tg-yw4l" ng-click="ordenar('Nome')">Nome</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Funcao')">Função</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Estrutura')">Estrutura</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Cliente')">Cliente</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Produto')">Produto</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Id_Projeto')">Id do Projeto</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Projeto')">Projeto</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Fase_Projeto')">Fase do Projeto</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Atividade')">Atividade</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Data_Inicio')">Data de Inicio</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Hora_Inicio')">Hora de Inicio</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Data_Fim')">Data de Fim</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Hora_Fim')">Hora de Fim</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Tempo')">Tempo</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Aprovacao')">Aprovação</th>
+                            <th class="tg-yw4l" ng-click="ordenar('Motivo')">Motivo</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="tbody-horas">
+                        <tr dir-paginate="r in result | filter: procurar | orderBy: sortKey: reverse | itemsPerPage:10 track by $index">
+                            <td class="tg-yw4l">{{r.Nome}}</td>
+                            <td class="tg-yw4l">{{r.Funcao}}</td>
+                            <td class="tg-yw4l">{{r.Estrutura}}</td>
+                            <td class="tg-yw4l">{{r.Cliente}}</td>
+                            <td class="tg-yw4l">{{r.Produto}}</td>
+                            <td class="tg-yw4l">{{r.Id_Projeto}}</td>
+                            <td class="tg-yw4l">{{r.Projeto}}</td>
+                            <td class="tg-yw4l">{{r.Fase_Projeto}}</td>
+                            <td class="tg-yw4l">{{r.Atividade}}</td>
+                            <td class="tg-yw4l">{{r.Data_Inicio}}</td>
+                            <td class="tg-yw4l">{{r.Hora_Inicio}}</td>
+                            <td class="tg-yw4l">{{r.Data_Fim}}</td>
+                            <td class="tg-yw4l">{{r.Hora_Fim}}</td>
+                            <td class="tg-yw4l">{{r.Tempo}}</td>
+                            <td class="tg-yw4l">{{r.Aprovacao}}</td>
+                            <td class="tg-yw4l">{{r.Motivo}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <dir-pagination-controls max-size="5" boundary-links="true"></dir-pagination-controls>
+        </div>
+    </div>
+</div>

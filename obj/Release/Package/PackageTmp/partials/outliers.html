@@ -1,0 +1,41 @@
+<!--Line chart-->
+<style>
+    .graph-title-major,
+    .graph-title-minor {
+        background-color: #527cd1;
+        width: 100%;
+        color: #fff;
+        font-size: 1.4em;
+        text-align: center;
+        padding: .5em 1em;
+    }
+
+    .alert-message {
+        color: #fff;
+        background-color: #F44336;
+        text-align: center;
+        padding: 1em;
+        border-radius: .3em;
+        border: 2px solid rgba(0,0,0,.1);
+    }
+
+</style>
+
+<menu-individual></menu-individual>
+
+<search-spinner></search-spinner>
+
+<alert-search></alert-search>
+
+<div ng-if="show">
+    <h2 class="graph-title-major hide">Outliers Equipes - Acima do Esperado</h2>
+    <div>
+        <div class="row" id="graphic-outliers-major">
+        </div>
+    </div>
+    <h2 class="graph-title-minor hide">Outliers Equipes - Abaixo do Esperado</h2>
+    <div>
+        <div class="row" id="graphic-outliers-minor">
+        </div>
+    </div>
+</div>

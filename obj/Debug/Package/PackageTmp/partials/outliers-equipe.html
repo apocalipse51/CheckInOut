@@ -1,0 +1,46 @@
+﻿<!--Estilos únicos-->
+<style>
+    .graph-title-major,
+    .graph-title-minor {
+        background-color: #527cd1;
+        width: 100%;
+        color: #fff;
+        font-size: 1.4em;
+        text-align: center;
+        padding: .5em 1em;
+    }
+
+    .alert-message {
+        color: #fff;
+        background-color: #F44336;
+        text-align: center;
+        padding: 1em;
+        border-radius: .3em;
+        border: 2px solid rgba(0,0,0,.1);
+    }
+        
+</style>
+<!--Fim da área de estilos únicos-->
+<!--Menu de navegação interna-->
+<menu-equipe></menu-equipe>
+<!--Fim da área de navegação interna-->
+<!--Barra de carregamento-->
+<search-spinner></search-spinner>
+<!--Fim da barra de carregamento-->
+<!--Alerta de pesquisa-->
+<alert-search></alert-search>
+<!--Fim da área do alerta de pesquisa-->
+<!--Container dos gráficos-->
+<div ng-if="show">
+    <h2 class="graph-title-major hide">Outliers Equipes - Acima do Esperado</h2>
+    <div>
+        <div class="row" id="graphic-outliers-major">
+        </div>
+    </div>
+    <h2 class="graph-title-minor hide">Outliers Equipes - Abaixo do Esperado</h2>
+    <div>
+        <div class="row" id="graphic-outliers-minor">
+        </div>
+    </div>
+</div>
+<!--Fim da área do container dos gráficos-->

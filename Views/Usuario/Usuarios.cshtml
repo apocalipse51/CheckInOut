@@ -1,0 +1,160 @@
+@section scripts{
+    @Scripts.Render("~/Scripts/UIMultiSelect.js")
+    @Scripts.Render("~/Scripts/Usuario/Usuarios.js")
+    @Styles.Render("~/Styles/jquery.multiselect.css")
+}
+@Html.Hidden("BuscaResponsavelURL", Url.Action("BuscaResponsavel", "Admin"))
+@Html.Hidden("BuscaTodasTelaURL", Url.Action("BuscaTelasTodas", "Usuario"))
+@Html.Hidden("BuscaFuncaoUsuarioURL", Url.Action("BuscaFuncaoUsuario", "Usuario"))
+@Html.Hidden("MantemUsuarioURL", Url.Action("MantemUsuario", "Usuario"))
+@Html.Hidden("ListaUsuariosURL", Url.Action("ListaUsuarios", "Usuario"))
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+
+<div class="wait alert-success">AGUARDE UM INSTANTE</div>
+<div class="error alert-danger"></div>
+<div class="row">
+  <div class="col-12">
+    <div class="adm-title-combo bg-white clearfix">
+      <h2>Administrador</h2>
+      <button type="button" class="btn btn-success btn-show" onclick="MonstraCampos()">Adicionar</button>
+      <button type="button" class="btn btn-danger btn-cancel" onclick="hideContainer()">Cancelar</button>
+    </div>
+  </div>
+</div>
+<!--Formulário de cadastro de novo usuário-->
+<div class="row">
+  <div class="col-12" id="divCampos" name="divCampos">
+      <div class="container bg-white pb-4 pt-4 shadow-ease">
+          <div class="row">
+              <div class="col-lg-4">
+                  <p>Nome:</p>
+                  <input type="text" name="txtNome" id="txtNome" class="text" />
+              </div>
+              <div class="col-lg-4">
+                  <p>Login:</p>
+                  <input type="text" name="txtLogin" id="txtLogin" class="text" />
+              </div>
+              <div class="col-lg-4">
+                  <p>Função</p>
+                  <select id="cbxUsuarioFuncao" class="form-control" name="cbxUsuarioFuncao"></select>
+              </div>
+           </div>
+          <div class="row">
+              <div class="col-lg-4">
+                  <p>E-mail:</p>
+                  <input type="text" name="txtEmail" id="txtEmail" class="text" />
+              </div>
+              <div class="col-lg-4">
+                  <p>Perfil:</p>
+                  <select id="selectAcessos"></select>
+                  <script>
+                      ListaTelas();
+                  </script>
+              </div>
+              <div class="col-lg-4">
+                  <p>Estrutura</p>
+                  <select id="cbxUsuarioEstrutura" class="form-control" name="cbxUsuarioEstrutura"></select>
+              </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-2">
+                      <p>Telefone</p>
+                      <input type="text" name="txtTel" id="txtTel" class="text" style="width: 120px" />
+                  </div>
+                  <div class="col-lg-2">
+                      <p>Estrutura aprova</p>
+                      <select id="cbxUsuarioAprova" class="form-control" name="cbxUsuarioAprova" style="width: 100px">
+                          <option value="1">Sim</option>
+                          <option value="0">Não</option>
+                      </select>
+                  </div>
+                  <div class="col-lg-2">
+                      <p>Visualizar estruturas</p>
+                      <select id="cbxUsuarioVisualizaEstruturas" class="form-control" name="cbxUsuarioVisualizaEstruturas" style="width: 100px">
+                          <option value="1">Sim</option>
+                          <option value="0">Não</option>
+                      </select>
+                  </div>
+                  <div class="col-lg-6">
+                      <p>Visualização pipeline</p>
+                      <select id="cbxUsuarioVisualizapipeline" class="form-control" name="cbxUsuarioVisualizapipeline" style="width: 120px">
+                          <option value="1">Completa</option>
+                          <option value="0">Parcial</option>
+                      </select>
+                  </div>
+                  <div class="col-lg-12">
+                  <p>Foto de perfil(128x128)</p>
+                      <div class="row">
+                          <div class="col-lg-4">
+                              <input type="file" id="userimgup" />
+                          </div>
+                          <div class="col-lg-2">
+                              <img id="userimgc" src="~/Images/userimg.png" height="128" width="128" style="border-radius:15px;" onerror="this.src='../Images/user.png'"/>
+                              <input id="Base64img" type="hidden" value=""/>
+                          </div>
+                          <div class="col-lg-4">
+                              <p>&nbsp;</p>
+                              <input type="button" value="Salvar" class="input form-control btn btn-success" onclick="SalvaUsuario();" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+<!--fim do formulário de cadastro de novo usuário-->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="box bg-white">
+          <div class="table-container">
+            <table class="table-internal" style="margin-top: 15px; overflow-x: scroll;" id="tblDescricaoItens">
+                <thead>
+                    <tr class="tr-head">
+                        <th>
+                            Editar                        
+                        </th>
+                        <th>
+                            Resetar Senha                        
+                        </th>
+                        <th>
+                            Login
+                        </th>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            Função
+                        </th>
+                        <th>
+                            Estrutura
+                        </th>
+                        <th>
+                            Estrutura aprova
+                        </th>
+                        <th>
+                            Email
+                        </th>
+                        <th>
+                            Telefone
+                        </th>
+                        <th>
+                            Sigla
+                        </th>
+                        <th>
+                        Visualizar estruturas
+                        </th>
+                        <th>
+                            Pipeline completa
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot class="table-footer"></tfoot>
+            </table>
+          </div>
+          <div class="controllers">
+
+          </div>
+        </div>
+    </div>
+</div>

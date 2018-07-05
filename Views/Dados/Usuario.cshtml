@@ -1,0 +1,63 @@
+﻿@section scripts{
+    @Scripts.Render("~/Scripts/UIMultiSelect.js")
+    @Scripts.Render("~/Scripts/Usuario/Usuarios.js")
+    @Scripts.Render("~/Scripts/Usuario/dados-usuario.js")
+    @Styles.Render("~/Styles/jquery.multiselect.css")
+}
+@Html.Hidden("BuscaResponsavelURL", Url.Action("BuscaResponsavel", "Admin"))
+@Html.Hidden("BuscaTodasTelaURL", Url.Action("BuscaTelasTodas", "Dados"))
+@Html.Hidden("BuscaFuncaoUsuarioURL", Url.Action("BuscaFuncaoUsuario", "Dados"))
+@Html.Hidden("MantemUsuarioURL", Url.Action("MantemUsuario", "Dados"))
+@Html.Hidden("ListaUsuariosURL", Url.Action("ListaUsuarios", "Dados"))
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+
+<div class="wait alert-success">AGUARDE UM INSTANTE</div>
+<div class="error alert-danger"></div>
+
+<!--Form to change user info-->
+<div id="divCampos" name="divCampos" class="bg-white box-padding mb-2">
+  <div class="form-row mb-2">
+    <div class="form-col col-lg-4 col-sm-12">
+      <p>Nome:</p>
+      <input type="text" name="txtNome" id="txtNome" class="text form-control" />
+    </div>
+    <div class="form-col col-lg-4 col-sm-12">
+      <p>Login:</p>
+      <input type="text" name="txtLogin" id="txtLogin" class="text form-control" readonly />
+    </div>
+    <div class="form-col col-lg-4 col-sm-12">
+      <p>E-mail:</p>
+      <input type="text" name="txtEmail" id="txtEmail" class="text form-control" />
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-col col-lg-4 col-sm-12">
+      <p>Foto de perfil(128x128)</p>
+      <input type="file" id="userimgup" />
+    </div>
+    <div class="form-col col-lg-4 col-sm-12">
+      <p>Telefone</p>
+      <input type="text" name="txtTel" id="txtTel" class="text form-control" style="width: 120px" />
+    </div>
+    <div class="form-col col-lg-4 col-sm-12">
+      <img id="userimgc" src="~/Images/userimg.png" height="128" width="128" style="border-radius:15px;" onerror="this.src='../Images/user.png'"/>
+      <input id="Base64img" type="hidden" value="" />
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-4">
+      <input type="button" value="Salvar" class="input form-control btn btn-success" onclick="SalvaUsuario();" />
+    </div>
+  </div>
+</div>
+<!--End of form to change user info-->
+<div class="row">
+  <div class="col-12">
+    <div class="bg-white box-padding user-data">
+
+    </div>
+  </div>
+</div>
+<script>
+  StringGenerator('@HttpContext.Current.Session["USUARIO"].ToString()');
+</script>

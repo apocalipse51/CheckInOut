@@ -1,0 +1,850 @@
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Images\Sorting icons.psd
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll.config
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.pdb
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Antlr3.Runtime.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\BouncyCastle.Crypto.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Eggado.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.CSharp.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Infrastructure.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ComponentModel.DataAnnotations.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Configuration.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.DataSetExtensions.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.Entity.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Drawing.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.EnterpriseServices.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.WebRequest.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Runtime.Serialization.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Security.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Transactions.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Abstractions.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.ApplicationServices.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.DynamicData.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Entity.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Extensions.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Optimization.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Routing.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Services.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Xml.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Xml.Linq.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebGrease.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.xml
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.OData.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.OData.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.OData.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\System.Spatial.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\System.Spatial.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\System.Spatial.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\System.Spatial.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\System.Spatial.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\System.Spatial.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\System.Spatial.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\System.Spatial.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\System.Spatial.resources.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csprojResolveAssemblyReference.cache
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.dll
+C:\Indigo\Outros\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.pdb
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Images\Sorting icons.psd
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll.config
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.pdb
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Antlr3.Runtime.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\BouncyCastle.Crypto.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Eggado.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.CSharp.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Configuration.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.DataSetExtensions.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.Entity.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Drawing.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.EnterpriseServices.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.WebRequest.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Runtime.Serialization.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Security.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Transactions.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Abstractions.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.ApplicationServices.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.DynamicData.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Entity.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Extensions.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Optimization.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Routing.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Services.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Xml.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Xml.Linq.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebGrease.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.pdb
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.pdb
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.xml
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csprojResolveAssemblyReference.cache
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.dll
+C:\Users\bruno.pardim\Documents\ATUAL\re\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.pdb
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Images\Sorting icons.psd
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll.config
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.pdb
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Antlr3.Runtime.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\BouncyCastle.Crypto.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Eggado.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.CSharp.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Configuration.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.Entity.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Drawing.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.EnterpriseServices.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.WebRequest.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Runtime.Serialization.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Security.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Transactions.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Abstractions.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.ApplicationServices.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.DynamicData.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Entity.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Optimization.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Routing.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Services.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Xml.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebGrease.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.pdb
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.pdb
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.pdb
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.AccessControl.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.Client.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.Extensions.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.PlatformServices.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Calendar.v3.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Core.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.PlatformServices.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Calendar.v3.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Core.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.Properties.Resources.resources
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.GenerateResource.Cache
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.DataSet.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.DataSet.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Excel.4.5.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Excel.4.5.pdb
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EPPlus.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EPPlus.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.ResolveComReference.cache
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelLibrary.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.pdb
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DocumentFormat.OpenXml.dll
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DocumentFormat.OpenXml.xml
+C:\Users\bruno.pardim\Documents\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csprojResolveAssemblyReference.cache
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Images\Sorting icons.psd
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll.config
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.pdb
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Antlr3.Runtime.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\BouncyCastle.Crypto.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DocumentFormat.OpenXml.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Eggado.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EPPlus.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Excel.4.5.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.DataSet.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelLibrary.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.PlatformServices.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Calendar.v3.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Core.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.PlatformServices.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.AccessControl.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.Client.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.Extensions.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.CSharp.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Configuration.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.Entity.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Drawing.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.EnterpriseServices.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.WebRequest.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Runtime.Serialization.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Security.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Transactions.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Abstractions.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.ApplicationServices.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.DynamicData.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Entity.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Optimization.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Routing.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Services.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Xml.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebGrease.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.pdb
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DocumentFormat.OpenXml.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EPPlus.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Excel.4.5.pdb
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.DataSet.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Calendar.v3.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Core.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.pdb
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.pdb
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.ResolveComReference.cache
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.Properties.Resources.resources
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.GenerateResource.Cache
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.pdb
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\MoreLinq.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ValueTuple.dll
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\MoreLinq.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ValueTuple.xml
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csprojAssemblyReference.cache
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.sobral\Desktop\Project\fontes\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.CopyComplete
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Images\Sorting icons.psd
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll.config
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.pdb
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Antlr3.Runtime.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\BouncyCastle.Crypto.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DocumentFormat.OpenXml.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Eggado.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EPPlus.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Excel.4.5.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.DataSet.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelLibrary.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.PlatformServices.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Calendar.v3.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Core.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.PlatformServices.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.AccessControl.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.Client.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.Extensions.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.CSharp.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\MoreLinq.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Configuration.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.Entity.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Drawing.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.EnterpriseServices.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.WebRequest.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Runtime.Serialization.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Security.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Transactions.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ValueTuple.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Abstractions.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.ApplicationServices.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.DynamicData.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Entity.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Optimization.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Routing.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Services.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Xml.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebGrease.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.pdb
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DocumentFormat.OpenXml.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EPPlus.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Excel.4.5.pdb
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.DataSet.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Calendar.v3.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Core.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.pdb
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.pdb
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\MoreLinq.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ValueTuple.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.xml
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csprojAssemblyReference.cache
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.ResolveComReference.cache
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.Properties.Resources.resources
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.GenerateResource.cache
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.CopyComplete
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.dll
+C:\Users\gabriel.sobral\Desktop\WebAPI\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.pdb
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Images\Sorting icons.psd
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll.config
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\IndigoSoft.Reports.Fixa.pdb
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Antlr3.Runtime.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\BouncyCastle.Crypto.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DocumentFormat.OpenXml.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Eggado.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EPPlus.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Excel.4.5.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.DataSet.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelLibrary.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.PlatformServices.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Calendar.v3.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Core.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.PlatformServices.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.AccessControl.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.Client.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.GData.Extensions.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.CSharp.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\MoreLinq.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ComponentModel.DataAnnotations.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Configuration.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Data.Entity.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Drawing.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.EnterpriseServices.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.WebRequest.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Runtime.Serialization.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Security.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Transactions.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ValueTuple.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Abstractions.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.ApplicationServices.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.DynamicData.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Entity.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Optimization.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Routing.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Services.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Xml.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebGrease.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.pdb
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ClosedXML.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\CsvHelper.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DocumentFormat.OpenXml.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EPPlus.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Excel.4.5.pdb
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ExcelDataReader.DataSet.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Auth.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Calendar.v3.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Google.Apis.Core.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.pdb
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.pdb
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Exchange.WebServices.Auth.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\MoreLinq.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Newtonsoft.Json.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.ValueTuple.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\EntityFramework.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Net.Http.Formatting.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Helpers.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.WebHost.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Mvc.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Razor.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Deployment.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.WebPages.Razor.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.Core.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Web.Http.OData.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.Edm.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\Microsoft.Data.OData.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\System.Spatial.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.Data.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\WebMatrix.WebData.xml
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\de\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\es\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\fr\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\it\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ja\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ko\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\ru\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csprojAssemblyReference.cache
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.ResolveComReference.cache
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.Properties.Resources.resources
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.GenerateResource.cache
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.CoreCompileInputs.cache
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.ControleLicenca.csproj.CopyComplete
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.dll
+C:\Users\gabriel.sobral\Desktop\Indigo Check In Out\IndigoSoft.ControleLicencas\IndigoSoft.ControleLicenca\obj\Debug\IndigoSoft.Reports.Fixa.pdb

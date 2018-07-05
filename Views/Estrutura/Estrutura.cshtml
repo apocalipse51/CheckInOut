@@ -1,0 +1,91 @@
+﻿@section scripts{
+    @Scripts.Render("~/Scripts/Estrutura/Estrutura.js")
+}
+
+@Html.Hidden("BuscaResponsavelURL", Url.Action("BuscaResponsavel", "Admin"))
+@Html.Hidden("BuscaFuncaoUsuarioURL", Url.Action("BuscaFuncaoUsuario", "Usuario"))
+@Html.Hidden("FiltrarEstruturaUsuarioURL", Url.Action("FiltrarEstrutura", "Estrutura"))
+@Html.Hidden("AlterarEstruturaURL", Url.Action("AlterarEstrutura", "Estrutura"))
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+
+
+<h2>Estrutura</h2>
+<div class="wait alert-success">AGUARDE UM INSTANTE</div>
+<div class="error alert-danger"></div>
+<div class="container">
+    <div class="row">
+        <div class="container">
+            <h3>Minha Estrutura</h3>
+                <div class="container">
+                    <div class="row">
+                        <div style="float:right;">
+                            <div class="col-lg-12">
+                                <p>Estrutura</p>
+                                <select id="cbxUsuarioEstruturaf" class="form-control" name="cbxUsuarioEstruturaf" onchange="Filtrar();"></select>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+               <div class="col-md-4" id="divCampos" name="divCampos">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <p>Nome:</p>
+                                <input type="text" name="txtNome" id="txtNome" class="text" readonly />
+                            </div>
+                            <div class="col-lg-4">
+                                <p>Funcão</p>
+                                <select id="cbxUsuarioFuncao" class="form-control" name="cbxUsuarioFuncao"></select>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>Estrutura</p>
+                                <select id="cbxUsuarioEstrutura" class="form-control" name="cbxUsuarioEstrutura"></select>
+                            </div>
+                            <div class="col-lg-2">
+                                <p>Estrutura aprova</p>
+                                <select id="cbxUsuarioAprova" class="form-control" name="cbxUsuarioAprova">
+                                    <option value="1">Sim</option>
+                                    <option value="0">Não</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2">
+                                <p>&nbsp;</p>
+                                <input type="button" value="Alterar" class="input form-control btn btn-success" onclick="AlterarEstrutura();" />
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+        </div>
+        <table class="table-internal" style="margin-top: 30px;" id="tblEstrutura">
+            <thead>
+                <tr class="tr-head">             
+                       <th>
+                       <p>&nbsp;</p>
+                       </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Função
+                    </th>
+                    <th>
+                        Sigla
+                    </th>
+                    <th>
+                        Estrutura
+                    </th>
+                    <th>
+                        Estrutura aprova
+                    </th>
+                    <th>
+                        TARGET
+                    </th>
+                    <th>
+                        ATUAL
+                    </th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>

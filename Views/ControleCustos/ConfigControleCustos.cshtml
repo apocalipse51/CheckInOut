@@ -1,0 +1,130 @@
+﻿@section scripts{
+@Scripts.Render("~/Scripts/UIMultiSelect.js")
+@Scripts.Render("~/Scripts/ControleCustos/ControleCustos.js")
+@Styles.Render("~/Styles/jquery.multiselect.css")
+}
+@Html.Hidden("MantemConfiguracaoURL", Url.Action("ConfiguracaoCustos", "ControleCustos"))
+@Html.Hidden("BuscaLicencasURL", Url.Action("BuscaContratos", "ControleCustos"))
+@Html.Hidden("ListaControleCustoURL", Url.Action("ListaConfiguracaoCustos", "ControleCustos"))
+@Html.Hidden("idUsuario", @HttpContext.Current.Session["IDUSUARIO"].ToString())
+@Html.Hidden("idcontrole", 0)
+
+
+<div class="wait alert-success">AGUARDE UM INSTANTE</div>
+<div class="error alert-danger"></div>
+<h2>Configuração Controle de custos</h2>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="box">
+            <div style="clear: both;"></div>
+            <div class="col-md-4" align="right" style="width: 100%">
+                <img src="/Images/plusPNG.png" onclick="MonstraCampos()">
+            </div>
+            <div style="clear: both;"></div>
+            <div class="col-md-4" id="divCampos" name="divCampos">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-lg-4">
+                                <p>Contrato</p>
+                                <select id="cbxLicenca" class="form-control" name="cbxLicenca"></select>
+                            </div>
+                            <div class="col-lg-4">
+                                <p>Servidor:</p>
+                                <input type="text" name="txtServidor" id="txtServidor" class="text" />
+                            </div>
+                            <div class="col-lg-4">
+                                <p>Base de dados:</p>
+                                <input type="text" name="txtBaseDados" id="txtBaseDados" class="text" />
+                            </div>                                            
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p>Usuário</p>
+                            <input type="text" name="txtUsuario" id="txtUsuario" class="text" />
+                        </div>
+                        <div class="col-lg-4">
+                            <p>Senha</p>
+                            <input type="text" name="txtSenha" id="txtSenha" class="text" />
+                        </div>
+                        <div class="col-lg-4">
+                            <p>View</p>                            
+                            <input type="text" name="txtViewControle" id="txtViewControle" class="text" />
+                        </div> 
+                    </div>
+                    <div class="row">   
+                        <div class="col-lg-4">
+                            <p>Campo Data</p>
+                            <input type="text" name="txtData" id="txtData" class="text" />
+                        </div>                 
+                        <div class="col-lg-4">
+                            <p>Id Operador</p>
+                            <input type="text" name="txtIdOperador" id="txtIdOperador" class="text" />
+                        </div>
+                        <div class="col-lg-4">
+                            <p>Nome Operador</p>
+                            <input type="text" name="txtNomeOperador" id="txtNomeOperador" class="text" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <p>Filtra data</p>
+                            <select id="cbxFiltraData" class="form-control" name="cbxFiltraData" style="width: 100px">
+                                <option value="0">Não</option>
+                                <option value="1">Sim</option>
+                            </select>
+                        </div>                                  
+                        <div class="col-lg-2">
+                            <p>Ativo</p>
+                            <select id="cbxAtivo" class="form-control" name="cbxAtivo" style="width: 100px">
+                                <option value="0">Não</option>
+                                <option value="1">Sim</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <p>&nbsp;</p>
+                            <input type="button" value="Salvar" class="input form-control btn btn-success" onclick="SalvaConfig();" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <table class="table-internal" style="margin-top: 15px;" id="tblDescricaoItens">
+                <thead>
+                    <tr class="tr-head">
+                        <th>
+                           
+                        </th>
+                        <th>
+                           Licença
+                        </th>
+                        <th>
+                            Servidor
+                        </th>
+                        <th>
+                           Base de dados
+                        </th>
+                        <th>
+                            Usuário
+                        </th>
+                        <th>
+                            Senha
+                        </th>
+                        <th>
+                           Campo Data
+                        </th>
+                        <th>
+                            Id Operador
+                        </th>
+                        <th>
+                            Nome Operador
+                        </th>
+                        <th>
+                           Ativo
+                        </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html ng-app="checkin">
+@Html.Hidden("BuscaTelaURL", Url.Action("BuscaTelas", "Usuario"))
+@Html.Hidden("LogoutUsuarioURL", Url.Action("Logout", "Usuario"))
+<head>
+    <base href="/">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Indigo - ADMIN</title>
+    <link id="favicon" href="~/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link href="~/Styles/dataTables.jqueryui.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/check-theme.css">
+    <link rel="stylesheet" href="~/Content/layout.css">
+    <script src="~/Scripts/bootstrap.js"></script>
+    @Scripts.Render("~/Scripts/main.js")
+    @Scripts.Render("~/Scripts/MaskMoney.js")
+    @Scripts.Render("~/Scripts/jQuery.mask.js")
+    @Scripts.Render("~/Scripts/Home/Layout.js")
+    <script src="~/Scripts/datatable.js"></script>
+    <script src="~/Scripts/dataTables.jqueryui.js"></script>
+    <script src="~/Scripts/Sessao.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/dirPagination.js"></script>
+    <script src="~/Scripts/app.js"></script>
+    <script src="~/Scripts/directives/Directives.js"></script>
+    <script src="~/Scripts/controllers/main-controller.js"></script>
+    <script src="~/Scripts/controllers/horas-controller.js"></script>
+    <script src="~/Scripts/controllers/outliers-controller.js"></script>
+    <script src="~/Scripts/controllers/relatorio-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/equipe-main-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/equipe-horas-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/equipe-outliers-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/equipe-relatorio-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/cliente-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/produto-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/projeto-controller.js"></script>
+    <script src="~/Scripts/controllers/HorasEquipes/teste-estrutura.js"></script>
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    @Html.Hidden("ResetarSenhaUsuarioURL", Url.Action("ResetarSenhaUsuario", "Usuario"))
+    <!--Area de alteração de senha-->
+    <!--
+    <div class="row">
+      <div class="col-12">
+        <div class="monstraUsuario top-bar" id="monstraUsuario" onclick="AlterarSenha()" style="margin-right:15px;">
+            Usuário: @HttpContext.Current.Session["USUARIO"].ToString()
+            <div id="alterars" class="passwordChange" onclick="AlterarSenha()">
+                Alterar senha
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-3">
+        <div class="menu-bg menu">
+            <div class="menu-painel">
+                <div id="MenuCompleto" style="margin-left:3%;"></div>
+                <div class="menu-item logout" onclick="window.location.href = '@Url.Action("Logout", "Usuario")'">
+                    <div class="img-m">
+                        <img src="~/Images/logout.png" style="margin-left: 2px;" />
+                    </div>
+                    <div class="desc-m">Sair</div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+      <div class="col-9">
+        @RenderBody()
+
+        <div class="modal fade" id="ModalAlterarSenha" tabindex="-1" role="dialog" aria-labelledby="ModalLabelAlterarSenha" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content" style="background: #ffffff; border-radius: 15px; border: 2px solid #660099;">
+                    <div class="modal-header">
+                        <h4 class="example-title" id="ModalLabelAlterarSenha">Alterar senha</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <p>Nova Senha:</p>
+                                    <input type="password" id="novaSenhaUsuario" class="text" style="width: 100%;" />
+                                    <input type="hidden" id="idUsuario" class="text" style="width: 100%;" value="@HttpContext.Current.Session["IDUSUARIO"].ToString()" />
+                                    <p>&nbsp;</p>
+                                </div>
+                                <div class="col-lg-10">
+                                    <input type="button" id="AlterarSenha" class="input form-control btn btn-success" placeholder="Altar a Senha" value="Alterar Senha" onclick="ResetSenhaUsuario();" />
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+    -->
+
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Company name</a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!--Menu-->
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Orders
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="shopping-cart"></span>
+                  Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="users"></span>
+                  Customers
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Reports
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Integrations
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Saved reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Current month
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Last quarter
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Social engagement
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Year-end sale
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--Main Content-->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          @RenderBody()
+
+          <div class="modal fade" id="ModalAlterarSenha" tabindex="-1" role="dialog" aria-labelledby="ModalLabelAlterarSenha" aria-hidden="true">
+              <div class="modal-dialog modal-sm" role="document">
+                  <div class="modal-content" style="background: #ffffff; border-radius: 15px; border: 2px solid #660099;">
+                      <div class="modal-header">
+                          <h4 class="example-title" id="ModalLabelAlterarSenha">Alterar senha</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                              <div class="row">
+                                  <div class="col-lg-10">
+                                      <p>Nova Senha:</p>
+                                      <input type="password" id="novaSenhaUsuario" class="text" style="width: 100%;" />
+                                      <input type="hidden" id="idUsuario" class="text" style="width: 100%;" value="@HttpContext.Current.Session["IDUSUARIO"].ToString()" />
+                                      <p>&nbsp;</p>
+                                  </div>
+                                  <div class="col-lg-10">
+                                      <input type="button" id="AlterarSenha" class="input form-control btn btn-success" placeholder="Altar a Senha" value="Alterar Senha" onclick="ResetSenhaUsuario();" />
+                                  </div>
+                              </div>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+        </main>
+      </div>
+    </div>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+
+        feather.replace()
+
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            datasets: [{
+              data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+              lineTension: 0,
+              backgroundColor: 'transparent',
+              borderColor: '#007bff',
+              borderWidth: 4,
+              pointBackgroundColor: '#007bff'
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: false
+                }
+              }]
+            },
+            legend: {
+              display: false,
+            }
+          }
+        });
+
+        Sessao();
+        CarregaMenu('@HttpContext.Current.Session["IDUSUARIO"].ToString()');
+        //Não excluir, usado para busca na página de relatórios individuais
+        window.localStorage.setItem('idSearch', '@HttpContext.Current.Session["IDUSUARIO"].ToString()');
+    </script>
+</body>
+</html>

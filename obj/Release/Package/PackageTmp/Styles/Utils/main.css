@@ -1,0 +1,469 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
+
+.ui-multiselect { height:25px; overflow-x:hidden; padding:2px 0 2px 4px; text-align:left }
+
+html {
+    height: 100% !important;
+}
+
+:root {
+    --header-color: #0070b2;
+    --main-color: #303f9f;
+    /*Btn Colors*/
+    --btn-primary: #1e88e5;
+    --btn-danger: #ffd740;
+    --btn-success: #00c853;
+    --btn-info: #039be5;
+    /*Text-color*/
+    --text-light: #fff;
+    --text-dark: #111;
+}
+
+.btn {
+  border: none !important;
+  border-radius: 0 !important;
+  padding: .3em .7em !important;
+  box-shadow: 0 0 2px .3px rgba(0,0,0,.3) !important;
+  transition: .2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1) !important;
+  z-index: 9999 !important;
+  transition: .2s ease-in-out !important;
+}
+
+.btn-info {
+  background-color: var(--btn-info) !important;
+  color: var(--text-light) !important;
+}
+
+.btn-success {
+  background-color: var(--btn-success) !important;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary) !important;
+}
+
+.btn-danger {
+  background-color: var(--btn-danger) !important;
+}
+
+.ajuda {
+    position: absolute;
+    width: 800px;
+    height: 550px;
+    z-index: 5000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+    left: 50%;
+    margin-left: -400px;
+    display: none;
+}
+
+.centroAjuda {
+    position: relative;
+    left: 10%;
+}
+
+.imagemAjuda {
+    width: 50%;
+    height: 50%;
+}
+
+.botaoAjuda {
+    position: absolute;
+    left: 95%;
+    top: 8px;
+}
+
+.imageBotaoAjuda {
+    width: 64px;
+    height: 64px;
+}
+
+
+body {
+    background: #F1F4F5;
+    margin: 0px;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    /* height: 100%; */
+    min-height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.top {
+    height: 60px;
+    width: 100%;
+    background: var(--main-color);
+    position: absolute;
+    z-index: 5000;
+}
+
+.menu {
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+    .menu:hover {
+        -webkit-filter: opacity(50%);
+    }
+
+.logo {
+    width: 105px;
+    height: 40px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+.indigo {
+    width: 105px;
+    height: 40px;
+    float: right;
+    margin-left: 30px;
+    margin-top: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+.monstraUsuario {
+    margin-top:10px;
+    float: right;
+    color: white;
+    font-size:10px;
+}
+
+.labelValores {
+    font-size: 50px;
+    color: #74B0D4;
+    float: left;
+    margin-left: 10px;
+}
+
+.labelDesValores {
+    float: left;
+    font-size: 30px;
+}
+
+
+
+
+
+.title {
+    margin-top: 3px;
+    float: right;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+
+.box {
+    padding: 20px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+    background: #fff;
+    min-height: 500px;
+}
+
+.content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.label-c {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.box-c {
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);
+    background: #fff;
+    height: 500px;
+}
+
+.box-sm-c {
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);
+    background: #fff;
+    height: 187px;
+}
+
+.box-m-c {
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.18);
+    background: #fff;
+    height: 394px;
+}
+
+.box-color {
+    color: white;
+    padding: 10px;
+    line-height: 30px;
+}
+
+    .box-color .desc {
+        font-weight: 400;
+        font-size: 18px;
+        float: left;
+        width: 100%;
+        height: 30px;
+    }
+
+    .box-color .desc-total {
+        font-weight: bold;
+        font-size: 26px;
+        float: left;
+        margin-left: 20px;
+        width: 85%;
+        margin-top: 10px;
+        text-align: right;
+    }
+
+    .box-color .img-c {
+        float: left;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 13px;
+    }
+
+
+.line {
+    background: #FAFAFA;
+    width: 100%;
+    height: 40px;
+}
+
+.c-purple {
+    background: #609 !important;
+    color: white !important;
+}
+
+    .c-purple:hover {
+        background: #651f87 !important;
+        color: white !important;
+    }
+
+.table-internal {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+    .table-internal th {
+        padding: 8px;
+        color: #76838f;
+        font-weight: 400;
+    }
+
+    .table-internal tr {
+        border-bottom: 1px solid #e4eaec;
+    }
+
+    .table-internal td {
+        padding: 8px;
+        font-weight: 300;
+        color: #76838f;
+        box-sizing: border-box;
+    }
+
+
+.painel {
+    padding: 20px;
+}
+
+.menu-bg {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.73);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3000;
+    display: none;
+}
+
+.menu-painel {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 120px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.menu-item {
+    z-index: 4000;
+    width: 200px;
+    height: 180px;
+    background: #323232;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+    .menu-item:hover {
+        background-color: #535050;
+    }
+
+.img-m {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    margin-top: 47px;
+}
+
+.desc-m {
+    width: 100%;
+    text-align: center;
+    height: 64px;
+    margin: 0 auto;
+    margin-top: 17px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.logout {
+    background: #bd2e2e;
+}
+
+    .logout:hover {
+        background: #ba0808 !important;
+    }
+
+.wait {
+    width: 100%;
+    color: white;
+    display: none;
+    font-size: 11px;
+    margin: 0 auto;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    background: #609;
+}
+
+.error {
+    width: 100%;
+    color: white;
+    display: none;
+    font-size: 11px;
+    margin: 0 auto;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    background: #e52525;
+}
+
+#table_length {
+    display: none;
+}
+
+#table_filter {
+    display: none;
+}
+
+
+.posl.col-sm-3 {
+    padding-left: 0px;
+}
+
+.posr.col-sm-3 {
+    padding-right: 0px;
+}
+/*AQUI RESPONSIVIDADE DAS TABELAS DO CÃO*/
+
+@media (max-width: 767px) {
+    .indigo {
+        width: 70px;
+        height: 40px;
+        float: right;
+        margin-left: 10px;
+        margin-top: 0px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .labelValores {
+        font-size: 30px;
+        color: #74B0D4;
+        float: left;
+        margin-left: 10px;
+    }
+
+    .labelDesValores {
+        float: left;
+        font-size: 20px;
+    }
+
+    .table-internal {
+        display: block;
+        position: relative;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .posl.col-sm-3 {
+        padding-left: 15px;
+    }
+
+    .posr.col-sm-3 {
+        padding-right: 15px;
+    }
+
+    .imagemAjuda {
+        width: 80%;
+        height: 80%;
+    }
+
+
+.ajuda {
+    position: absolute;
+    width: 300px;
+    height: 550px;
+    z-index: 5000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+    left: 50%;
+    margin-left: -150px;
+    display: none;
+}
+
+.botaoAjuda {
+    position: absolute;
+    left: 80%;
+    top: 25px;
+    width: 100%;
+}
+
+.imageBotaoAjuda {
+    width: 32px;
+    height: 32px;
+}
+
+
+}
+/*FINAL DA RESPONSIVIDADES DAS TABELAS DO CÃO*/

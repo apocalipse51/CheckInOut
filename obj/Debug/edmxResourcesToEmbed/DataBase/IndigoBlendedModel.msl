@@ -1,0 +1,732 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IndigoBlended_GVTModelStoreContainer" CdmEntityContainer="Indigo">
+    <EntitySetMapping Name="Indigo_Report_Usuarios">
+      <EntityTypeMapping TypeName="IndigoBlended_GVTModel.Indigo_Report_Usuarios">
+        <MappingFragment StoreEntitySet="Indigo_Report_Usuarios">
+          <ScalarProperty Name="rus_Id" ColumnName="rus_Id" />
+          <ScalarProperty Name="rus_Nome" ColumnName="rus_Nome" />
+          <ScalarProperty Name="rus_Login" ColumnName="rus_Login" />
+          <ScalarProperty Name="rus_Senha" ColumnName="rus_Senha" />
+          <ScalarProperty Name="rus_DataHora" ColumnName="rus_DataHora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_LOGIN" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_LOGIN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.UsuarioResult">
+          <ScalarProperty Name="rus_Id" ColumnName="rus_Id" />
+          <ScalarProperty Name="rus_Nome" ColumnName="rus_Nome" />
+          <ScalarProperty Name="rus_Login" ColumnName="rus_Login" />
+          <ScalarProperty Name="rus_Senha" ColumnName="rus_Senha" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_TABULACAO" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_TABULACAO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardTabulacaoResult">
+          <ScalarProperty Name="Tabulacao" ColumnName="Tabulacao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_DETALHAMENTO" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_DETALHAMENTO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardDetalhamentoResult">
+          <ScalarProperty Name="Tabulacao" ColumnName="Tabulacao" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_CONVERSAO_TOTAL" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_CONVERSAO_TOTAL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardConversaoResult">
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_CONVERSAO_APTAS" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_CONVERSAO_APTAS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardConversaoResult">
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardConversaoResult">
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_NORMATIVO_ABERTURA" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_NORMATIVO_ABERTURA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.BarrasNormativoResult">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_NORMATIVO_VENDA" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_NORMATIVO_VENDA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.BarrasNormativoResult">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_NORMATIVO_ABERTURA_TOTAL" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_NORMATIVO_ABERTURA_TOTAL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.PizzaNormativoResult">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_NORMATIVO_VENDA_ABERTURA" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_NORMATIVO_VENDA_ABERTURA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.PizzaNormativoResult">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_NORMATIVO_VENDA_TOTAL" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_NORMATIVO_VENDA_TOTAL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.PizzaNormativoResult">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_NORMATIVO_DETALHAMENTO" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_NORMATIVO_DETALHAMENTO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DetalhamentoNormativo">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Tabulacao" ColumnName="Tabulacao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+          <ScalarProperty Name="Percentual" ColumnName="Percentual" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_COBERTURA" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_COBERTURA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.BarrasCobertura">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_COBERTURA_ABERTAS_NAOABERTAS" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_COBERTURA_ABERTAS_NAOABERTAS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.PizzaCoberturaAbertaNaoAbertas">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_COBERTURA_DETALHAMENTO" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_COBERTURA_DETALHAMENTO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DetalhamentoCobertura">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Tabulacao" ColumnName="Tabulacao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+          <ScalarProperty Name="Percentual" ColumnName="Percentual" />
+          <ScalarProperty Name="CorLinha" ColumnName="CorLinha" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_COBERTURA_FACILIDADE_SEMFACILIDADE" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_COBERTURA_FACILIDADE_SEMFACILIDADE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.PizzaCoberturaSemFacilidade">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_COBERTURA_NAOPOSSIBILITA_RECUSA" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_COBERTURA_NAOPOSSIBILITA_RECUSA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.PizzaCoberturaRecusa">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_DASHBOARD_OPERADOR" FunctionName="IndigoBlended_GVTModel.Store.STP_DASHBOARD_OPERADOR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardOperador">
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Inaptas" ColumnName="Inaptas" />
+          <ScalarProperty Name="Negociacao" ColumnName="Negociacao" />
+          <ScalarProperty Name="Vendas" ColumnName="Vendas" />
+          <ScalarProperty Name="Inconsistencias" ColumnName="Inconsistencias" />
+          <ScalarProperty Name="Recusas" ColumnName="Recusas" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_DETALHAMENTO_OPERADOR" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_DETALHAMENTO_OPERADOR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardDetalhamentoResult">
+          <ScalarProperty Name="Tabulacao" ColumnName="Tabulacao" />
+          <ScalarProperty Name="Percentual" ColumnName="Percentual" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+          <ScalarProperty Name="CorLinha" ColumnName="CorLinha" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_CONVERSAO_APTAS_OPERADOR" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_CONVERSAO_APTAS_OPERADOR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardConversaoResult">
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA_OPERADOR" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA_OPERADOR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardConversaoResult">
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_CONVERSAO_TOTAL_OPERADOR" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_CONVERSAO_TOTAL_OPERADOR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardConversaoResult">
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_TABULACAO_OPERADOR" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_TABULACAO_OPERADOR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardTabulacaoResult">
+          <ScalarProperty Name="Tabulacao" ColumnName="Tabulacao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_OPERADOR_TOTAL" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_OPERADOR_TOTAL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardTabulacaoResult">
+          <ScalarProperty Name="Tabulacao" ColumnName="Tabulacao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_VENDAS_PENDENTES" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_VENDAS_PENDENTES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.VendasPendentesResult">
+          <ScalarProperty Name="pro_login" ColumnName="pro_login" />
+          <ScalarProperty Name="pro_Nome" ColumnName="pro_Nome" />
+          <ScalarProperty Name="int_cpf" ColumnName="int_cpf" />
+          <ScalarProperty Name="int_NomeCompleto" ColumnName="int_NomeCompleto" />
+          <ScalarProperty Name="int_estado" ColumnName="int_estado" />
+          <ScalarProperty Name="int_cidade" ColumnName="int_cidade" />
+          <ScalarProperty Name="int_TelevisaoAdiquirida" ColumnName="int_TelevisaoAdiquirida" />
+          <ScalarProperty Name="int_TelefoneAdiquirida" ColumnName="int_TelefoneAdiquirida" />
+          <ScalarProperty Name="int_InternetAdiquirida" ColumnName="int_InternetAdiquirida" />
+          <ScalarProperty Name="int_AdicionaisAduidida" ColumnName="int_AdicionaisAduidida" />
+          <ScalarProperty Name="int_TabelaPreco" ColumnName="int_TabelaPreco" />
+          <ScalarProperty Name="int_GrupoPreco" ColumnName="int_GrupoPreco" />
+          <ScalarProperty Name="int_CategoriaOferta" ColumnName="int_CategoriaOferta" />
+          <ScalarProperty Name="int_Ofertas" ColumnName="int_Ofertas" />
+          <ScalarProperty Name="int_GrupoPromocao" ColumnName="int_GrupoPromocao" />
+          <ScalarProperty Name="int_Promocao" ColumnName="int_Promocao" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_CONVERSAO_APTAS_TRANSFERENCIA_MOVEL" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_CONVERSAO_APTAS_TRANSFERENCIA_MOVEL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardConversaoResult">
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA_TRANSFERENCIA_MOVEL" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA_TRANSFERENCIA_MOVEL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardConversaoResult">
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_CONVERSAO_TOTAL_TRANSFERENCIA_MOVEL" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_CONVERSAO_TOTAL_TRANSFERENCIA_MOVEL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardConversaoResult">
+          <ScalarProperty Name="Texto" ColumnName="Texto" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_DETALHAMENTO_TRANSFERENCIA_MOVEL" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_DETALHAMENTO_TRANSFERENCIA_MOVEL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardDetalhamentoResult">
+          <ScalarProperty Name="Tabulacao" ColumnName="Tabulacao" />
+          <ScalarProperty Name="Percentual" ColumnName="Percentual" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+          <ScalarProperty Name="CorLinha" ColumnName="CorLinha" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_DASHBOARD_TABULACAO_TRANSFERENCIA_MOVEL" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_DASHBOARD_TABULACAO_TRANSFERENCIA_MOVEL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.DashBoardTabulacaoResult">
+          <ScalarProperty Name="Tabulacao" ColumnName="Tabulacao" />
+          <ScalarProperty Name="Quantidade" ColumnName="Quantidade" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_TABULACAO_SUPERVISOR" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_TABULACAO_SUPERVISOR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.TabulacaoDetalhada">
+          <ScalarProperty Name="login_usuario" ColumnName="login_usuario" />
+          <ScalarProperty Name="codigo_tabulacao" ColumnName="codigo_tabulacao" />
+          <ScalarProperty Name="descricao_tabulacao" ColumnName="descricao_tabulacao" />
+          <ScalarProperty Name="colaborador" ColumnName="colaborador" />
+          <ScalarProperty Name="CorLinha" ColumnName="CorLinha" />
+          <ScalarProperty Name="data_interacao" ColumnName="data_interacao" />
+          <ScalarProperty Name="TelevisaoAdiquirida" ColumnName="TelevisaoAdiquirida" />
+          <ScalarProperty Name="TelefoneAdiquirida" ColumnName="TelefoneAdiquirida" />
+          <ScalarProperty Name="InternetAdiquirida" ColumnName="InternetAdiquirida" />
+          <ScalarProperty Name="AdicionaisAduidida" ColumnName="AdicionaisAduidida" />
+          <ScalarProperty Name="documento" ColumnName="documento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_EQUIPE_SUPERVISOR" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_EQUIPE_SUPERVISOR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.EquipeSupervisor">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_OPERADORES_DISPONIVEIS" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_OPERADORES_DISPONIVEIS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.OperadoresDisponiveis">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_SUPERVISORES" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_SUPERVISORES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.Supervisores">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_SALVA_OPERADOR_EQUIPE" FunctionName="IndigoBlended_GVTModel.Store.STP_SALVA_OPERADOR_EQUIPE" />
+    <FunctionImportMapping FunctionImportName="STP_RETIRA_OPERADOR_EQUIPE" FunctionName="IndigoBlended_GVTModel.Store.STP_RETIRA_OPERADOR_EQUIPE" />
+    <FunctionImportMapping FunctionImportName="STP_LISTA_TABULACOES" FunctionName="IndigoBlended_GVTModel.Store.STP_LISTA_TABULACOES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.Tabulacoes">
+          <ScalarProperty Name="tab_IdTab" ColumnName="tab_IdTab" />
+          <ScalarProperty Name="tab_descricao" ColumnName="tab_descricao" />
+          <ScalarProperty Name="tab_RamalTransferencia" ColumnName="tab_RamalTransferencia" />
+          <ScalarProperty Name="tab_TabulacaoDiscador" ColumnName="tab_TabulacaoDiscador" />
+          <ScalarProperty Name="tto_Descircao" ColumnName="tto_Descircao" />
+          <ScalarProperty Name="lto_Descircao" ColumnName="lto_Descircao" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_LISTA_LOCAL_TABULACAO" FunctionName="IndigoBlended_GVTModel.Store.STP_LISTA_LOCAL_TABULACAO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.LocalTabulacao">
+          <ScalarProperty Name="lto_Id" ColumnName="lto_Id" />
+          <ScalarProperty Name="lto_Descircao" ColumnName="lto_Descircao" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_LISTA_TIPO_TABULACAO" FunctionName="IndigoBlended_GVTModel.Store.STP_LISTA_TIPO_TABULACAO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.TipoTabulacao">
+          <ScalarProperty Name="tto_Id" ColumnName="tto_Id" />
+          <ScalarProperty Name="tto_Descircao" ColumnName="tto_Descircao" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_SALVA_NOVA_OCORRENCIA" FunctionName="IndigoBlended_GVTModel.Store.STP_SALVA_NOVA_OCORRENCIA" />
+    <FunctionImportMapping FunctionImportName="STP_APAGA_NOVA_OCORRENCIA" FunctionName="IndigoBlended_GVTModel.Store.STP_APAGA_NOVA_OCORRENCIA" />
+    <FunctionImportMapping FunctionImportName="STP_MANTEM_USUARIO_SISTEMA" FunctionName="IndigoBlended_GVTModel.Store.STP_MANTEM_USUARIO_SISTEMA" />
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_USUARIOS" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_USUARIOS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.UsuariosCadastrados">
+          <ScalarProperty Name="Bloqueado" ColumnName="Bloqueado" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="LoginAvaya" ColumnName="LoginAvaya" />
+          <ScalarProperty Name="UsuarioSiebel" ColumnName="UsuarioSiebel" />
+          <ScalarProperty Name="Usuario360" ColumnName="Usuario360" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="Filial" ColumnName="Filial" />
+          <ScalarProperty Name="Perfil" ColumnName="Perfil" />
+          <ScalarProperty Name="Apl" ColumnName="Apl" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_AREA" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_AREA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.Area">
+          <ScalarProperty Name="AreaId" ColumnName="AreaId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_FILIAL" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_FILIAL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.Filial">
+          <ScalarProperty Name="FIL_ID" ColumnName="FIL_ID" />
+          <ScalarProperty Name="FIL_DESCRICAO" ColumnName="FIL_DESCRICAO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_PERFIL" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_PERFIL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.Perfil">
+          <ScalarProperty Name="per_Id" ColumnName="per_Id" />
+          <ScalarProperty Name="per_Desc" ColumnName="per_Desc" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_DESBLOQUEAR_USUARIO" FunctionName="IndigoBlended_GVTModel.Store.STP_DESBLOQUEAR_USUARIO" />
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_FRASEOLOGIA" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_FRASEOLOGIA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.Fraseologia">
+          <ScalarProperty Name="fra_Id" ColumnName="fra_Id" />
+          <ScalarProperty Name="FRA_IDFRA" ColumnName="FRA_IDFRA" />
+          <ScalarProperty Name="FRA_DESC" ColumnName="FRA_DESC" />
+          <ScalarProperty Name="flx_Nome" ColumnName="flx_Nome" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_MANTEM_FRASEOLOGIA" FunctionName="IndigoBlended_GVTModel.Store.STP_MANTEM_FRASEOLOGIA" />
+    <FunctionImportMapping FunctionImportName="STP_REPORT_4P" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_4P">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.Report4pResult">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Telefone_Entrante" ColumnName="Telefone_Entrante" />
+          <ScalarProperty Name="Telefone_do_Atendimento" ColumnName="Telefone_do_Atendimento" />
+          <ScalarProperty Name="CPF_do_Titular" ColumnName="CPF_do_Titular" />
+          <ScalarProperty Name="Data_de_Nascimento_do_Titular" ColumnName="Data_de_Nascimento_do_Titular" />
+          <ScalarProperty Name="Nome_Completo_do_Titular" ColumnName="Nome_Completo_do_Titular" />
+          <ScalarProperty Name="Nome_Mae_Titular" ColumnName="Nome_Mae_Titular" />
+          <ScalarProperty Name="Sexo_Titular" ColumnName="Sexo_Titular" />
+          <ScalarProperty Name="E_mail_Titular" ColumnName="E_mail_Titular" />
+          <ScalarProperty Name="Tipo_E_mail" ColumnName="Tipo_E_mail" />
+          <ScalarProperty Name="E_mail_Cadastrado_com_Sucesso" ColumnName="E_mail_Cadastrado_com_Sucesso" />
+          <ScalarProperty Name="Cliente_GVT" ColumnName="Cliente_GVT" />
+          <ScalarProperty Name="Tipo_de_Operação" ColumnName="Tipo_de_Operação" />
+          <ScalarProperty Name="CEP_do_Tutular" ColumnName="CEP_do_Tutular" />
+          <ScalarProperty Name="Logradouro" ColumnName="Logradouro" />
+          <ScalarProperty Name="Estado_UF" ColumnName="Estado_UF" />
+          <ScalarProperty Name="Bairro" ColumnName="Bairro" />
+          <ScalarProperty Name="Numero_do_Logradouro" ColumnName="Numero_do_Logradouro" />
+          <ScalarProperty Name="Tipo_de_Logradouro" ColumnName="Tipo_de_Logradouro" />
+          <ScalarProperty Name="Complemento_Endereço" ColumnName="Complemento_Endereço" />
+          <ScalarProperty Name="Código_Adabas" ColumnName="Código_Adabas" />
+          <ScalarProperty Name="Plano_Atual_do_Titular" ColumnName="Plano_Atual_do_Titular" />
+          <ScalarProperty Name="Oferta_do_Presentinho" ColumnName="Oferta_do_Presentinho" />
+          <ScalarProperty Name="Plano_Escolhido" ColumnName="Plano_Escolhido" />
+          <ScalarProperty Name="Assertividade" ColumnName="Assertividade" />
+          <ScalarProperty Name="Data_de_Vencimento" ColumnName="Data_de_Vencimento" />
+          <ScalarProperty Name="Aceite_do_PopUp_Conta_Digital" ColumnName="Aceite_do_PopUp_Conta_Digital" />
+          <ScalarProperty Name="Motivo_de_recusa_da_Conta_Digital" ColumnName="Motivo_de_recusa_da_Conta_Digital" />
+          <ScalarProperty Name="Aceite_da_Conta_Digital" ColumnName="Aceite_da_Conta_Digital" />
+          <ScalarProperty Name="E_mail_da_Conta_Digital" ColumnName="E_mail_da_Conta_Digital" />
+          <ScalarProperty Name="Conta_Digital_Cadastrada_com_Sucesso" ColumnName="Conta_Digital_Cadastrada_com_Sucesso" />
+          <ScalarProperty Name="Aceite_Conta_Fatura" ColumnName="Aceite_Conta_Fatura" />
+          <ScalarProperty Name="Aceite_do_Débito_em_Conta" ColumnName="Aceite_do_Débito_em_Conta" />
+          <ScalarProperty Name="Código_do_Banco" ColumnName="Código_do_Banco" />
+          <ScalarProperty Name="Nome_do_Banco" ColumnName="Nome_do_Banco" />
+          <ScalarProperty Name="Agência_do_Banco" ColumnName="Agência_do_Banco" />
+          <ScalarProperty Name="Conta_do_Banco" ColumnName="Conta_do_Banco" />
+          <ScalarProperty Name="Dígito_do_Banco" ColumnName="Dígito_do_Banco" />
+          <ScalarProperty Name="Débito_em_Conta_Cadastrado_com_Sucesso" ColumnName="Débito_em_Conta_Cadastrado_com_Sucesso" />
+          <ScalarProperty Name="RE_do_Operador" ColumnName="RE_do_Operador" />
+          <ScalarProperty Name="Nome_do_Operador" ColumnName="Nome_do_Operador" />
+          <ScalarProperty Name="Motivo_Finalizador" ColumnName="Motivo_Finalizador" />
+          <ScalarProperty Name="Data_e_Hora_do_Atendimento" ColumnName="Data_e_Hora_do_Atendimento" />
+          <ScalarProperty Name="Versão_do_Indigo" ColumnName="Versão_do_Indigo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_TABULACOES_PADRAO_DATAS" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_TABULACOES_PADRAO_DATAS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.TabulacaoPadraoDatasResult">
+          <ScalarProperty Name="CANALVENDAS" ColumnName="CANALVENDAS" />
+          <ScalarProperty Name="DATARECEBIMENTOMAILING" ColumnName="DATARECEBIMENTOMAILING" />
+          <ScalarProperty Name="FORNECEDOR" ColumnName="FORNECEDOR" />
+          <ScalarProperty Name="MAILING" ColumnName="MAILING" />
+          <ScalarProperty Name="SEGMENTOOPERACAO" ColumnName="SEGMENTOOPERACAO" />
+          <ScalarProperty Name="TIPOOPERACAO" ColumnName="TIPOOPERACAO" />
+          <ScalarProperty Name="TIPOCLIENTE" ColumnName="TIPOCLIENTE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DATAHORAATENDIMENTO" ColumnName="DATAHORAATENDIMENTO" />
+          <ScalarProperty Name="DDDTERMINALA" ColumnName="DDDTERMINALA" />
+          <ScalarProperty Name="DURACAOCONTATO" ColumnName="DURACAOCONTATO" />
+          <ScalarProperty Name="INTENCAOCOMPRA" ColumnName="INTENCAOCOMPRA" />
+          <ScalarProperty Name="NUMPROTUNICO" ColumnName="NUMPROTUNICO" />
+          <ScalarProperty Name="TELEFONETERMINALA" ColumnName="TELEFONETERMINALA" />
+          <ScalarProperty Name="CALLBACK" ColumnName="CALLBACK" />
+          <ScalarProperty Name="DDDTERMINALCALLBACK" ColumnName="DDDTERMINALCALLBACK" />
+          <ScalarProperty Name="IDNOVOATENDIMENTO" ColumnName="IDNOVOATENDIMENTO" />
+          <ScalarProperty Name="TELEFONETERMINALCALLBACK" ColumnName="TELEFONETERMINALCALLBACK" />
+          <ScalarProperty Name="BAIRRO" ColumnName="BAIRRO" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="CIDADE" ColumnName="CIDADE" />
+          <ScalarProperty Name="COMPLEMENTO" ColumnName="COMPLEMENTO" />
+          <ScalarProperty Name="CPFCLIENTESOLICITANTE" ColumnName="CPFCLIENTESOLICITANTE" />
+          <ScalarProperty Name="CPFTITULAR" ColumnName="CPFTITULAR" />
+          <ScalarProperty Name="DATANASCIMENTOCLIENTESOLICITANTE" ColumnName="DATANASCIMENTOCLIENTESOLICITANTE" />
+          <ScalarProperty Name="DATANASCIMENTOTITULAR" ColumnName="DATANASCIMENTOTITULAR" />
+          <ScalarProperty Name="DDDCONTATO1" ColumnName="DDDCONTATO1" />
+          <ScalarProperty Name="DDDCONTATO2" ColumnName="DDDCONTATO2" />
+          <ScalarProperty Name="DDDTERMINALFIXA" ColumnName="DDDTERMINALFIXA" />
+          <ScalarProperty Name="DDDTERMINAL" ColumnName="DDDTERMINAL" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LOGRADOURO" ColumnName="LOGRADOURO" />
+          <ScalarProperty Name="NOMECLIENTESOLICITANTE" ColumnName="NOMECLIENTESOLICITANTE" />
+          <ScalarProperty Name="NOMEMAESOLICITANTE" ColumnName="NOMEMAESOLICITANTE" />
+          <ScalarProperty Name="NOMEMAETITULAR" ColumnName="NOMEMAETITULAR" />
+          <ScalarProperty Name="NOMETITULAR" ColumnName="NOMETITULAR" />
+          <ScalarProperty Name="NUMEROLOGRADOURO" ColumnName="NUMEROLOGRADOURO" />
+          <ScalarProperty Name="REGIONAL" ColumnName="REGIONAL" />
+          <ScalarProperty Name="TELEFONECONTATO1" ColumnName="TELEFONECONTATO1" />
+          <ScalarProperty Name="TELEFONECONTATO2" ColumnName="TELEFONECONTATO2" />
+          <ScalarProperty Name="TELEFONETERMINALFIXA" ColumnName="TELEFONETERMINALFIXA" />
+          <ScalarProperty Name="TELEFONETERMINAL" ColumnName="TELEFONETERMINAL" />
+          <ScalarProperty Name="TIPOLOG" ColumnName="TIPOLOG" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="MATRICULASAPOPERADOR" ColumnName="MATRICULASAPOPERADOR" />
+          <ScalarProperty Name="NOMEOPERADOR" ColumnName="NOMEOPERADOR" />
+          <ScalarProperty Name="NOMESUPERVISOROPERACAO" ColumnName="NOMESUPERVISOROPERACAO" />
+          <ScalarProperty Name="REOPERADOR" ColumnName="REOPERADOR" />
+          <ScalarProperty Name="MOTIVOSCOREVERMELHO" ColumnName="MOTIVOSCOREVERMELHO" />
+          <ScalarProperty Name="SCOREV360" ColumnName="SCOREV360" />
+          <ScalarProperty Name="SCOREVSCORE" ColumnName="SCOREVSCORE" />
+          <ScalarProperty Name="PRODUTOADQUIRIDO1" ColumnName="PRODUTOADQUIRIDO1" />
+          <ScalarProperty Name="PRODUTOADQUIRIDO2" ColumnName="PRODUTOADQUIRIDO2" />
+          <ScalarProperty Name="PRODUTOADQUIRIDO3" ColumnName="PRODUTOADQUIRIDO3" />
+          <ScalarProperty Name="PRODUTOADQUIRIDO4" ColumnName="PRODUTOADQUIRIDO4" />
+          <ScalarProperty Name="PRODUTOATUAL1" ColumnName="PRODUTOATUAL1" />
+          <ScalarProperty Name="PRODUTOATUAL2" ColumnName="PRODUTOATUAL2" />
+          <ScalarProperty Name="PRODUTOATUAL3" ColumnName="PRODUTOATUAL3" />
+          <ScalarProperty Name="PRODUTOATUAL4" ColumnName="PRODUTOATUAL4" />
+          <ScalarProperty Name="PRODUTOOFERTADO1" ColumnName="PRODUTOOFERTADO1" />
+          <ScalarProperty Name="PRODUTOOFERTADO2" ColumnName="PRODUTOOFERTADO2" />
+          <ScalarProperty Name="PRODUTOOFERTADO3" ColumnName="PRODUTOOFERTADO3" />
+          <ScalarProperty Name="PRODUTOOFERTADO4" ColumnName="PRODUTOOFERTADO4" />
+          <ScalarProperty Name="ADABASEMISSAO" ColumnName="ADABASEMISSAO" />
+          <ScalarProperty Name="DATAHORACONCORDANCIA" ColumnName="DATAHORACONCORDANCIA" />
+          <ScalarProperty Name="DTEMISSAO1" ColumnName="DTEMISSAO1" />
+          <ScalarProperty Name="DTEMISSAO2" ColumnName="DTEMISSAO2" />
+          <ScalarProperty Name="DTEMISSAO3" ColumnName="DTEMISSAO3" />
+          <ScalarProperty Name="DTEMISSAO4" ColumnName="DTEMISSAO4" />
+          <ScalarProperty Name="NUMEROOS1" ColumnName="NUMEROOS1" />
+          <ScalarProperty Name="NUMEROOS2" ColumnName="NUMEROOS2" />
+          <ScalarProperty Name="NUMEROOS3" ColumnName="NUMEROOS3" />
+          <ScalarProperty Name="NUMEROOS4" ColumnName="NUMEROOS4" />
+          <ScalarProperty Name="SITE" ColumnName="SITE" />
+          <ScalarProperty Name="STATUSEMISSAO" ColumnName="STATUSEMISSAO" />
+          <ScalarProperty Name="TIPOPAGTO" ColumnName="TIPOPAGTO" />
+          <ScalarProperty Name="TROCATITULARIDADE" ColumnName="TROCATITULARIDADE" />
+          <ScalarProperty Name="MOTIVOFINALIZADOR" ColumnName="MOTIVOFINALIZADOR" />
+          <ScalarProperty Name="RETORNOSISTEMAEMISSAO" ColumnName="RETORNOSISTEMAEMISSAO" />
+          <ScalarProperty Name="CONTAONLINE" ColumnName="CONTAONLINE" />
+          <ScalarProperty Name="NOMEBANCO" ColumnName="NOMEBANCO" />
+          <ScalarProperty Name="AGENCIA" ColumnName="AGENCIA" />
+          <ScalarProperty Name="CONTA" ColumnName="CONTA" />
+          <ScalarProperty Name="DIGITO" ColumnName="DIGITO" />
+          <ScalarProperty Name="DATAVENCIMENTO" ColumnName="DATAVENCIMENTO" />
+          <ScalarProperty Name="ACERTIVIDADE" ColumnName="ACERTIVIDADE" />
+          <ScalarProperty Name="SVA1" ColumnName="SVA1" />
+          <ScalarProperty Name="SVA2" ColumnName="SVA2" />
+          <ScalarProperty Name="SVA3" ColumnName="SVA3" />
+          <ScalarProperty Name="SVA4" ColumnName="SVA4" />
+          <ScalarProperty Name="DISPONIBILIDADEDEFIBRA" ColumnName="DISPONIBILIDADEDEFIBRA" />
+          <ScalarProperty Name="OFERTAFIBRA" ColumnName="OFERTAFIBRA" />
+          <ScalarProperty Name="TRANSFERENCIASAVE" ColumnName="TRANSFERENCIASAVE" />
+          <ScalarProperty Name="APTOADSL" ColumnName="APTOADSL" />
+          <ScalarProperty Name="TRANSFERENCIAADSL" ColumnName="TRANSFERENCIAADSL" />
+          <ScalarProperty Name="PACOTEOUTRACHANCE" ColumnName="PACOTEOUTRACHANCE" />
+          <ScalarProperty Name="MOTIVOFINALIZADOROUTRACHANCE" ColumnName="MOTIVOFINALIZADOROUTRACHANCE" />
+          <ScalarProperty Name="IDINBOUNDPARAOUTRACHANCE" ColumnName="IDINBOUNDPARAOUTRACHANCE" />
+          <ScalarProperty Name="SOLO" ColumnName="SOLO" />
+          <ScalarProperty Name="TRANSFERENCIAFORAESCOPO" ColumnName="TRANSFERENCIAFORAESCOPO" />
+          <ScalarProperty Name="PERFILCLIENTE" ColumnName="PERFILCLIENTE" />
+          <ScalarProperty Name="DATAAGENDAMENTO" ColumnName="DATAAGENDAMENTO" />
+          <ScalarProperty Name="DATAPORTABILIDADE" ColumnName="DATAPORTABILIDADE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_MANTEM_CONFIGURACAO_FLUXO" FunctionName="IndigoBlended_GVTModel.Store.STP_MANTEM_CONFIGURACAO_FLUXO" />
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_CONFIGURACAO_FLUXO" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_CONFIGURACAO_FLUXO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.ConfiguracaoFluxo">
+          <ScalarProperty Name="fdr_Id" ColumnName="fdr_Id" />
+          <ScalarProperty Name="fdr_VDN" ColumnName="fdr_VDN" />
+          <ScalarProperty Name="fdr_Skill" ColumnName="fdr_Skill" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_REPORT_TABULACOES_PADRAO" FunctionName="IndigoBlended_GVTModel.Store.STP_REPORT_TABULACOES_PADRAO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.TabulacaoPadraoResult">
+          <ScalarProperty Name="CANALVENDAS" ColumnName="CANALVENDAS" />
+          <ScalarProperty Name="DATARECEBIMENTOMAILING" ColumnName="DATARECEBIMENTOMAILING" />
+          <ScalarProperty Name="FORNECEDOR" ColumnName="FORNECEDOR" />
+          <ScalarProperty Name="MAILING" ColumnName="MAILING" />
+          <ScalarProperty Name="SEGMENTOOPERACAO" ColumnName="SEGMENTOOPERACAO" />
+          <ScalarProperty Name="TIPOOPERACAO" ColumnName="TIPOOPERACAO" />
+          <ScalarProperty Name="TIPOCLIENTE" ColumnName="TIPOCLIENTE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DATAHORAATENDIMENTO" ColumnName="DATAHORAATENDIMENTO" />
+          <ScalarProperty Name="DDDTERMINALA" ColumnName="DDDTERMINALA" />
+          <ScalarProperty Name="DURACAOCONTATO" ColumnName="DURACAOCONTATO" />
+          <ScalarProperty Name="INTENCAOCOMPRA" ColumnName="INTENCAOCOMPRA" />
+          <ScalarProperty Name="NUMPROTUNICO" ColumnName="NUMPROTUNICO" />
+          <ScalarProperty Name="TELEFONETERMINALA" ColumnName="TELEFONETERMINALA" />
+          <ScalarProperty Name="CALLBACK" ColumnName="CALLBACK" />
+          <ScalarProperty Name="DDDTERMINALCALLBACK" ColumnName="DDDTERMINALCALLBACK" />
+          <ScalarProperty Name="IDNOVOATENDIMENTO" ColumnName="IDNOVOATENDIMENTO" />
+          <ScalarProperty Name="TELEFONETERMINALCALLBACK" ColumnName="TELEFONETERMINALCALLBACK" />
+          <ScalarProperty Name="BAIRRO" ColumnName="BAIRRO" />
+          <ScalarProperty Name="CEP" ColumnName="CEP" />
+          <ScalarProperty Name="CIDADE" ColumnName="CIDADE" />
+          <ScalarProperty Name="COMPLEMENTO" ColumnName="COMPLEMENTO" />
+          <ScalarProperty Name="CPFCLIENTESOLICITANTE" ColumnName="CPFCLIENTESOLICITANTE" />
+          <ScalarProperty Name="CPFTITULAR" ColumnName="CPFTITULAR" />
+          <ScalarProperty Name="DATANASCIMENTOCLIENTESOLICITANTE" ColumnName="DATANASCIMENTOCLIENTESOLICITANTE" />
+          <ScalarProperty Name="DATANASCIMENTOTITULAR" ColumnName="DATANASCIMENTOTITULAR" />
+          <ScalarProperty Name="DDDCONTATO1" ColumnName="DDDCONTATO1" />
+          <ScalarProperty Name="DDDCONTATO2" ColumnName="DDDCONTATO2" />
+          <ScalarProperty Name="DDDTERMINALFIXA" ColumnName="DDDTERMINALFIXA" />
+          <ScalarProperty Name="DDDTERMINAL" ColumnName="DDDTERMINAL" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="LOGRADOURO" ColumnName="LOGRADOURO" />
+          <ScalarProperty Name="NOMECLIENTESOLICITANTE" ColumnName="NOMECLIENTESOLICITANTE" />
+          <ScalarProperty Name="NOMEMAESOLICITANTE" ColumnName="NOMEMAESOLICITANTE" />
+          <ScalarProperty Name="NOMEMAETITULAR" ColumnName="NOMEMAETITULAR" />
+          <ScalarProperty Name="NOMETITULAR" ColumnName="NOMETITULAR" />
+          <ScalarProperty Name="NUMEROLOGRADOURO" ColumnName="NUMEROLOGRADOURO" />
+          <ScalarProperty Name="REGIONAL" ColumnName="REGIONAL" />
+          <ScalarProperty Name="TELEFONECONTATO1" ColumnName="TELEFONECONTATO1" />
+          <ScalarProperty Name="TELEFONECONTATO2" ColumnName="TELEFONECONTATO2" />
+          <ScalarProperty Name="TELEFONETERMINALFIXA" ColumnName="TELEFONETERMINALFIXA" />
+          <ScalarProperty Name="TELEFONETERMINAL" ColumnName="TELEFONETERMINAL" />
+          <ScalarProperty Name="TIPOLOG" ColumnName="TIPOLOG" />
+          <ScalarProperty Name="UF" ColumnName="UF" />
+          <ScalarProperty Name="MATRICULASAPOPERADOR" ColumnName="MATRICULASAPOPERADOR" />
+          <ScalarProperty Name="NOMEOPERADOR" ColumnName="NOMEOPERADOR" />
+          <ScalarProperty Name="NOMESUPERVISOROPERACAO" ColumnName="NOMESUPERVISOROPERACAO" />
+          <ScalarProperty Name="REOPERADOR" ColumnName="REOPERADOR" />
+          <ScalarProperty Name="MOTIVOSCOREVERMELHO" ColumnName="MOTIVOSCOREVERMELHO" />
+          <ScalarProperty Name="SCOREV360" ColumnName="SCOREV360" />
+          <ScalarProperty Name="SCOREVSCORE" ColumnName="SCOREVSCORE" />
+          <ScalarProperty Name="PRODUTOADQUIRIDO1" ColumnName="PRODUTOADQUIRIDO1" />
+          <ScalarProperty Name="PRODUTOADQUIRIDO2" ColumnName="PRODUTOADQUIRIDO2" />
+          <ScalarProperty Name="PRODUTOADQUIRIDO3" ColumnName="PRODUTOADQUIRIDO3" />
+          <ScalarProperty Name="PRODUTOADQUIRIDO4" ColumnName="PRODUTOADQUIRIDO4" />
+          <ScalarProperty Name="PRODUTOATUAL1" ColumnName="PRODUTOATUAL1" />
+          <ScalarProperty Name="PRODUTOATUAL2" ColumnName="PRODUTOATUAL2" />
+          <ScalarProperty Name="PRODUTOATUAL3" ColumnName="PRODUTOATUAL3" />
+          <ScalarProperty Name="PRODUTOATUAL4" ColumnName="PRODUTOATUAL4" />
+          <ScalarProperty Name="PRODUTOOFERTADO1" ColumnName="PRODUTOOFERTADO1" />
+          <ScalarProperty Name="PRODUTOOFERTADO2" ColumnName="PRODUTOOFERTADO2" />
+          <ScalarProperty Name="PRODUTOOFERTADO3" ColumnName="PRODUTOOFERTADO3" />
+          <ScalarProperty Name="PRODUTOOFERTADO4" ColumnName="PRODUTOOFERTADO4" />
+          <ScalarProperty Name="ADABASEMISSAO" ColumnName="ADABASEMISSAO" />
+          <ScalarProperty Name="DATAHORACONCORDANCIA" ColumnName="DATAHORACONCORDANCIA" />
+          <ScalarProperty Name="DTEMISSAO1" ColumnName="DTEMISSAO1" />
+          <ScalarProperty Name="DTEMISSAO2" ColumnName="DTEMISSAO2" />
+          <ScalarProperty Name="DTEMISSAO3" ColumnName="DTEMISSAO3" />
+          <ScalarProperty Name="DTEMISSAO4" ColumnName="DTEMISSAO4" />
+          <ScalarProperty Name="NUMEROOS1" ColumnName="NUMEROOS1" />
+          <ScalarProperty Name="NUMEROOS2" ColumnName="NUMEROOS2" />
+          <ScalarProperty Name="NUMEROOS3" ColumnName="NUMEROOS3" />
+          <ScalarProperty Name="NUMEROOS4" ColumnName="NUMEROOS4" />
+          <ScalarProperty Name="SITE" ColumnName="SITE" />
+          <ScalarProperty Name="STATUSEMISSAO" ColumnName="STATUSEMISSAO" />
+          <ScalarProperty Name="TIPOPAGTO" ColumnName="TIPOPAGTO" />
+          <ScalarProperty Name="TROCATITULARIDADE" ColumnName="TROCATITULARIDADE" />
+          <ScalarProperty Name="MOTIVOFINALIZADOR" ColumnName="MOTIVOFINALIZADOR" />
+          <ScalarProperty Name="RETORNOSISTEMAEMISSAO" ColumnName="RETORNOSISTEMAEMISSAO" />
+          <ScalarProperty Name="CONTAONLINE" ColumnName="CONTAONLINE" />
+          <ScalarProperty Name="NOMEBANCO" ColumnName="NOMEBANCO" />
+          <ScalarProperty Name="AGENCIA" ColumnName="AGENCIA" />
+          <ScalarProperty Name="CONTA" ColumnName="CONTA" />
+          <ScalarProperty Name="DIGITO" ColumnName="DIGITO" />
+          <ScalarProperty Name="DATAVENCIMENTO" ColumnName="DATAVENCIMENTO" />
+          <ScalarProperty Name="ACERTIVIDADE" ColumnName="ACERTIVIDADE" />
+          <ScalarProperty Name="SVA1" ColumnName="SVA1" />
+          <ScalarProperty Name="SVA2" ColumnName="SVA2" />
+          <ScalarProperty Name="SVA3" ColumnName="SVA3" />
+          <ScalarProperty Name="SVA4" ColumnName="SVA4" />
+          <ScalarProperty Name="DISPONIBILIDADEDEFIBRA" ColumnName="DISPONIBILIDADEDEFIBRA" />
+          <ScalarProperty Name="OFERTAFIBRA" ColumnName="OFERTAFIBRA" />
+          <ScalarProperty Name="TRANSFERENCIASAVE" ColumnName="TRANSFERENCIASAVE" />
+          <ScalarProperty Name="APTOADSL" ColumnName="APTOADSL" />
+          <ScalarProperty Name="TRANSFERENCIAADSL" ColumnName="TRANSFERENCIAADSL" />
+          <ScalarProperty Name="PACOTEOUTRACHANCE" ColumnName="PACOTEOUTRACHANCE" />
+          <ScalarProperty Name="MOTIVOFINALIZADOROUTRACHANCE" ColumnName="MOTIVOFINALIZADOROUTRACHANCE" />
+          <ScalarProperty Name="IDINBOUNDPARAOUTRACHANCE" ColumnName="IDINBOUNDPARAOUTRACHANCE" />
+          <ScalarProperty Name="SOLO" ColumnName="SOLO" />
+          <ScalarProperty Name="TRANSFERENCIAFORAESCOPO" ColumnName="TRANSFERENCIAFORAESCOPO" />
+          <ScalarProperty Name="PERFILCLIENTE" ColumnName="PERFILCLIENTE" />
+          <ScalarProperty Name="VDN" ColumnName="VDN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_COORDENADOR" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_COORDENADOR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.BuscaCoordenador">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_ADICIONA_COORDENADOR_EQUIPE" FunctionName="IndigoBlended_GVTModel.Store.STP_ADICIONA_COORDENADOR_EQUIPE" />
+    <FunctionImportMapping FunctionImportName="STP_ALTERA_DADOS_CTI" FunctionName="IndigoBlended_GVTModel.Store.STP_ALTERA_DADOS_CTI" />
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_CONFIGURACAO_CTI" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_CONFIGURACAO_CTI">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.ConfiguracaoCTI">
+          <ScalarProperty Name="cti_ServerIp" ColumnName="cti_ServerIp" />
+          <ScalarProperty Name="cti_ServerPort" ColumnName="cti_ServerPort" />
+          <ScalarProperty Name="cti_UserName" ColumnName="cti_UserName" />
+          <ScalarProperty Name="cti_UserPassword" ColumnName="cti_UserPassword" />
+          <ScalarProperty Name="cti_StringConnection" ColumnName="cti_StringConnection" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_MAPA_PA" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_MAPA_PA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.MapaPA">
+          <ScalarProperty Name="ext_ExtensionId" ColumnName="ext_ExtensionId" />
+          <ScalarProperty Name="ext_Number" ColumnName="ext_Number" />
+          <ScalarProperty Name="ext_Hostname" ColumnName="ext_Hostname" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_BUSCA_PAUSA_CTI" FunctionName="IndigoBlended_GVTModel.Store.STP_BUSCA_PAUSA_CTI">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="IndigoBlended_GVTModel.PausaCTI">
+          <ScalarProperty Name="psa_Id" ColumnName="psa_Id" />
+          <ScalarProperty Name="psa_Nome" ColumnName="psa_Nome" />
+          <ScalarProperty Name="psa_Cod" ColumnName="psa_Cod" />
+          <ScalarProperty Name="cli_Id" ColumnName="cli_Id" />
+          <ScalarProperty Name="psa_Nr17" ColumnName="psa_Nr17" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="STP_MANTEM_AREA" FunctionName="IndigoBlended_GVTModel.Store.STP_MANTEM_AREA" />
+    <FunctionImportMapping FunctionImportName="STP_MANTEM_MAPA_PA" FunctionName="IndigoBlended_GVTModel.Store.STP_MANTEM_MAPA_PA" />
+    <FunctionImportMapping FunctionImportName="STP_MANTEM_PAUSA_CTI" FunctionName="IndigoBlended_GVTModel.Store.STP_MANTEM_PAUSA_CTI" />
+  </EntityContainerMapping>
+</Mapping>

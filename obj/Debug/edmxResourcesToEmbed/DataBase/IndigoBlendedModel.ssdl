@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IndigoBlended_GVTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Indigo_Report_Usuarios">
+    <Key>
+      <PropertyRef Name="rus_Id" />
+    </Key>
+    <Property Name="rus_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rus_Nome" Type="varchar" MaxLength="200" />
+    <Property Name="rus_Login" Type="varchar" MaxLength="50" />
+    <Property Name="rus_Senha" Type="varchar" MaxLength="50" />
+    <Property Name="rus_DataHora" Type="datetime" />
+  </EntityType>
+  <Function Name="STP_ADICIONA_COORDENADOR_EQUIPE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Supervisor" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="Coordenador" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="STP_ALTERA_DADOS_CTI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Ip" Type="varchar" Mode="In" />
+    <Parameter Name="Porta" Type="int" Mode="In" />
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="Pass" Type="varchar" Mode="In" />
+    <Parameter Name="String" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_APAGA_NOVA_OCORRENCIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tabulacao" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_BUSCA_AREA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_CONFIGURACAO_CTI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_CONFIGURACAO_FLUXO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_COORDENADOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_EQUIPE_SUPERVISOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SupervisorID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="STP_BUSCA_FILIAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_FRASEOLOGIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_MAPA_PA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_OPERADORES_DISPONIVEIS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_PAUSA_CTI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_PERFIL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_SUPERVISORES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_BUSCA_USUARIOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="supervisor" Type="varchar" Mode="In" />
+    <Parameter Name="coordenador" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_DASHBOARD_OPERADOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+    <Parameter Name="Equipe" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_DESBLOQUEAR_USUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="username" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_LISTA_LOCAL_TABULACAO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_LISTA_TABULACOES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="EMPRESA" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_LISTA_TIPO_TABULACAO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="STP_MANTEM_AREA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="AreaId" Type="int" Mode="In" />
+    <Parameter Name="Nome" Type="varchar" Mode="In" />
+    <Parameter Name="Skill" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_MANTEM_CONFIGURACAO_FLUXO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="Vdn" Type="varchar" Mode="In" />
+    <Parameter Name="Skill" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_MANTEM_FRASEOLOGIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdFraseologia" Type="int" Mode="In" />
+    <Parameter Name="fraseologia" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="STP_MANTEM_MAPA_PA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id" Type="int" Mode="In" />
+    <Parameter Name="Ramal" Type="varchar" Mode="In" />
+    <Parameter Name="HostName" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_MANTEM_PAUSA_CTI" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdPausa" Type="int" Mode="In" />
+    <Parameter Name="Nome" Type="varchar" Mode="In" />
+    <Parameter Name="Codigo" Type="varchar" Mode="In" />
+    <Parameter Name="PausaNr" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="STP_MANTEM_USUARIO_SISTEMA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="login" Type="varchar" Mode="In" />
+    <Parameter Name="perfilId" Type="int" Mode="In" />
+    <Parameter Name="filialId" Type="int" Mode="In" />
+    <Parameter Name="nomeUsuario" Type="varchar" Mode="In" />
+    <Parameter Name="loginAvaya" Type="varchar" Mode="In" />
+    <Parameter Name="usuarioSiebel" Type="varchar" Mode="In" />
+    <Parameter Name="senhaSiebel" Type="varchar(max)" Mode="In" />
+    <Parameter Name="usuario360" Type="varchar" Mode="In" />
+    <Parameter Name="senha360" Type="varchar(max)" Mode="In" />
+    <Parameter Name="area" Type="int" Mode="In" />
+    <Parameter Name="senhaIndigo" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_4P" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DT_INICIO" Type="datetime" Mode="In" />
+    <Parameter Name="DT_FIM" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_COBERTURA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_COBERTURA_ABERTAS_NAOABERTAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_COBERTURA_DETALHAMENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_COBERTURA_FACILIDADE_SEMFACILIDADE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_COBERTURA_NAOPOSSIBILITA_RECUSA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_CONVERSAO_APTAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_CONVERSAO_APTAS_OPERADOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_CONVERSAO_APTAS_TRANSFERENCIA_MOVEL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA_OPERADOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_CONVERSAO_PRODUTIVA_TRANSFERENCIA_MOVEL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_CONVERSAO_TOTAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_CONVERSAO_TOTAL_OPERADOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_CONVERSAO_TOTAL_TRANSFERENCIA_MOVEL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_DETALHAMENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_DETALHAMENTO_OPERADOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_DETALHAMENTO_TRANSFERENCIA_MOVEL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_OPERADOR_TOTAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+    <Parameter Name="Equipe" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_TABULACAO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_TABULACAO_OPERADOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+    <Parameter Name="Usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_DASHBOARD_TABULACAO_TRANSFERENCIA_MOVEL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_LOGIN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Login" Type="varchar" Mode="In" />
+    <Parameter Name="Senha" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_NORMATIVO_ABERTURA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_NORMATIVO_ABERTURA_TOTAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_NORMATIVO_DETALHAMENTO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_NORMATIVO_VENDA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_NORMATIVO_VENDA_ABERTURA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_NORMATIVO_VENDA_TOTAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_TABULACAO_SUPERVISOR" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DtInicio" Type="datetime" Mode="In" />
+    <Parameter Name="DtFim" Type="datetime" Mode="In" />
+    <Parameter Name="Supervisor" Type="int" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_TABULACOES_PADRAO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DT_INICIO" Type="datetime" Mode="In" />
+    <Parameter Name="DT_FIM" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_TABULACOES_PADRAO_DATAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DT_INICIO" Type="datetime" Mode="In" />
+    <Parameter Name="DT_FIM" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="STP_REPORT_VENDAS_PENDENTES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SUPERVISOR" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_RETIRA_OPERADOR_EQUIPE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OperadorID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="STP_SALVA_NOVA_OCORRENCIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tabulacao" Type="varchar" Mode="In" />
+    <Parameter Name="descricao" Type="varchar" Mode="In" />
+    <Parameter Name="ramal" Type="varchar" Mode="In" />
+    <Parameter Name="tabulacaoDiscador" Type="varchar" Mode="In" />
+    <Parameter Name="tipoTabulacao" Type="int" Mode="In" />
+    <Parameter Name="localTabulacao" Type="int" Mode="In" />
+    <Parameter Name="empresa" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="STP_SALVA_OPERADOR_EQUIPE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="SupervisorID" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="OperadorID" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <EntityContainer Name="IndigoBlended_GVTModelStoreContainer">
+    <EntitySet Name="Indigo_Report_Usuarios" EntityType="Self.Indigo_Report_Usuarios" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

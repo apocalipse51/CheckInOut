@@ -1,0 +1,320 @@
+﻿@section scripts{
+
+    @Scripts.Render("~/Scripts/HorasProjeto/HorasProjeto.js")
+}
+
+<link rel="stylesheet" href="~/Styles/spinner.css">
+
+@Html.Hidden("BuscaClienteFinalURL", Url.Action("ListaClienteFinal", "Admin"))
+@Html.Hidden("BuscaProdutoClienteURL", Url.Action("ListaProdutoCliente", "Admin"))
+@Html.Hidden("BuscaProjetoProdutoURL", Url.Action("ListaProjetoPorProduto", "Admin"))
+@Html.Hidden("BuscaHorasProjetoURL", Url.Action("ListaHorasProjetosUsuario", "HorasProjeto"))
+@Html.Hidden("BuscaHorasProjetoAtalhoURL", Url.Action("ListaHorasProjetosUsuarioAtalho", "HorasProjeto"))
+@Html.Hidden("MantemHorasProjetoUrl", Url.Action("MantemHoraProjeto", "HorasProjeto"))
+@Html.Hidden("MantemHorasProjetoAtalhoUrl", Url.Action("MantemHoraProjetoAtalho", "HorasProjeto"))
+@Html.Hidden("IniciaHorasProjetosUsuarioAtalhoUrl", Url.Action("IniciaHorasProjetosUsuarioAtalho", "HorasProjeto"))
+@Html.Hidden("JustificaPontoUrl", Url.Action("JustificaPonto", "HorasProjeto"))
+@Html.Hidden("AlmocoHoraProjetoUrl", Url.Action("AlmocoHoraProjeto", "HorasProjeto"))
+@Html.Hidden("FiltrarHoraProjetoUrl", Url.Action("FiltrarHoraProjeto", "HorasProjeto"))
+@Html.Hidden("FiltrarHoraProjetoJustUrl", Url.Action("FiltrarHoraProjetoJust", "HorasProjeto"))
+@Html.Hidden("BuscaTipoJustificativaURL", Url.Action("BuscaTipoJustificativa", "HorasProjeto"))
+@Html.Hidden("VerificaJustUsuarioURL", Url.Action("VerificaJustUsuario", "HorasProjeto"))
+@Html.Hidden("FechaHorarioUrl", Url.Action("FechaHorario", "HorasProjeto"))
+@Html.Hidden("BuscaFaseProjetoURL", Url.Action("ListaFaseProjeto", "Admin"))
+@Html.Hidden("BuscaSubFaseProjetoURL", Url.Action("ListaSubFaseProjeto", "Admin"))
+@Html.Hidden("LogoutUsuarioURL", Url.Action("Logout", "Usuario"))
+@Html.Hidden("idHorasProjeto", 0)
+
+<style>
+    .alert-message {
+        color: #fff;
+        background-color: #F44336;
+        text-align: center;
+        padding: 1em;
+        border-radius: .3em;
+        border: 2px solid rgba(0,0,0,.1);
+    }
+
+    .bg-white {
+      background-color: #fff;
+      padding: 1em;
+      margin-bottom: .5em !important;
+      box-shadow: 0 0 2px rgba(0,0,0,.4);
+    }
+
+    .table-internal tr {
+      border-bottom: 1px solid #000;
+    }
+</style>
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-lg-12 bg-white">
+        <a href="#cbxJustificativa">
+            <input type="button" value="Justificar" id="Justificar" class="btn btn-primary active" title="Justificar ausência de horas de projeto" onclick="MostrarJustificarHora();" style="float:left;" />
+        </a>
+        <input type="button" value="Checkout" id="Checkout" class="btn btn-warning active" title="Checkout de atividade e encerrar sessão" onclick="Sair();" style="float:right;" />
+    </div>
+
+    <div class="text-center col-lg-12 bg-white">
+      <h3 id="status">Carregando...</h3>
+    </div>
+
+    <div class="wait"></div>
+    <div class="error"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 bg-white">
+            <input type="button" value="Almoço" id="AlmocoRetorno" title="Entrar em almoço ou retomar a última atividade" class="btn btn-default active" onclick="IniciarAlmoco(null);" style="float:left;" />
+            <input type="button" value="Nova atividade" id="NovaAtividade" title="Realizar nova atividade" class="btn btn-primary active" onclick="IniciarAlmoco('finaliza');" style="float:left;" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 bg-white">
+            <table id="tab" align="center">
+                <tr>
+                    <td><div id="barchart_material" style="width: 300px; height: 300px;"></div></td>
+                </tr>
+                <tr>
+                    <td align="center">@ViewBag.carga_horas h / @ViewBag.horas_atual h(@ViewBag.carga_atuals % completos)</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-6 bg-white">
+            <table style="margin: 0 auto; margin-top: 2em;">
+                <tr>
+                    <td><label id="lblAtalhosC">Atalhos</label></td>
+                </tr>
+                <tr>
+                    <td><label id="lblAtalho1" for="Atalho1" style="font-size:13px;">Vazio</label></td>
+                    <td><input type="radio" name="Atalho" id="Atalho1" value="Atalho1" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label id="lblAtalho2" for="Atalho2" style="font-size:13px;">Vazio</label></td>
+                    <td><input type="radio" name="Atalho" id="Atalho2" value="Atalho2" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label id="lblAtalho3" for="Atalho3" style="font-size:13px;">Vazio</label></td>
+                    <td><input type="radio" name="Atalho" id="Atalho3" value="Atalho3" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label id="lblAtalho4" for="Atalho4" style="font-size:13px;">Vazio</label></td>
+                    <td><input type="radio" name="Atalho" id="Atalho4" value="Atalho4" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label id="lblAtalho5" for="Atalho5" style="font-size:13px;">Vazio</label></td>
+                    <td><input type="radio" name="Atalho" id="Atalho5" value="Atalho5" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label id="lblAtalho6" for="Atalho6" style="font-size:13px;">Vazio</label></td>
+                    <td><input type="radio" name="Atalho" id="Atalho6" value="Atalho6" autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Iniciar" id="IniciarAtalho" class="input form-control btn btn-success active" onclick="IniciaAtalhoProjeto();" /></td>
+                    <td><input type="button" value="Criar/Modificar" id="EditarAtalho" class="input form-control btn btn-info active" onclick="EditarAtalho();" /></td>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="box bg-white">
+      <h2>Registro de Horas de Projeto</h2>
+      <div style="clear: both;"></div>
+      <div class="container">
+          <div id="divCamposJustificar" name="divCamposJustificar">
+              <div class="row">
+                  <div class="messageJustificativa" style="text-align: center;">
+
+                  </div>
+                  <div class="col-lg-4">
+                      <p>Justificativa</p>
+                      <select id="cbxJustificativa" name="cbxJustificativa" class="form-control" onchange="CarregaComboClienteFinal();"></select>
+                  </div>
+                  <div class="col-lg-4">
+                      <p>Data/Hora de inicio</p>
+                      <input type="datetime-local" name="txtJustificativaDataInicio" id="txtJustificativaDataInicio" value="" class="text" style="height: 34px; border: 1px solid #ccc;" />
+                  </div>
+                  <div class="col-lg-4">
+                      <p>Data/Hora de Fim</p>
+                      <input type="datetime-local" name="txtJustificativaDataFim" id="txtJustificativaDataFim" value="" class="text" style="height: 34px; border: 1px solid #ccc;" />
+                  </div>
+              </div>
+          </div>
+          <div id="divCampos" name="divCampos">
+              <div class="row">
+                  <div class="col-lg-4">
+                      <p id="lblCliente">Cliente:</p>
+                      <select id="cbxClienteFinal" name="cbxClienteFinal" class="form-control" onchange="CarregaComboProdutosCliente();"></select>
+                  </div>
+                  <div class="col-lg-4">
+                      <p id="lblProduto">Produto:</p>
+                      <select id="cbxProduto" name="cbxProduto" class="form-control" onchange="CarregaComboProjetoProduto();"></select>
+                  </div>
+                  <div class="col-lg-4">
+                      <p id="lblProjeto">Projeto:</p>
+                      <select id="cbxProjeto" name="cbxProjeto" class="form-control" onchange="CarregaComboFaseProjeto();"></select>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-4">
+                      <p id="lblFaseProjeto">Fase Projeto:</p>
+                      <select id="cbxFase" name="cbxFase" class="form-control" onchange="CarregaComboSubFase();"></select>
+                  </div>
+                  <div class="col-lg-4">
+                      <p id="lblAtividade">Atividade:</p>
+                      <select id="cbxSubFase" name="cbxSubFase" class="form-control"></select>
+                  </div>
+                  <div class="col-lg-4">
+                      <p>Observação:</p>
+                      <input type="text" name="txtDescricao" id="txtDescricao" class="text" style="width:100%;" />
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-2" style="margin-top:10px;">
+                      <input type="button" value="Iniciar" id="Iniciar" class="input form-control btn btn-success active" onclick="IniciarHoras();"/>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div>
+    </div>
+      <div style="clear: both;"></div>
+      <div class="table-container">
+        <table class="table-internal" style="margin-top: 15px;" id="tblDescricaoItens">
+            <thead>
+                <tr class="tr-head">
+                    <th>
+                        Cliente
+                    </th>
+                    <th>
+                        Produto
+                    </th>
+                    <th>
+                        Projeto
+                    </th>
+                    <th>
+                        Fase
+                    </th>
+                    <th>
+                        Atividade
+                    </th>
+                    <th>
+                        Data Hora Início
+                    </th>
+                    <th>
+                        Data Hora Final
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                    <th>
+                        Justificativa
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+      </div>
+      <div id="filtroAtividade" class="activitie-filter">
+        <table id="tabFiltro" align="center">
+            <tr>
+                <td>
+                    <input type="date" name="DataInicio" id="DataInicio" class="text" style="height: 34px; border: 1px solid #ccc;" />
+                </td>
+                <td>
+                    <input type="date" name="DataFim" id="DataFim" class="text" style="height: 34px; border: 1px solid #ccc;" />
+                </td>
+                <td>
+                    <input type="button" value="Filtrar" class="input form-control btn btn-success" onclick="Filtrar();" />
+                </td>
+            </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+              [@DateTime.Now.Month.ToString() + '/' + @DateTime.Now.Year.ToString(),'',''],
+              ['  ', @ViewBag.carga_horas, @ViewBag.horas_atual],
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'Horas em projetos'
+                },
+                bars: 'vertical',
+                backgroundColor: {
+                    fill: '#fff',
+                    fillOpacity: 0.8
+                },
+                legend: { position: "none" }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+</script>
+
+<div class="modal fade" id="ModalAtalho" tabindex="-1" role="dialog" aria-labelledby="ModalLabelAtalho" aria-hidden="true" style="margin-top:10%;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content" style="background: #ffffff; border-radius: 15px; border: 2px solid #660099;">
+            <div class="modal-header">
+                <h4 class="example-title" id="ModalLabelAtalho">Criar Atalho</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="divCamposAtalho" name="divCamposAtalho">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p id="lblCliente">Cliente:</p>
+                            <select id="cbxClienteFinalAtalho" name="cbxClienteFinalAtalho" class="form-control" onchange="CarregaComboProdutosClienteAtalho();"></select>
+                        </div>
+                        <div class="col-lg-4">
+                            <p id="lblProduto">Produto:</p>
+                            <select id="cbxProdutoAtalho" name="cbxProdutoAtalho" class="form-control" onchange="CarregaComboProjetoProdutoAtalho();"></select>
+                        </div>
+                        <div class="col-lg-4">
+                            <p id="lblProjeto">Projeto:</p>
+                            <select id="cbxProjetoAtalho" name="cbxProjetoAtalho" class="form-control" onchange="CarregaComboFaseProjetoAtalho();"></select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p id="lblFaseProjeto">Fase Projeto:</p>
+                            <select id="cbxFaseAtalho" name="cbxFaseAtalho" class="form-control" onchange="CarregaComboSubFaseAtalho();"></select>
+                        </div>
+                        <div class="col-lg-4">
+                            <p id="lblAtividade">Atividade:</p>
+                            <select id="cbxSubFaseAtalho" name="cbxSubFaseAtalho" class="form-control"></select>
+                        </div>
+                        <div class="col-lg-4">
+                            <p>Observação:</p>
+                            <input type="text" name="txtDescricaoAtalho" id="txtDescricaoAtalho" class="text" style="width:100%;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2" style="margin-top:10px;">
+                            <input type="button" value="Salvar" id="Salvar" class="input form-control btn btn-success active" onclick="SalvarAtalho();" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
