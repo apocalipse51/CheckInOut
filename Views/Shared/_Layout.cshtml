@@ -14,6 +14,7 @@
     <link href="~/Styles/dataTables.jqueryui.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Content/layout.css">
     <link rel="stylesheet" href="~/Content/user-info.css">
+    <link rel="stylesheet" href="~/Styles/spinner.css">
     <script src="~/Scripts/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="~/Scripts/popper.js"></script>
     <script src="~/Scripts/home/Template.js"></script>
@@ -22,6 +23,7 @@
     @Scripts.Render("~/Scripts/MaskMoney.js")
     @Scripts.Render("~/Scripts/jQuery.mask.js")
     @Scripts.Render("~/Scripts/Home/Layout.js")
+    @Scripts.Render("~/Scripts/HorasProjeto/HorasProjeto.js")
     <script src="~/Scripts/datatable.js"></script>
     <script src="~/Scripts/dataTables.jqueryui.js"></script>
     <script src="~/Scripts/Sessao.js"></script>
@@ -44,71 +46,123 @@
     <script src="~/Scripts/controllers/HorasEquipes/projeto-controller.js"></script>
     <script src="~/Scripts/controllers/HorasEquipes/teste-estrutura.js"></script>
     @RenderSection("scripts", required: false)
+    <style>
+        .alert-message {
+            color: #fff;
+            background-color: #F44336;
+            text-align: center;
+            padding: 1em;
+            border-radius: .3em;
+            border: 2px solid rgba(0,0,0,.1);
+        }
+
+        .bg-white {
+            background-color: #fff;
+            padding: 1em;
+            margin-bottom: .5em !important;
+            box-shadow: 0 0 2px rgba(0,0,0,.4);
+        }
+
+        .table-internal tr {
+            border-bottom: 1px solid #000;
+        }
+    </style>
 </head>
 <body>
     <!--Hidden URL to get the password's reset link-->
     @Html.Hidden("ResetarSenhaUsuarioURL", Url.Action("ResetarSenhaUsuario", "Usuario"))
+    <!--Hidden urls 4 search-->
+    @Html.Hidden("BuscaClienteFinalURL", Url.Action("ListaClienteFinal", "Admin"))
+    @Html.Hidden("BuscaProdutoClienteURL", Url.Action("ListaProdutoCliente", "Admin"))
+    @Html.Hidden("BuscaProjetoProdutoURL", Url.Action("ListaProjetoPorProduto", "Admin"))
+    @Html.Hidden("BuscaHorasProjetoURL", Url.Action("ListaHorasProjetosUsuario", "HorasProjeto"))
+    @Html.Hidden("BuscaHorasProjetoAtalhoURL", Url.Action("ListaHorasProjetosUsuarioAtalho", "HorasProjeto"))
+    @Html.Hidden("MantemHorasProjetoUrl", Url.Action("MantemHoraProjeto", "HorasProjeto"))
+    @Html.Hidden("MantemHorasProjetoAtalhoUrl", Url.Action("MantemHoraProjetoAtalho", "HorasProjeto"))
+    @Html.Hidden("IniciaHorasProjetosUsuarioAtalhoUrl", Url.Action("IniciaHorasProjetosUsuarioAtalho", "HorasProjeto"))
+    @Html.Hidden("JustificaPontoUrl", Url.Action("JustificaPonto", "HorasProjeto"))
+    @Html.Hidden("AlmocoHoraProjetoUrl", Url.Action("AlmocoHoraProjeto", "HorasProjeto"))
+    @Html.Hidden("FiltrarHoraProjetoUrl", Url.Action("FiltrarHoraProjeto", "HorasProjeto"))
+    @Html.Hidden("FiltrarHoraProjetoJustUrl", Url.Action("FiltrarHoraProjetoJust", "HorasProjeto"))
+    @Html.Hidden("BuscaTipoJustificativaURL", Url.Action("BuscaTipoJustificativa", "HorasProjeto"))
+    @Html.Hidden("VerificaJustUsuarioURL", Url.Action("VerificaJustUsuario", "HorasProjeto"))
+    @Html.Hidden("FechaHorarioUrl", Url.Action("FechaHorario", "HorasProjeto"))
+    @Html.Hidden("BuscaFaseProjetoURL", Url.Action("ListaFaseProjeto", "Admin"))
+    @Html.Hidden("BuscaSubFaseProjetoURL", Url.Action("ListaSubFaseProjeto", "Admin"))
+    @Html.Hidden("LogoutUsuarioURL", Url.Action("Logout", "Usuario"))
+    @Html.Hidden("idHorasProjeto", 0)
+    <!--End of hidden url 4 search-->
     <!--End of hidden URL-->
-    <!--Area de alteração de senha-->
+    <!--Barra superior-->
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">IndigoSoft</a>
-      <button class='btn-out' onclick="Template.Close()" data-toggle="modal" data-target="#loadLeave"><i data-feather="log-out"></i></button>
-      <button type="button" class="btn-menu-main" onclick="showMenu()"><i data-feather="menu"></i></button>
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">IndigoSoft</a>
+        <!--Btn options Almoço/Nova Tarefa-->
+        <div style="text-align: left; width: 100%; padding: 0 1em;">            
+          <input type="button" value="Almoço" id="AlmocoRetorno" title="Entrar em almoço ou retomar a última atividade" class="btn btn-default active" onclick="IniciarAlmoco(null);" style="float:left;" />
+          <input type="button" value="Nova atividade" id="NovaAtividade" title="Realizar nova atividade" class="btn btn-primary active" onclick="IniciarAlmoco('finaliza');" style="float:left;" />     
+            <a href="#cbxJustificativa">
+              <input type="button" value="Justificar" id="Justificar" class="btn btn-primary active" title="Justificar ausência de horas de projeto" onclick="MostrarJustificarHora();" style="float:left;" />
+          </a>
+          <input type="button" value="Checkout" id="Checkout" class="btn btn-warning active" title="Checkout de atividade e encerrar sessão" onclick="Sair();" style="float:right;" />  
+          <!--<button class='btn-out' onclick="Template.Close()" data-toggle="modal" data-target="#loadLeave"><i data-feather="log-out"></i></button>-->
+          <button type="button" class="btn-menu-main" onclick="showMenu()"><i data-feather="menu"></i></button>     
+        </div>        
+        <!--End of Btn options Almoço/Nova Tarefa-->        
     </nav>
-    <!--Fim da área de alteração da Senha-->
+    <!--Fim da barra superior-->
     <!--Menu And main content-->
     <div class="container-fluid">
-      <div class="row">
-        <!--Menu-->
-        <nav class="col-md-2 col-lg-2 d-none d-md-block bg-light sidebar hide">
-          <div class="sidebar-sticky">
-            <!--User info area-->
-            <div class="user">
-              <div>
-                <img src='/Images/user.png' alt="Avatar Usuário" class="user-info-image" onerror="this.src='../Images/user.png'">
-              </div>
-              <div class="user-info">
-                <p class="user-name">@HttpContext.Current.Session["USUARIO"].ToString()</p>                
-                <div class="btn-group">
-                  <button type="button" class="user-options-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Opções
-                  </button>
-                  <div class="dropdown-menu">
-                    <p id="alterars" class="passwordChange password-change-link dropdown-item">Alterar senha</p>
-                  </div>
+        <div class="row">
+            <!--Menu-->
+            <nav class="col-md-2 col-lg-2 d-none d-md-block bg-light sidebar hide">
+                <div class="sidebar-sticky">
+                    <!--User info area-->
+                    <div class="user">
+                        <div>
+                            <img src='/Images/user.png' alt="Avatar Usuário" class="user-info-image" onerror="this.src='../Images/user.png'">
+                        </div>
+                        <div class="user-info">
+                            <p class="user-name">@HttpContext.Current.Session["USUARIO"].ToString()</p>
+                            <div class="btn-group">
+                                <button type="button" class="user-options-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Opções
+                                </button>
+                                <div class="dropdown-menu">
+                                    <p id="alterars" class="passwordChange password-change-link dropdown-item">Alterar senha</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End of user info Area-->
+                    <ul class="nav flex-column menu-container pb-1">
+                        <!--Menu Goes Here-->
+                    </ul>
                 </div>
-              </div>
-            </div>
-            <!--End of user info Area-->
-            <ul class="nav flex-column menu-container pb-1">
-              <!--Menu Goes Here-->
-            </ul>
-          </div>
-        </nav>
-        <!--Main Content-->
-        <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-5 pb-5 mt-5 mb-5 main">
-          @RenderBody()
-          <!--Modal Area-->
-          <div class="modal-container">
-            <!--Modal Content Goes Here-->
-          </div>
-          <!-- Leave Modal -->
-          <div class="modal fade" id="loadLeave" tabindex="-1" role="dialog" aria-labelledby="loadLeave" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="loadLeavelLabel">Saindo...</h5>
-              </div>
-              <div class="modal-body">
-                <div class="loader loader-menu loader-black"></div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <!-- End of leave modal -->
-          <!--End of modal Area-->
-        </main>
-      </div>
+            </nav>
+            <!--Main Content-->
+            <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-5 pb-5 mt-5 mb-5 main">
+                @RenderBody()
+                <!--Modal Area-->
+                <div class="modal-container">
+                    <!--Modal Content Goes Here-->
+                </div>
+                <!-- Leave Modal -->
+                <div class="modal fade" id="loadLeave" tabindex="-1" role="dialog" aria-labelledby="loadLeave" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="loadLeavelLabel">Saindo...</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="loader loader-menu loader-black"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of leave modal -->
+                <!--End of modal Area-->
+            </main>
+        </div>
     </div>
     <!--End of menu and main content-->
     <!-- Icons -->

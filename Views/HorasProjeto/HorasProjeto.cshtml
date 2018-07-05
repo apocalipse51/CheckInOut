@@ -1,5 +1,4 @@
 ﻿@section scripts{
-
     @Scripts.Render("~/Scripts/HorasProjeto/HorasProjeto.js")
 }
 
@@ -48,29 +47,33 @@
 </style>
 
 <div class="container-fluid">
-<div class="row">
-    <div class="col-lg-12 bg-white">
-        <a href="#cbxJustificativa">
-            <input type="button" value="Justificar" id="Justificar" class="btn btn-primary active" title="Justificar ausência de horas de projeto" onclick="MostrarJustificarHora();" style="float:left;" />
-        </a>
-        <input type="button" value="Checkout" id="Checkout" class="btn btn-warning active" title="Checkout de atividade e encerrar sessão" onclick="Sair();" style="float:right;" />
-    </div>
-
-    <div class="text-center col-lg-12 bg-white">
-      <h3 id="status">Carregando...</h3>
-    </div>
-
-    <div class="wait alert-success"></div>
-    <div class="error alert-danger"></div>
-    </div>
     <div class="row">
+        
+        <!--<div class="col-lg-12 bg-white">
+            <a href="#cbxJustificativa">
+                <input type="button" value="Justificar" id="Justificar" class="btn btn-primary active" title="Justificar ausência de horas de projeto" onclick="MostrarJustificarHora();" style="float:left;" />
+            </a>
+            <input type="button" value="Checkout" id="Checkout" class="btn btn-warning active" title="Checkout de atividade e encerrar sessão" onclick="Sair();" style="float:right;" />
+        </div>-->
+
+        <div class="text-center col-lg-12 bg-white">
+            <h3 id="status">Carregando...</h3>
+        </div>
+        <!--Alerts components-->
+        <div class="wait alert-success"></div>
+        <div class="error alert-danger"></div>
+        <!--end of Alerts components-->
+    </div>
+    <!--Btns Almoço/Nova Atividade-->
+    <!--<div class="row">
         <div class="col-lg-12 bg-white">
             <input type="button" value="Almoço" id="AlmocoRetorno" title="Entrar em almoço ou retomar a última atividade" class="btn btn-default active" onclick="IniciarAlmoco(null);" style="float:left;" />
             <input type="button" value="Nova atividade" id="NovaAtividade" title="Realizar nova atividade" class="btn btn-primary active" onclick="IniciarAlmoco('finaliza');" style="float:left;" />
         </div>
-    </div>
-
+    </div>-->
+    <!--End of btns Almoço/Nova Atividade-->
     <div class="row">
+        <!--Gráfico de horas-->
         <div class="col-lg-6 bg-white">
             <table id="tab" align="center">
                 <tr>
@@ -81,6 +84,8 @@
                 </tr>
             </table>
         </div>
+        <!--fim do Gráfico de horas-->
+        <!--Área de seleção e adição de atalhos-->
         <div class="col-lg-6 bg-white">
             <table style="margin: 0 auto; margin-top: 2em;">
                 <tr>
@@ -116,8 +121,10 @@
                 </tr>
             </table>
         </div>
-      </div>
+        <!-- fim da área de seleção e adição de atalhos-->
     </div>
+</div>
+
 <div class="row">
   <div class="col-sm-12">
     <div class="box bg-white">
@@ -239,31 +246,31 @@
 </div>
 
 <script type="text/javascript">
-        google.charts.load('current', { 'packages': ['bar'] });
-        google.charts.setOnLoadCallback(drawChart);
-        function drawChart() {
+    google.charts.load('current', { 'packages': ['bar'] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
 
-            var data = google.visualization.arrayToDataTable([
-              [@DateTime.Now.Month.ToString() + '/' + @DateTime.Now.Year.ToString(),'',''],
-              ['  ', @ViewBag.carga_horas, @ViewBag.horas_atual],
-            ]);
+        var data = google.visualization.arrayToDataTable([
+            [@DateTime.Now.Month.ToString() + '/' + @DateTime.Now.Year.ToString(),'',''],
+            ['  ', @ViewBag.carga_horas, @ViewBag.horas_atual],
+        ]);
 
-            var options = {
-                chart: {
-                    title: 'Horas em projetos'
-                },
-                bars: 'vertical',
-                backgroundColor: {
-                    fill: '#fff',
-                    fillOpacity: 0.8
-                },
-                legend: { position: "none" }
-            };
+        var options = {
+            chart: {
+                title: 'Horas em projetos'
+            },
+            bars: 'vertical',
+            backgroundColor: {
+                fill: '#fff',
+                fillOpacity: 0.8
+            },
+            legend: { position: "none" }
+        };
 
-            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
 
-            chart.draw(data, google.charts.Bar.convertOptions(options));
-        }
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
 </script>
 
 <div class="modal fade" id="ModalAtalho" tabindex="-1" role="dialog" aria-labelledby="ModalLabelAtalho" aria-hidden="true" style="margin-top:10%;">
