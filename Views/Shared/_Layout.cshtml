@@ -97,17 +97,15 @@
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">IndigoSoft</a>
         <!--Btn options Almoço/Nova Tarefa-->
-        <div style="text-align: left; width: 100%; padding: 0 1em;">            
-          <input type="button" value="Almoço" id="AlmocoRetorno" title="Entrar em almoço ou retomar a última atividade" class="btn btn-default active" onclick="IniciarAlmoco(null);" style="float:left;" />
-          <input type="button" value="Nova atividade" id="NovaAtividade" title="Realizar nova atividade" class="btn btn-primary active" onclick="IniciarAlmoco('finaliza');" style="float:left;" />     
-            <a href="#cbxJustificativa">
-              <input type="button" value="Justificar" id="Justificar" class="btn btn-primary active" title="Justificar ausência de horas de projeto" onclick="MostrarJustificarHora();" style="float:left;" />
-          </a>
-          <input type="button" value="Checkout" id="Checkout" class="btn btn-warning active" title="Checkout de atividade e encerrar sessão" onclick="Sair();" style="float:right;" />  
-          <!--<button class='btn-out' onclick="Template.Close()" data-toggle="modal" data-target="#loadLeave"><i data-feather="log-out"></i></button>-->
-          <button type="button" class="btn-menu-main" onclick="showMenu()"><i data-feather="menu"></i></button>     
+        <div style="text-align: left; width: 100%; padding: 0 1em;">
+          <input type="button" value="Almoço" id="AlmocoRetorno" class="btn btn-default active" onclick="IniciarAlmoco(null)" title="Entrar em almoço ou retomar a última atividade">
+          <input type="button" value="Nova atividade" id="NovaAtividade" class="btn btn-primary active" onclick="IniciarAlmoco('finaliza');" title="Realizar nova atividade">
+          <input type="button" value="Justificar" id="Justificar" class="btn btn-primary active" onclick="MostrarJustificarHora();" title="Justificar ausência de horas de projeto">
+          <input type="button" value="Checkout" id="Checkout" class="btn btn-warning active" onclick="Sair();" title="Checkout de atividade e encerrar sessão">
+          <!--<button type="button" class="btn-menu-main" onclick="showMenu()"><i data-feather="menu"></i></button>-->
         </div>        
-        <!--End of Btn options Almoço/Nova Tarefa-->        
+        <!--<button class='btn-out' onclick="Template.Close()" data-toggle="modal" data-target="#loadLeave"><i data-feather="log-out"></i></button>-->
+        <!--End of Btn options Almoço/Nova Tarefa-->
     </nav>
     <!--Fim da barra superior-->
     <!--Menu And main content-->
@@ -141,6 +139,9 @@
             </nav>
             <!--Main Content-->
             <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-5 pb-5 mt-5 mb-5 main">
+                <div class="text-center col-lg-12 bg-white">
+                  <h3 id="status" class="status">Carregando...</h3>
+                </div>
                 @RenderBody()
                 <!--Modal Area-->
                 <div class="modal-container">
@@ -167,33 +168,33 @@
     <!--End of menu and main content-->
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-    <script>
-        feather.replace();
-        Sessao();
-        //Não excluir, usado para busca na página de relatórios individuais
-        localStorage.setItem('idSearch', '@HttpContext.Current.Session["IDUSUARIO"].ToString()');
-        localStorage.setItem('imgPerfil', '@HttpContext.Current.Session["IMGUSUARIO"].ToString()');
-        localStorage.setItem('perfil', '@HttpContext.Current.Session["PERFIL"].ToString()');
-        //Instancia o menu
-        Template.Menu(@HttpContext.Current.Session["IDUSUARIO"].ToString());
-        //Get the user image
-        Template.ImgUser();
-        //Modal Change password behavior definition
-        document.querySelector('#alterars').addEventListener('click', e => {
-          Template.ChangePassword();
-          AlterarSenha();
-        });
+    <script>      
+      feather.replace();
+      Sessao();
+      //Não excluir, usado para busca na página de relatórios individuais
+      localStorage.setItem('idSearch', '@HttpContext.Current.Session["IDUSUARIO"].ToString()');
+      localStorage.setItem('imgPerfil', '@HttpContext.Current.Session["IMGUSUARIO"].ToString()');
+      localStorage.setItem('perfil', '@HttpContext.Current.Session["PERFIL"].ToString()');
+      //Instancia o menu
+      Template.Menu(@HttpContext.Current.Session["IDUSUARIO"].ToString());
+      //Get the user image
+      Template.ImgUser();
+      //Modal Change password behavior definition
+      document.querySelector('#alterars').addEventListener('click', e => {
+        Template.ChangePassword();
+        AlterarSenha();
+      });
 
-        function showMenu() {
-          let menu = document.querySelector('.sidebar');
-          if(menu.classList.contains('hide')) {
-            menu.classList.remove('hide');
-            menu.classList.add('show');
-          } else {
-            menu.classList.remove('show');
-            menu.classList.add('hide');
-          }
+      function showMenu() {
+        let menu = document.querySelector('.sidebar');
+        if(menu.classList.contains('hide')) {
+          menu.classList.remove('hide');
+          menu.classList.add('show');
+        } else {
+          menu.classList.remove('show');
+          menu.classList.add('hide');
         }
+      }
     </script>
 </body>
 </html>

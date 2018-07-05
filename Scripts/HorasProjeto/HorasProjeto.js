@@ -1,4 +1,7 @@
-﻿$(document).ready(function () {
+﻿/*
+Old version used for move the document to the first page
+
+$(document).ready(function () {
     var now = new Date();
     CarregaHorasProjetoAtalho();
     VerificaNumeroJust();
@@ -6,6 +9,18 @@
     $('#NovaAtividade').hide();
     $('#divCamposJustificar').hide();
     window.location = "#cbxJustificativa";
+    IniciarAlmoco('lista');
+});
+
+*/
+
+$(document).ready(function () {
+    var now = new Date();
+    CarregaHorasProjetoAtalho();
+    VerificaNumeroJust();
+    CarregaComboClienteFinal();
+    $('#NovaAtividade').hide();
+    $('#divCamposJustificar').hide();    
     IniciarAlmoco('lista');
 });
 
@@ -918,18 +933,12 @@ function IniciaAtalho() {
 }
 
 function IniciaAtalhoProjeto() {
-
-        $(".error").slideUp(300);
-        if ($('#Atalho1').prop('checked') || $('#Atalho2').prop('checked') || $('#Atalho3').prop('checked') || $('#Atalho4').prop('checked') || $('#Atalho5').prop('checked') || $('#Atalho6').prop('checked')) {
-
-            IniciaAtalho()
-
-        }
-        else {
-
-            $(".error").slideDown(300);
-            $(".error").html("Selecione um botão de atalho !");
-
-        }
-
+    $(".error").slideUp(300);
+    if ($('#Atalho1').prop('checked') || $('#Atalho2').prop('checked') || $('#Atalho3').prop('checked') || $('#Atalho4').prop('checked') || $('#Atalho5').prop('checked') || $('#Atalho6').prop('checked')) {
+        IniciaAtalho()
     }
+    else {
+        $(".error").slideDown(300);
+        $(".error").html("Selecione um botão de atalho !");
+    }
+}
