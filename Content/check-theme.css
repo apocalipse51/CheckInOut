@@ -62,7 +62,7 @@ background-color: rgba(0,0,0,.3);
 }
 
 /* Main Container */
-.main {
+.main {  
   background-color: #f2f8f9;
 }
 
@@ -524,4 +524,29 @@ background-color: rgba(0,0,0,.3);
   width: 100%;
   position: relative;
   display: block;
+}
+
+/*Status*/
+.status {
+  display: block;
+  position: fixed;
+  right: 1em;
+  top: 4em;
+  z-index: 100;
+  width: 2.5em;
+  height: 2.5em;
+  float: right;
+  border-radius: 20px;
+  background-color: var(--dark);
+  text-align: center;
+  margin-bottom: .5em;
+  padding: .3em .5em;
+  box-shadow: var(--shadow-ease);    
+  cursor: pointer;
+}
+
+.status h3 {  
+  display: none;
+  font-size: 1.2em;
+  color: var(--text-light);
 }

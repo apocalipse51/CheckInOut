@@ -21,8 +21,44 @@ $(document).ready(function () {
     CarregaComboClienteFinal();
     $('#NovaAtividade').hide();
     $('#divCamposJustificar').hide();    
-    IniciarAlmoco('lista');
+    IniciarAlmoco('lista');   
+    //ShowStatus('.status'); 
 });
+
+function ShowStatus(selector) {    
+    setTimeout(() => {
+        $(selector).stop().animate({
+            width: "60%",        
+          }, {
+            duration: 1000,
+            specialEasing: {
+                width: "linear"
+            },
+          complete: function() {       
+          }
+        });
+        let tit = document.querySelector('.status h3');
+        tit.style.display = 'block';
+    }, 15000);    
+}
+
+function HideStatus(selector) {
+    setTimeout(() => {
+        $(selector).stop().animate({
+            width: "2.5em",            
+            }, {
+            duration: 1000,
+            specialEasing: {
+                width: "linear",
+                height: "linear"
+            },
+            complete: function() {           
+            }
+        });
+        let tit = document.querySelector('.status h3');
+        tit.style.display = 'block';
+    }, 15000);   
+}
 
 function EditarAtalho(){
     $(".error").slideUp(300);

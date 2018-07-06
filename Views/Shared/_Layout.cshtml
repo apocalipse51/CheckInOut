@@ -98,10 +98,10 @@
         <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">IndigoSoft</a>
         <!--Btn options Almoço/Nova Tarefa-->
         <div style="text-align: left; width: 100%; padding: 0 1em;">
-          <input type="button" value="Almoço" id="AlmocoRetorno" class="btn btn-default active" onclick="IniciarAlmoco(null)" title="Entrar em almoço ou retomar a última atividade">
-          <input type="button" value="Nova atividade" id="NovaAtividade" class="btn btn-primary active" onclick="IniciarAlmoco('finaliza');" title="Realizar nova atividade">
-          <input type="button" value="Justificar" id="Justificar" class="btn btn-primary active" onclick="MostrarJustificarHora();" title="Justificar ausência de horas de projeto">
-          <input type="button" value="Checkout" id="Checkout" class="btn btn-warning active" onclick="Sair();" title="Checkout de atividade e encerrar sessão">
+          <input type="button" value="Almoço" id="AlmocoRetorno" class="btn btn-default active" onclick="IniciarAlmoco(null); ShowStatus('.status');" title="Entrar em almoço ou retomar a última atividade">
+          <input type="button" value="Nova atividade" id="NovaAtividade" class="btn btn-primary active" onclick="IniciarAlmoco('finaliza'); ShowStatus('.status');" title="Realizar nova atividade">
+          <input type="button" value="Justificar" id="Justificar" class="btn btn-primary active" onclick="MostrarJustificarHora(); ShowStatus('.status');" title="Justificar ausência de horas de projeto">
+          <input type="button" value="Checkout" id="Checkout" class="btn btn-warning active" onclick="Sair(); ShowStatus('.status');" title="Checkout de atividade e encerrar sessão">
           <!--<button type="button" class="btn-menu-main" onclick="showMenu()"><i data-feather="menu"></i></button>-->
         </div>        
         <!--<button class='btn-out' onclick="Template.Close()" data-toggle="modal" data-target="#loadLeave"><i data-feather="log-out"></i></button>-->
@@ -138,10 +138,11 @@
                 </div>
             </nav>
             <!--Main Content-->
-            <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-5 pb-5 mt-5 mb-5 main">
-                <div class="text-center col-lg-12 bg-white">
-                  <h3 id="status" class="status">Carregando...</h3>
+            <main role="main" class="col-md-10 ml-sm-auto col-lg-10 pt-5 pb-5 mt-2 mb-5 main">
+                <div class="status">
+                  <h3 id="status">Carregando...</h3>
                 </div>
+                <div class="clearfix"></div>
                 @RenderBody()
                 <!--Modal Area-->
                 <div class="modal-container">
@@ -168,33 +169,37 @@
     <!--End of menu and main content-->
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-    <script>      
-      feather.replace();
-      Sessao();
-      //Não excluir, usado para busca na página de relatórios individuais
-      localStorage.setItem('idSearch', '@HttpContext.Current.Session["IDUSUARIO"].ToString()');
-      localStorage.setItem('imgPerfil', '@HttpContext.Current.Session["IMGUSUARIO"].ToString()');
-      localStorage.setItem('perfil', '@HttpContext.Current.Session["PERFIL"].ToString()');
-      //Instancia o menu
-      Template.Menu(@HttpContext.Current.Session["IDUSUARIO"].ToString());
-      //Get the user image
-      Template.ImgUser();
-      //Modal Change password behavior definition
-      document.querySelector('#alterars').addEventListener('click', e => {
-        Template.ChangePassword();
-        AlterarSenha();
-      });
+    <script>             
+        feather.replace();
+        Sessao();
+        //Não excluir, usado para busca na página de relatórios individuais
+        localStorage.setItem('idSearch', '@HttpContext.Current.Session["IDUSUARIO"].ToString()');
+        localStorage.setItem('imgPerfil', '@HttpContext.Current.Session["IMGUSUARIO"].ToString()');
+        localStorage.setItem('perfil', '@HttpContext.Current.Session["PERFIL"].ToString()');
+        //Instancia o menu
+        Template.Menu(@HttpContext.Current.Session["IDUSUARIO"].ToString());
+        //Get the user image
+        Template.ImgUser();
+        //Modal Change password behavior definition
+        document.querySelector('#alterars').addEventListener('click', e => {
+            Template.ChangePassword();
+            AlterarSenha();
+        });
 
-      function showMenu() {
-        let menu = document.querySelector('.sidebar');
-        if(menu.classList.contains('hide')) {
-          menu.classList.remove('hide');
-          menu.classList.add('show');
-        } else {
-          menu.classList.remove('show');
-          menu.classList.add('hide');
+        document.querySelector('.status').addEventListener('mouseonver', () => {
+            ShowStatus('.status');
+        });
+
+        function showMenu() {
+            let menu = document.querySelector('.sidebar');
+            if(menu.classList.contains('hide')) {
+            menu.classList.remove('hide');
+            menu.classList.add('show');
+            } else {
+            menu.classList.remove('show');
+            menu.classList.add('hide');
+            }
         }
-      }
     </script>
 </body>
 </html>
